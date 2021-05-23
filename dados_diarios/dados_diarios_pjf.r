@@ -97,12 +97,7 @@ obitos_diarios_pjf_clean<- obitos_diarios_pjf_separado %>%
   
   
   
-  tidyr::separate(col=texto,
-                  into= c("texto", "comorbidade"),
-                  sep = "comorbidade(s)*:",
-                  extra= "merge")
-  #b
-
+  
            
           
 
@@ -115,9 +110,6 @@ obitos_diarios_pjf_clean<- obitos_diarios_pjf_separado %>%
 
 
 # Visualização ----------------------------------------------------
-
-#Mortes Diárias
-
 
 
 
