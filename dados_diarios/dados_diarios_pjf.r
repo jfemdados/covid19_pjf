@@ -134,6 +134,8 @@ genero_masculino <- c( "homem", "idoso", "isoso", "masculino", "natimorto")
 # a linha de cima provavelmente é o mesmo mês do registro. Nesse caso, farei um fill("down")
 # para lidar com as faltas
 
+#Tentei fazer essa função para lidar com números por extenso, infelizmente não funcionou.
+#terá que ser por vez no meio do código
 
 nomeMes_to_nMes <- function(x){
   
@@ -153,24 +155,6 @@ nomeMes_to_nMes <- function(x){
   
 }
 
-#nao funcionou infelizmente com função, terá que ser por vez no meio do codigo
-
-
-nomeMes_to_nMes2 <- function(x){
-  mutate(
-  x=stringr::str_replace(x, "jan", "01"),
-  x=stringr::str_replace(x, "fev", "02"),
-  x=stringr::str_replace(x, "mar", "03"),
-  x=stringr::str_replace(x, "abr", "04"),
-  x=stringr::str_replace(x, "mai", "05"),
-  x=stringr::str_replace(x, "jun", "06"),
-  x=stringr::str_replace(x, "jul", "07"),
-  x=stringr::str_replace(x, "ago", "08"),
-  x=stringr::str_replace(x, "set", "09"),
-  x=stringr::str_replace(x, "out", "10"),
-  x=stringr::str_replace(x, "nov", "11"),
-  x=stringr::str_replace(x, "dez", "12"))
-}
 
 
 
