@@ -110,15 +110,7 @@ obitos_diarios_pjf_clean<- obitos_diarios_pjf_separado %>%
 # Padronizando Colunas ----------------------------------------------------
 
 
-# De posse das mesmas variáveis, o próximo passo é padronizar a forma com que essas 
-
-table(obitos_diarios_pjf_clean$genero)
-
-# no Gênero, temos dois gêneros com várias caligrafias diferentes para masculino e feminino.
-# os dois vetores servem para padronizar
-
-genero_feminino <- c( "feminino", "feminina", "idosa", "isosa", "mulher")
-genero_masculino <- c( "homem", "idoso", "isoso", "masculino", "natimorto")
+# De posse das mesmas variáveis, o próximo passo é padronizar a forma com que elas aparecem ao longo da tabela.
 
 # Nas DOENÇAS, temos várias abreviações e vários nomes completos
 
@@ -155,8 +147,16 @@ nomeMes_to_nMes <- function(x){
   
 }
 
+# no Gênero, temos dois gêneros com várias caligrafias diferentes para masculino e feminino, que você pode ver pela função abaixo.
 
+table(obitos_diarios_pjf_clean$genero)
 
+# esses dois vetores servem para usar na hora de padronizar a coluna do gênero.
+
+genero_feminino <- c( "feminino", "feminina", "idosa", "isosa", "mulher")
+genero_masculino <- c( "homem", "idoso", "isoso", "masculino", "natimorto")
+
+# Começando os trabalhos de padronização 
 
 obitos_diarios_pjf_tidy <- obitos_diarios_pjf_clean %>%
   #Com as variáveis já separadas, podemos retirar a coluna original do texto.
@@ -210,7 +210,7 @@ obitos_diarios_pjf_tidy <- obitos_diarios_pjf_clean %>%
           str_detect(data_obito, "morreu") ~ str_extract(data_obito, "\\d+"),
           TRUE ~ data_obito),
       tamanho_data= str_length(data_obito),
-  #agora a base está boa para aplicar lubridate_parse_time
+  #Preparando a coluna ano para lidar com números faltantes
         ano= str_extract(data_obito,"(?=/\\d{4,4})"))
 
           #str_length(data_obito) == 4 ~ paste(str_extract(data_obito,"^\\d{2,2}"),
