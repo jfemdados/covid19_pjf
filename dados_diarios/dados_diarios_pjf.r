@@ -29,6 +29,8 @@ obitos_diarios_pjf_raw <- tibble(
 obitos_diarios_pjf_raw %>% slice(1) %>% pull(texto)                                    
 
 
+# Separando Linhas --------------------------------------------------------
+
 #Separando Cada Linha do PDF que corresponde a um caso
 obitos_diarios_pjf_separado<- obitos_diarios_pjf_raw %>%
   mutate(texto= str_split(texto, "\\r\\n\\d+\\. "))%>%
@@ -37,7 +39,7 @@ obitos_diarios_pjf_separado<- obitos_diarios_pjf_raw %>%
 obitos_diarios_pjf_separado %>%# slice(1000:1578) %>%
   pull(texto) 
 
-# Tidying ----------------------------------------------------
+# -------------- TIDYING ----------------------------------------------------
 
 # Em tese teríamos 4 colunas, c( "genero", "idade", "data_do_obito" e "comorbidades")
 #Temos problemas em todas essas colunas:
@@ -52,6 +54,14 @@ obitos_diarios_pjf_separado %>%# slice(1000:1578) %>%
 
 #Temos um caso de 5 colunas:  se_é_idoso, genero, idade, data_do_obito e comorbidades
 #como "idoso, masculino, 88 anos. óbito em 05/07/2020. comorbidades:dcc, etc."
+
+
+#Portanto, como primeiro passo para transformar isso em uma tabela tidy:
+# Vamos separar uma variável por coluna.
+
+
+# Separando Colunas -------------------------------------------------------
+
 
 
 obitos_diarios_pjf_clean<- obitos_diarios_pjf_separado %>%
@@ -90,16 +100,152 @@ obitos_diarios_pjf_clean<- obitos_diarios_pjf_separado %>%
                                                       "obito.+" ,
                                                       "óbito$",
                                                       sep= "|")),
-         comorbidade = str_remove(comorbidade, "comorbidade(s)*(:|,)") %>%
+         comorbidade = str_remove(comorbidade, "comorbidade(s)*(:|,)|comorbidade(s)*/fator de risco:") %>%
                                                 str_squish(),
          comorbidade = str_remove(comorbidade, "(\\.|,|;)$"))
   
   
   
+
+# Padronizando Colunas ----------------------------------------------------
+
+
+# De posse das mesmas variáveis, o próximo passo é padronizar a forma com que essas 
+
+table(obitos_diarios_pjf_clean$genero)
+
+# no Gênero, temos dois gêneros com várias caligrafias diferentes para masculino e feminino.
+# os dois vetores servem para padronizar
+
+genero_feminino <- c( "feminino", "feminina", "idosa", "isosa", "mulher")
+genero_masculino <- c( "homem", "idoso", "isoso", "masculino", "natimorto")
+
+# Nas DOENÇAS, temos várias abreviações e vários nomes completos
+
+#Sigla DNC é Doença Neural Crônica, DRC é Doença Renal Crônica etc.
+# As siglas foram todas passadas  para seus nomes completos para serem mais facilmente entendidos.
+
+# No campo das DATAS, temos vários padrões:
+
+# Em números, temos "dd/mm/yy", "dd/mm/yyyy", "dd/mm", "d/mm", "dd/m" e "ddmm".
+# Por extenso, "dd de mes por extenso" e incríveis "morreu no último domingo, dd".
+# A meta é passar tudo para yyyy-mm-dd como objeto de data.
+# nos números faltantes sem meses e sem anos, como a base é organizad por dia,
+# a linha de cima provavelmente é o mesmo mês do registro. Nesse caso, farei um fill("down")
+# para lidar com as faltas
+
+
+nomeMes_to_nMes <- function(x){
   
+  mutate(
+    x=stringr::str_replace(x, "janeiro", "01"),
+    x=stringr::str_replace(x, "fevereiro", "02"),
+    x=stringr::str_replace(x, "março", "03"),
+    x=stringr::str_replace(x, "abril", "04"),
+    x=stringr::str_replace(x, "maio", "05"),
+    x=stringr::str_replace(x, "junho", "06"),
+    x=stringr::str_replace(x, "julho", "07"),
+    x=stringr::str_replace(x, "agosto", "08"),
+    x=stringr::str_replace(x, "setembro", "09"),
+    x=stringr::str_replace(x, "outubro", "10"),
+    x=stringr::str_replace(x, "novembro", "11"),
+    x=stringr::str_replace(x, "dezembro", "12"))
   
-           
-          
+}
+
+#nao funcionou infelizmente com função, terá que ser por vez no meio do codigo
+
+
+nomeMes_to_nMes2 <- function(x){
+  mutate(
+  x=stringr::str_replace(x, "jan", "01"),
+  x=stringr::str_replace(x, "fev", "02"),
+  x=stringr::str_replace(x, "mar", "03"),
+  x=stringr::str_replace(x, "abr", "04"),
+  x=stringr::str_replace(x, "mai", "05"),
+  x=stringr::str_replace(x, "jun", "06"),
+  x=stringr::str_replace(x, "jul", "07"),
+  x=stringr::str_replace(x, "ago", "08"),
+  x=stringr::str_replace(x, "set", "09"),
+  x=stringr::str_replace(x, "out", "10"),
+  x=stringr::str_replace(x, "nov", "11"),
+  x=stringr::str_replace(x, "dez", "12"))
+}
+
+
+
+obitos_diarios_pjf_tidy <- obitos_diarios_pjf_clean %>%
+  #Com as variáveis já separadas, podemos retirar a coluna original do texto.
+  select(!texto) %>%
+  #Padronizando GÊNERO
+  mutate(genero= case_when(
+    genero %in% genero_feminino ~ "feminino",
+    genero %in% genero_masculino ~ "masculino",
+    TRUE ~ as.character(genero)),
+  #padronizando COMORBIDADES. Criei coluna comorbidade e comorbidades para ter controle do que fazia
+        comorbidades= str_replace_all(comorbidade, "drc\\b", "doença renal crônica"),
+        comorbidades= str_replace_all(comorbidades, "dcc", "doença cardiovascular crônica"),
+        comorbidades= str_replace_all(comorbidades, "has|hás|hs", "hipertensão arterial sistêmica"),
+        comorbidades= str_replace_all(comorbidades, "dm|diabetes mel{1,2}itus", "diabetes"),
+        comorbidades= str_replace_all(comorbidades, "dpoc", "doença pulmonar obstrutiva crônica"),
+        comorbidades= str_replace_all(comorbidades, "\\bca\\b", "câncer"),
+        comorbidades= str_replace_all(comorbidades, "dnc", "doença neurológica crônica"),
+        comorbidades= str_replace_all(comorbidades, "outra pneumopatia", "pneumopatia"),
+        comorbidades= str_replace_all(comorbidades, "iam", "infarto agudo do miocárdio"),
+        comorbidades= str_replace_all(comorbidades, "ave", "acidente vascular encefálico"),
+        comorbidades= str_replace_all(comorbidades, "\\bfa\\b", "fibrilação atrial"),
+        comorbidades= str_replace_all(comorbidades, "\\btu\\b", "tumor"),
+        comorbidades= str_replace_all(comorbidades, "ave", "acidente vascular encefálico"),
+        comorbidades= str_replace_all(comorbidades, "dvc", "doença venosa crônica"),
+        comorbidades= str_replace_all(comorbidades, "tep", "trombo embolismo pulmonar"),
+  #arrumando delimitadores
+        comorbidades= str_replace_all(comorbidades, " e |/", ","),
+  #retirando siglas dentro de parentêses
+        comorbidades= str_remove_all(comorbidades, "\\(.+\\)"),
+  #nesting
+        comorbidades = str_split(comorbidades,","),
+  #padronizado DATAS, primeiro as datas que estão escritas por extenso para texto
+  #tentei usar função mas não funcionou
+      data_obito= stringr::str_replace(data_obito, "janeiro", "01"),
+      data_obito=stringr::str_replace(data_obito , "fevereiro", "02"),
+      data_obito=stringr::str_replace(data_obito , "março", "03"),
+      data_obito=stringr::str_replace(data_obito , "abril", "04"),
+      data_obito=stringr::str_replace(data_obito , "maio", "05"),
+      data_obito=stringr::str_replace(data_obito , "junho", "06"),
+      data_obito=stringr::str_replace(data_obito , "julho", "07"),
+      data_obito=stringr::str_replace(data_obito , "agosto", "08"),
+      data_obito=stringr::str_replace(data_obito , "setembro", "09"),
+      data_obito=stringr::str_replace(data_obito , "outubro", "10"),
+      data_obito=stringr::str_replace(data_obito , "novembro", "11"),
+      data_obito=stringr::str_replace(data_obito , "dezembro", "12"),
+      data_obito=stringr::str_replace(data_obito , " de ", "/"),
+  # retirando o ultimo caso por extenso, de "morreu no ultimo domingo, e lidando com "dd/mm/yy" para "dd/mm/yyyy"
+      data_obito= case_when(
+          str_detect(data_obito, "/21\\b") ~ str_replace(data_obito,"/21\\b","/2021"),
+          str_detect(data_obito, "/21\\b") ~ str_replace(data_obito,"/20\\b","/2020"),
+          str_detect(data_obito, "morreu") ~ str_extract(data_obito, "\\d+"),
+          TRUE ~ data_obito),
+      tamanho_data= str_length(data_obito),
+  #agora a base está boa para aplicar lubridate_parse_time
+        ano= str_extract(data_obito,"(?=/\\d{4,4})"))
+
+          #str_length(data_obito) == 4 ~ paste(str_extract(data_obito,"^\\d{2,2}"),
+           #                                   str_extract(data_obito,"\\d{2,2}$"),
+            #                                  sep= "/"))
+        #ano = str_extract(data_obito, "")
+  
+
+                              "|/20\\b"
+          "\\d+/\\d+(/\\d+)*"
+          "\\d{4,4}"
+          "\\d{1,2} de \\w*"
+          "morreu.*\\d+"
+        
+
+table(obitos_diarios_pjf_tidy$genero)
+
+
+
 
 # filtros e Classificações  ----------------------------------------------------
 
@@ -110,6 +256,9 @@ obitos_diarios_pjf_clean<- obitos_diarios_pjf_separado %>%
 
 
 # Visualização ----------------------------------------------------
+
+#Mortes Diárias
+
 
 
 
