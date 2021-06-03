@@ -1,0 +1,1653 @@
+genero,pag,idade,data_obito,comorbidades,faixa_etaria
+masculino,1,70,2020-04-07,hipertensão arterial sistêmica/doença cardiovascular crônica,De 60 a 80
+masculino,1,71,2020-03-29,diabetes/doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,1,41,2020-04-12,doença cardiovascular crônica,40 a 60
+feminino,1,91,2020-04-23,câncer/doença neurológica crônica,Mais de 80
+masculino,1,84,2020-04-23,câncer,Mais de 80
+feminino,1,88,2020-04-26,hipertensão arterial sistêmica/hipotireoidismo,Mais de 80
+feminino,1,55,2020-05-04,imunodeficiência/doença renal crônica/doença cardiovascular crônica,40 a 60
+masculino,1,77,2020-05-03,sem comorbidade,De 60 a 80
+feminino,1,77,2020-05-02,hipertensão arterial sistêmica/doença pulmonar obstrutiva crônica,De 60 a 80
+feminino,1,87,2020-05-04,doença cardiovascular crônica/doença pulmonar obstrutiva crônica,Mais de 80
+masculino,1,56,2020-05-04,diabetes,40 a 60
+feminino,1,91,2020-05-05,sem comorbidade,Mais de 80
+masculino,1,72,2020-05-05,sem comorbidade,De 60 a 80
+feminino,1,74,2020-05-07,diabetes/doença cardiovascular crônica/doença renal crônica/obesidade/pneumopatia crônica/tumor de snc prévio,De 60 a 80
+feminino,1,93,2020-05-02,doença cardiovascular crônica/obesidade,Mais de 80
+masculino,1,81,2020-05-02,doença cardiovascular crônica/pneumopatia crônica,Mais de 80
+feminino,1,72,2020-05-08,doença cardiovascular crônica/histórico de acidente vascular cerebral,De 60 a 80
+masculino,1,56,2020-05-11,sem comorbidade,40 a 60
+masculino,1,65,2020-05-11,diabetes/doença cardiovascular crônica/histórico de tumor de cólon,De 60 a 80
+masculino,1,79,2020-05-09,doença cardiovascular crônica,De 60 a 80
+masculino,1,75,2020-05-11,diabetes/doença cardiovascular crônica/doença neurológica crônica,De 60 a 80
+feminino,1,79,2020-05-12,doença cardiovascular crônica/doença neurológica crônica,De 60 a 80
+feminino,1,74,2020-05-15,doença cardiovascular crônica,De 60 a 80
+masculino,1,81,2020-05-16,doença cardiovascular crônica,Mais de 80
+masculino,1,91,2020-05-08,doença cardiovascular crônica,Mais de 80
+feminino,2,83,2020-05-12,sem comorbidade,Mais de 80
+feminino,2,86,2020-05-16,diabetes/doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+feminino,2,90,2020-05-21,diabetes/doença cardiovascular crônica/doença neurológica crônica/hipertensão arterial sistêmica,Mais de 80
+feminino,2,79,2020-05-24,diabetes,De 60 a 80
+feminino,2,74,2020-05-26,diabetes /pneumopatia crônica/obesidade,De 60 a 80
+masculino,2,86,2020-05-27,doença cardiovascular crônica/hipertensão arterial sistêmica,Mais de 80
+feminino,2,85,2020-05-23,doença cardiovascular crônica /pneumopatia crônica,Mais de 80
+feminino,2,45,2020-05-31,doença cardiovascular crônica,40 a 60
+feminino,2,64,2020-05-18,doença cardiovascular crônica,De 60 a 80
+feminino,2,72,2020-06-02,alzheimer,De 60 a 80
+feminino,2,70,2020-05-30,diabetes/doença cardiovascular crônica/obesidade,De 60 a 80
+masculino,2,61,2020-06-02,hipertensão arterial sistêmica/diabetes/acidente vascular encefálico,De 60 a 80
+masculino,2,76,2020-06-01,hipertensão arterial sistêmica/diabetes/doença cardiovascular crônica/doença pulmonar obstrutiva crônica,De 60 a 80
+masculino,2,78,2020-06-10,doença cardiovascular crônica,De 60 a 80
+feminino,2,80,2020-06-12,hipertensão arterial sistêmica/doença cardiovascular crônica,De 60 a 80
+masculino,2,69,2020-06-11,diabetes/doença cardiovascular crônica,De 60 a 80
+feminino,2,72,2020-06-16,doença cardiovascular crônica,De 60 a 80
+masculino,2,69,2020-06-16,doença cardiovascular crônica,De 60 a 80
+masculino,2,88,2020-06-18,doença cardiovascular crônica/hipertensão arterial sistêmica/parkinson,Mais de 80
+masculino,2,70,2020-06-18,doença cardiovascular crônica/diabetes/asma,De 60 a 80
+feminino,2,84,2020-06-14,diabetes/hipertensão arterial sistêmica,Mais de 80
+feminino,2,72,2020-06-21,sem comorbidade,De 60 a 80
+feminino,2,70,2020-09-19,doença cardiovascular crônica,De 60 a 80
+masculino,2,83,2020-05-31,doença cardiovascular crônica /diabetes,Mais de 80
+masculino,2,64,2020-06-20,sem comorbidade,De 60 a 80
+feminino,2,94,2020-06-23,doença cardiovascular crônica,Mais de 80
+feminino,2,84,2020-06-20,diabetes/doença cardiovascular crônica/doença renal crônica,Mais de 80
+feminino,2,60,2020-06-26,hipertensão arterial sistêmica/obesidade,40 a 60
+masculino,2,93,2020-06-25,doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+feminino,2,93,2020-06-27,doença cardiovascular crônica/doença renal crônica,Mais de 80
+masculino,2,66,2020-06-29,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+feminino,3,84,2020-07-01,doença cardiovascular crônica/hipertensão arterial sistêmica/pneumopatia crônica,Mais de 80
+masculino,3,75,2020-07-02,hipertensão arterial sistêmica,De 60 a 80
+masculino,3,65,2020-07-03,sem comorbidade,De 60 a 80
+masculino,3,83,2020-07-02,hipertensão arterial sistêmica/doença neurológica crônica,Mais de 80
+masculino,3,86,2020-07-02,diabetes/doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+feminino,3,88,2020-07-02,doença neurológica crônica,Mais de 80
+feminino,3,66,2020-07-02,diabetes/doença cardiovascular crônica/doença neurológica crônica,De 60 a 80
+masculino,3,88,2020-07-05,doença cardiovascular crônica,Mais de 80
+feminino,3,60,2020-07-04,doença cardiovascular crônica/hipertensão arterial sistêmica/obesidade,40 a 60
+feminino,3,85,2020-07-02,diabetes/doença cardiovascular crônica,Mais de 80
+masculino,3,45,2020-07-07,doença cardiovascular crônica/diabetes/obesidade,40 a 60
+masculino,3,38,2020-07-07,imunodeficiência,20 a 40
+feminino,3,77,2020-07-08,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+masculino,3,58,2020-07-07,hipertensão arterial sistêmica/diabetes/doença renal crônica,40 a 60
+feminino,3,81,2020-07-06,doença cardiovascular crônica/doença renal crônica,Mais de 80
+masculino,3,66,2020-07-09,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,3,85,2020-07-08,doença cardiovascular crônica/pneumopatia crônica,Mais de 80
+masculino,3,47,2020-07-10,hipertensão arterial sistêmica/acidente vascular cerebral,40 a 60
+feminino,3,84,2020-07-10,pneumopatia crônica,Mais de 80
+masculino,3,59,2020-07-09,doença cardiovascular crônica,40 a 60
+masculino,3,68,2020-07-09,sem comorbidade,De 60 a 80
+feminino,3,56,2020-07-11,doença cardiovascular crônica,40 a 60
+feminino,3,29,2020-07-12,doença renal crônica,20 a 40
+masculino,3,56,2020-07-12,doença cardiovascular crônica/obesidade,40 a 60
+masculino,3,55,2020-07-10,sem comorbidade,40 a 60
+masculino,3,66,2020-07-12,doença cardiovascular crônica/câncer próstata,De 60 a 80
+feminino,3,77,2020-07-13,doença cardiovascular crônica,De 60 a 80
+feminino,3,99,2020-07-14,doença cardiovascular crônica/doença renal crônica,Mais de 80
+masculino,3,53,2020-07-13,doença neurológica crônica,40 a 60
+feminino,3,43,2020-07-14,diabetes,40 a 60
+feminino,3,84,2020-07-10,doença venosa crônica/doença neurológica crônica,Mais de 80
+masculino,3,66,2020-07-14,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,3,80,2020-07-14,hipertensão arterial sistêmica/doença neurológica crônica/diabetes,De 60 a 80
+feminino,3,70,2020-07-15,doença cardiovascular crônica/diabetes/asma,De 60 a 80
+masculino,3,51,2020-07-16,sem comorbidade,40 a 60
+masculino,3,77,2020-06-17,sem comorbidade,De 60 a 80
+masculino,3,69,2020-07-17,hipertensão arterial sistêmica,De 60 a 80
+feminino,3,78,2020-07-17,diabetes,De 60 a 80
+feminino,3,74,2020-07-20,doença neurológica crônica,De 60 a 80
+feminino,4,97,2020-07-20,doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+masculino,4,65,2020-07-21,hipertensão arterial sistêmica,De 60 a 80
+masculino,4,82,2020-07-20,doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+feminino,4,86,2020-07-21,hipertensão arterial sistêmica,Mais de 80
+masculino,4,83,2020-07-23,sem comorbidade,Mais de 80
+masculino,4,61,2020-07-09,diabetes/obesidade,De 60 a 80
+feminino,4,68,2020-07-03,doença cardiovascular crônica/doença neurológica crônica,De 60 a 80
+masculino,4,69,2020-07-24,doença renal crônica,De 60 a 80
+feminino,4,72,2020-07-24,sem comorbidade,De 60 a 80
+feminino,4,86,2020-07-25,doença cardiovascular crônica,Mais de 80
+masculino,4,59,2020-07-27,doença cardiovascular crônica,40 a 60
+feminino,4,56,2020-07-24,câncer pulmão,40 a 60
+masculino,4,49,2020-07-24,doença cardiovascular crônica/diabetes,40 a 60
+feminino,4,92,2020-07-26,doença cardiovascular crônica/diabetes,Mais de 80
+masculino,4,70,2020-07-28,hipertensão arterial sistêmica,De 60 a 80
+feminino,4,61,2020-07-28,doença cardiovascular crônica/doença hepática crônica/obesidade,De 60 a 80
+feminino,4,83,2020-07-28,doença cardiovascular crônica/diabetes,Mais de 80
+feminino,4,69,2020-07-29,doença cardiovascular crônica,De 60 a 80
+masculino,4,61,2020-07-30,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,4,64,2020-07-30,diabetes/hipertensão arterial sistêmica/doença renal crônica,De 60 a 80
+masculino,4,55,2020-07-31,doença cardiovascular crônica/diabetes,40 a 60
+feminino,4,49,2020-08-01,sem comorbidade,40 a 60
+masculino,4,75,2020-08-01,doença neurológica crônica,De 60 a 80
+masculino,4,81,2020-08-03,diabetes,Mais de 80
+masculino,4,78,2020-08-04,hipertensão arterial sistêmica/doença neurológica crônica,De 60 a 80
+masculino,4,59,2020-08-05,diabetes/doença cardiovascular crônica,40 a 60
+masculino,4,52,2020-08-07,diabetes/doença cardiovascular crônica/obesidade,40 a 60
+masculino,4,56,2020-08-07,sem comorbidade,40 a 60
+masculino,4,77,2020-08-09,sem comorbidade,De 60 a 80
+masculino,4,62,2020-08-08,sem comorbidade,De 60 a 80
+feminino,4,66,2020-08-08,doença hepática crônica,De 60 a 80
+feminino,4,74,2020-08-09,doença cardiovascular crônica,De 60 a 80
+masculino,4,42,2020-08-09,doença neurológica crônica/pneumopatia crônica/câncer,40 a 60
+feminino,4,59,2020-08-08,sem comorbidade,40 a 60
+masculino,4,75,2020-08-09,doença cardiovascular crônica,De 60 a 80
+feminino,4,68,2020-08-12,doença cardiovascular crônica,De 60 a 80
+masculino,4,50,2020-08-13,diabetes/doença cardiovascular crônica/doença renal crônica,40 a 60
+masculino,4,75,2020-08-14,sem comorbidade,De 60 a 80
+feminino,4,87,2020-08-13,doença cardiovascular crônica,Mais de 80
+masculino,5,70,2020-08-14,doença cardiovascular crônica,De 60 a 80
+feminino,5,91,2020-06-17,doença cardiovascular crônica,Mais de 80
+masculino,5,51,2020-07-20,doença cardiovascular crônica/doença renal crônica,40 a 60
+feminino,5,92,2020-08-18,diabetes/doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+masculino,5,73,2020-08-17,diabetes/doença cardiovascular crônica/doença renal crônica/obesidade,De 60 a 80
+feminino,5,63,2020-07-10,doença cardiovascular crônica/diabetes/imunodeficiência,De 60 a 80
+feminino,5,61,2020-06-27,doença cardiovascular crônica,De 60 a 80
+feminino,5,62,2020-08-17,doença cardiovascular crônica/pneumopatia crônica,De 60 a 80
+feminino,5,90,2020-08-19,doença cardiovascular crônica/doença neurológica crônica/imunodeficiência,Mais de 80
+feminino,5,60,2020-08-19,diabetes/hipertensão arterial sistêmica,40 a 60
+masculino,5,77,2020-08-19,doença cardiovascular crônica,De 60 a 80
+masculino,5,55,2020-08-19,imunodeficiência,40 a 60
+feminino,5,58,2020-08-20,doença cardiovascular crônica/diabetes/doença hematológica crônica,40 a 60
+feminino,5,50,2020-08-18,diabetes/doença cardiovascular crônica,40 a 60
+masculino,5,68,2020-08-20,imunodeficiência,De 60 a 80
+masculino,5,39,2020-08-18,doença renal crônica,20 a 40
+masculino,5,57,2020-08-13,hipertensão arterial sistêmica/obesidade,40 a 60
+masculino,5,80,2020-08-16,hipertensão arterial sistêmica,De 60 a 80
+feminino,5,63,2020-08-21,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,5,74,2020-08-23,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+masculino,5,90,2020-08-22,hipertensão arterial sistêmica/doença neurológica crônica,Mais de 80
+masculino,5,66,2020-08-25,diabetes,De 60 a 80
+masculino,5,69,2020-08-26,diabetes/doença cardiovascular crônica,De 60 a 80
+feminino,5,82,2020-08-26,doença cardiovascular crônica,Mais de 80
+feminino,5,62,2020-08-30,hipertensão arterial sistêmica/pneumopatia crônica,De 60 a 80
+feminino,5,66,2020-08-30,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,5,74,2020-09-01,doença cardiovascular crônica/diabetes/doença neurológica crônica,De 60 a 80
+feminino,5,52,2020-08-30,doença cardiovascular crônica/obesidade,40 a 60
+masculino,5,60,2020-09-02,diabetes/doença cardiovascular crônica/obesidade,40 a 60
+masculino,5,81,2020-09-01,diabetes/doença cardiovascular crônica,Mais de 80
+feminino,5,41,2020-09-01,hipertensão arterial sistêmica,40 a 60
+masculino,5,44,2020-09-02,hipertensão arterial sistêmica/imunodeficiência,40 a 60
+masculino,5,69,2020-09-03,hipertensão arterial sistêmica/diabetes/imunodeficiência,De 60 a 80
+masculino,5,72,2020-09-05,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,5,69,2020-09-05,hipertensão arterial sistêmica/diabetes/doença cardiovascular crônica,De 60 a 80
+feminino,5,79,2020-09-07,sem comorbidade,De 60 a 80
+masculino,5,67,2020-09-05,diabetes/doença cardiovascular crônica,De 60 a 80
+feminino,5,75,2020-09-05,doença cardiovascular crônica/obesidade,De 60 a 80
+masculino,5,84,2020-09-06,doença cardiovascular crônica,Mais de 80
+feminino,6,72,2020-09-06,doença cardiovascular crônica/hipertensão arterial sistêmica/doença neurológica crônica,De 60 a 80
+masculino,6,70,2020-09-08,doença cardiovascular crônica/pneumopatia crônica,De 60 a 80
+feminino,6,85,2020-09-08,doença cardiovascular crônica/hipertensão arterial sistêmica/imunossupressão,Mais de 80
+masculino,6,89,2020-09-10,doença cardiovascular crônica,Mais de 80
+masculino,6,69,2020-09-11,doença cardiovascular crônica,De 60 a 80
+feminino,6,62,2020-09-13,hipertensão arterial sistêmica,De 60 a 80
+feminino,6,83,2020-09-14,diabetes/doença cardiovascular crônica/pneumopatia crônica,Mais de 80
+feminino,6,84,2020-09-14,doença cardiovascular crônica/doença neurológica crônica/doença hematológica crônica,Mais de 80
+masculino,6,86,2020-08-30,diabetes/doença cardiovascular crônica,Mais de 80
+feminino,6,41,2020-09-11,imunodeficiência,40 a 60
+feminino,6,85,2020-09-13,doença cardiovascular crônica/diabetes,Mais de 80
+feminino,6,57,2020-09-14,sem comorbidade,40 a 60
+feminino,6,79,2020-09-13,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+feminino,6,86,2020-08-20,doença cardiovascular crônica/doença neurológica crônica/pneumopatia crônica,Mais de 80
+masculino,6,73,2020-09-15,doença cardiovascular crônica,De 60 a 80
+masculino,6,95,2020-09-15,doença cardiovascular crônica,Mais de 80
+feminino,6,67,2020-09-16,diabetes/doença cardiovascular crônica/obesidade,De 60 a 80
+masculino,6,65,2020-09-17,doença cardiovascular crônica/doença renal crônica/obesidade,De 60 a 80
+masculino,6,75,2020-07-06,doença cardiovascular crônica/doença neurológica crônica,De 60 a 80
+feminino,6,75,2020-07-06,sem comorbidade,De 60 a 80
+masculino,6,84,2020-09-18,doença neurológica crônica/doença pulmonar obstrutiva crônica,Mais de 80
+masculino,6,78,2020-09-19,doença cardiovascular crônica,De 60 a 80
+masculino,6,37,2020-09-20,autismo,20 a 40
+feminino,6,44,2020-09-20,doença neurológica crônica/hipertensão arterial sistêmica,40 a 60
+masculino,6,85,2020-08-10,hipertensão arterial sistêmica,Mais de 80
+feminino,6,41,2020-09-22,artrite soronegativo,40 a 60
+masculino,6,69,2020-09-22,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+feminino,6,80,2020-09-22,doença cardiovascular crônica/doença neurológica crônica,De 60 a 80
+masculino,6,61,2020-09-23,sem comorbidade,De 60 a 80
+masculino,6,73,2020-09-24,doença cardiovascular crônica,De 60 a 80
+feminino,6,88,2020-09-24,doença cardiovascular crônica,Mais de 80
+masculino,6,69,2020-09-18,doença neurológica crônica/doença renal crônica/pneumopatia crônica,De 60 a 80
+masculino,6,74,2020-09-26,doença cardiovascular crônica,De 60 a 80
+feminino,6,75,2020-09-26,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes/doença hepática crônica,De 60 a 80
+masculino,6,72,2020-09-27,doença cardiovascular crônica/hipertensão arterial sistêmica/doença neurológica crônica,De 60 a 80
+masculino,6,85,2020-09-28,hipertensão arterial sistêmica/doença neurológica crônica,Mais de 80
+feminino,6,88,2020-09-28,doença cardiovascular crônica/doença neurológica crônica/hipertensão arterial sistêmica/doença renal crônica,Mais de 80
+feminino,6,98,2020-09-25,diabetes/doença neurológica crônica,Mais de 80
+masculino,7,86,2020-09-28,doença cardiovascular crônica/hipertensão arterial sistêmica,Mais de 80
+feminino,7,74,2020-09-27,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,7,40,2020-09-28,doença cardiovascular crônica/hipertensão arterial sistêmica,20 a 40
+masculino,7,61,2020-09-29,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,7,71,2020-09-24,sem comorbidade,De 60 a 80
+masculino,7,73,2020-09-28,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,7,57,2020-09-29,hipertensão arterial sistêmica,40 a 60
+masculino,7,42,2020-09-29,doença vascular periférica,40 a 60
+feminino,7,61,2020-09-29,doença cardiovascular crônica/obesidade,De 60 a 80
+feminino,7,81,2020-09-30,doença cardiovascular crônica/doença neurológica crônica/pneumopatia crônica,Mais de 80
+masculino,7,75,2020-09-30,doença cardiovascular crônica/obesidade,De 60 a 80
+feminino,7,78,2020-10-01,doença cardiovascular crônica/doença renal crônica,De 60 a 80
+masculino,7,90,2020-10-01,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,Mais de 80
+feminino,7,84,2020-10-01,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,Mais de 80
+feminino,7,76,2020-10-02,diabetes/hipertensão arterial sistêmica/doença renal crônica,De 60 a 80
+feminino,7,56,2020-10-03,doença cardiovascular crônica/diabetes/doença renal crônica/obesidade,40 a 60
+masculino,7,59,2020-10-03,sem comorbidade,40 a 60
+masculino,7,65,2020-10-03,doença renal crônica/imunossupressão/câncer,De 60 a 80
+masculino,7,74,2020-10-02,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,7,77,2020-10-06,hipertensão arterial sistêmica/diabetes/imunodeficiência/imunossupressão/pneumopatia crônica,De 60 a 80
+masculino,7,63,2020-10-06,sem comorbidade,De 60 a 80
+feminino,7,63,2020-10-06,doença cardiovascular crônica,De 60 a 80
+masculino,7,52,2020-10-06,hipertensão arterial sistêmica/obesidade,40 a 60
+masculino,7,82,2020-10-06,doença cardiovascular crônica/hipertensão arterial sistêmica/obesidade,Mais de 80
+masculino,7,66,2020-10-04,doença cardiovascular crônica/doença neurológica crônica,De 60 a 80
+feminino,7,70,2020-10-07,doença renal crônica,De 60 a 80
+masculino,7,77,2020-10-08,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,7,86,2020-10-07,doença neurológica crônica,Mais de 80
+feminino,7,90,2020-10-09,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes/doença neurológica crônica/doença renal crônica,Mais de 80
+feminino,7,42,2020-10-08,sem comorbidade,40 a 60
+feminino,7,70,2020-10-12,hipertensão arterial sistêmica,De 60 a 80
+feminino,7,70,2020-10-12,diabetes/doença cardiovascular crônica/obesidade,De 60 a 80
+feminino,7,78,2020-10-02,diabetes/doença cardiovascular crônica/doença neurológica crônica,De 60 a 80
+feminino,7,80,2020-10-10,doença cardiovascular crônica/doença renal crônica,De 60 a 80
+feminino,7,75,2020-10-14,diabetes/doença cardiovascular crônica/doença renal crônica,De 60 a 80
+feminino,7,80,2020-10-14,diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,7,48,2020-10-17,diabetes/obesidade,40 a 60
+masculino,7,55,2020-10-19,doença cardiovascular crônica/hipertensão arterial sistêmica,40 a 60
+feminino,7,61,2020-10-18,sem comorbidade,De 60 a 80
+masculino,8,86,2020-10-16,doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+masculino,8,74,2020-10-19,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,8,44,2020-10-20,doença cardiovascular crônica/doença renal crônica/obesidade,40 a 60
+masculino,8,72,2020-10-25,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,8,63,2020-10-25,hipertensão arterial sistêmica/pneumopatia crônica,De 60 a 80
+masculino,8,40,2020-10-25,sem comorbidade,20 a 40
+feminino,8,32,2020-10-26,diabetes/hipertensão arterial sistêmica/obesidade,20 a 40
+feminino,8,84,2020-10-28,doença cardiovascular crônica/hipertensão arterial sistêmica/doença renal crônica,Mais de 80
+masculino,8,78,2020-10-28,doença neurológica crônica/pneumopatia crônica,De 60 a 80
+masculino,8,71,2020-10-28,hipertensão arterial sistêmica/doença renal crônica/câncer,De 60 a 80
+masculino,8,76,2020-10-29,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,8,9,2020-10-26,sem comorbidade,Menos de 20 anos
+feminino,8,78,2020-10-30,diabetes,De 60 a 80
+masculino,8,72,2020-10-30,sem comorbidade,De 60 a 80
+masculino,8,66,2020-11-02,doença cardiovascular crônica/hipertensão arterial sistêmica/doença renal crônica/pneumopatia crônica,De 60 a 80
+feminino,8,60,2020-10-31,doença hepática crônica/pneumopatia crônica,40 a 60
+feminino,8,88,2020-11-01,hipertensão arterial sistêmica,Mais de 80
+masculino,8,85,2020-10-28,doença cardiovascular crônica/pneumopatia crônica,Mais de 80
+feminino,8,72,2020-11-05,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+masculino,8,63,2020-11-06,diabetes/hipertensão arterial sistêmica/obesidade,De 60 a 80
+masculino,8,73,2020-11-08,doença cardiovascular crônica/hipertensão arterial sistêmica/obesidade/vasculopatia periférica,De 60 a 80
+feminino,8,64,2020-11-07,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,8,68,2020-11-09,hipertensão arterial sistêmica,De 60 a 80
+feminino,8,91,2020-11-09,doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+masculino,8,61,2020-11-12,sem comorbidade,De 60 a 80
+masculino,8,61,2020-11-15,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes/doença renal crônica,De 60 a 80
+masculino,8,85,2020-11-15,doença cardiovascular crônica/diabetes,Mais de 80
+masculino,8,87,2020-11-12,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,Mais de 80
+masculino,8,74,2020-11-16,doença cardiovascular crônica,De 60 a 80
+masculino,8,84,2020-11-14,doença cardiovascular crônica/hipertensão arterial sistêmica,Mais de 80
+masculino,8,71,2020-11-16,doença cardiovascular crônica,De 60 a 80
+masculino,8,58,2020-11-16,doença cardiovascular crônica/hipertensão arterial sistêmica,40 a 60
+masculino,8,59,2020-11-12,doença cardiovascular crônica/doença renal crônica/diabetes/doença renal crônica,40 a 60
+feminino,8,49,2020-11-17,sem comorbidade,40 a 60
+masculino,8,78,2020-11-16,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,8,76,2020-11-18,doença cardiovascular crônica/doença renal crônica,De 60 a 80
+feminino,8,81,2020-11-17,doença cardiovascular crônica/doença renal crônica/pneumopatia crônica,Mais de 80
+feminino,8,81,2020-11-18,doença cardiovascular crônica/vasculopatia,Mais de 80
+feminino,9,61,2020-11-19,doença cardiovascular crônica/obesidade,De 60 a 80
+feminino,9,80,2020-11-19,diabetes/hipertensão arterial sistêmica/epilepsia,De 60 a 80
+feminino,9,77,2020-11-05,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,9,73,2020-11-20,diabetes/pneumopatia crônica,De 60 a 80
+masculino,9,84,2020-11-22,doença neurológica crônica,Mais de 80
+masculino,9,66,2020-11-21,imunossupressão/doença renal crônica/transplante renal,De 60 a 80
+masculino,9,93,2020-11-22,doença cardiovascular crônica/diabetes,Mais de 80
+masculino,9,84,2020-11-23,doença cardiovascular crônica/hipertensão arterial sistêmica/glaucoma/doença arterial coronariana,Mais de 80
+masculino,9,89,2020-11-23,doença cardiovascular crônica/diabetes,Mais de 80
+masculino,9,75,2020-11-23,doença cardiovascular crônica/diabetes/doença neurológica crônica/acidente vascular encefálico/hipertensão arterial sistêmica,De 60 a 80
+feminino,9,56,2020-11-24,doença cardiovascular crônica/diabetes/obesidade,40 a 60
+masculino,9,86,2020-11-24,doença cardiovascular crônica/diabetes/doença renal crônica/asma,Mais de 80
+masculino,9,60,2020-11-08,diabetes,40 a 60
+masculino,9,88,2020-11-15,doença neurológica crônica/cardiopatia/isquemia cerebral,Mais de 80
+feminino,9,73,2020-11-24,diabetes/hipertensão arterial sistêmica/fibrilação atrial crônica,De 60 a 80
+feminino,9,87,2020-11-24,doença cardiovascular crônica/doença pulmonar obstrutiva crônica/hipertensão arterial sistêmica,Mais de 80
+masculino,9,56,2020-11-23,doença cardiovascular crônica/diabetes/doença neurológica crônica/hipertensão arterial sistêmica,40 a 60
+masculino,9,78,2020-11-25,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,9,71,2020-11-26,hipertireoidismo,De 60 a 80
+feminino,9,71,2020-11-26,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,9,85,2020-11-26,doença cardiovascular crônica/hipertensão arterial sistêmica/sequelas de acidente vascular cerebral,Mais de 80
+masculino,9,39,2020-09-11,imunodeficiência,20 a 40
+feminino,9,67,2020-11-15,sem comorbidade,De 60 a 80
+masculino,9,80,2020-11-27,doença cardiovascular crônica/asma/doença pulmonar obstrutiva crônica/hipertensão arterial sistêmica/infarto agudo do miocárdio,De 60 a 80
+masculino,9,77,2020-11-26,pneumopatia crônica,De 60 a 80
+feminino,9,87,2020-11-26,doença cardiovascular crônica/diabetes/doença neurológica crônica,Mais de 80
+masculino,9,38,2020-11-26,doença cardiovascular crônica/diabetes/obesidade,20 a 40
+feminino,9,65,2020-11-27,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,9,51,2020-11-28,diabetes/obesidade/hipertensão arterial sistêmica,40 a 60
+feminino,9,92,2020-11-27,doença cardiovascular crônica/hipertensão arterial sistêmica/marca-passo,Mais de 80
+masculino,9,74,2020-11-28,diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,9,39,2020-11-28,obesidade,20 a 40
+masculino,9,41,2020-11-27,doença cardiovascular crônica/diabetes,40 a 60
+feminino,9,74,2020-11-29,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,9,97,2020-11-27,doença cardiovascular crônica/diabetes/síndrome do intestino irritável,Mais de 80
+masculino,9,56,2020-11-28,doença cardiovascular crônica/diabetes,40 a 60
+masculino,10,71,2020-11-27,doença cardiovascular crônica,De 60 a 80
+feminino,10,88,2020-11-27,doença cardiovascular crônica/diabetes/doença neurológica crônica,Mais de 80
+masculino,10,76,2020-11-27,hipertensão arterial sistêmica,De 60 a 80
+feminino,10,60,2020-11-27,sem comorbidade,40 a 60
+masculino,10,78,2020-11-30,doença cardiovascular crônica/diabetes/pneumopatia/obesidade,De 60 a 80
+feminino,10,74,2020-11-28,doença cardiovascular crônica,De 60 a 80
+feminino,10,77,2020-11-26,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,10,87,2020-11-30,doença neurológica crônica/hipertensão arterial sistêmica,Mais de 80
+masculino,10,49,2020-12-01,gastrite/hipertireoidismo/hiperglicemia,40 a 60
+masculino,10,62,2020-12-02,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,10,81,2020-12-02,doença cardiovascular crônica/diabetes/obesidade,Mais de 80
+feminino,10,80,2020-12-02,doença cardiovascular crônica/pneumopatia crônica/hipotireoidismo,De 60 a 80
+feminino,10,77,2020-12-03,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+feminino,10,81,2020-11-30,hipertensão arterial sistêmica,Mais de 80
+feminino,10,70,2020-12-03,hipertensão arterial sistêmica,De 60 a 80
+masculino,10,72,2020-12-04,doença cardiovascular crônica/hipertensão arterial sistêmica/doença renal crônica/obesidade,De 60 a 80
+feminino,10,45,2020-12-06,doença cardiovascular crônica/hipertensão arterial sistêmica/obesidade,40 a 60
+feminino,10,65,2020-12-07,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,10,92,2020-12-07,doença cardiovascular crônica/doença renal crônica,Mais de 80
+masculino,10,58,2020-12-07,hipertensão arterial sistêmica/diabetes/obesidade,40 a 60
+masculino,10,68,2020-12-06,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,10,85,2020-12-03,doença cardiovascular crônica/hipertensão arterial sistêmica/doença neurológica crônica,Mais de 80
+masculino,10,65,2020-12-04,hipertensão arterial sistêmica/diabetes,De 60 a 80
+feminino,10,81,2020-12-04,doença cardiovascular crônica/diabetes/doença neurológica crônica,Mais de 80
+feminino,10,80,2020-12-04,hipertensão arterial sistêmica/doença renal crônica,De 60 a 80
+masculino,10,70,2020-12-08,doença cardiovascular crônica/hipertensão arterial sistêmica/doença neurológica crônica,De 60 a 80
+masculino,10,37,2020-12-05,imunodeficiência,20 a 40
+masculino,10,41,2020-12-07,obesidade,40 a 60
+masculino,10,77,2020-12-07,sem comorbidade,De 60 a 80
+masculino,10,52,2020-12-04,doença cardiovascular crônica/hipertensão arterial sistêmica/doença neurológica crônica,40 a 60
+masculino,10,79,2020-12-06,doença cardiovascular crônica,De 60 a 80
+masculino,10,49,2020-12-04,doença cardiovascular crônica/hipertensão arterial sistêmica,40 a 60
+feminino,10,94,2020-12-04,doença cardiovascular crônica/pneumopatia crônica,Mais de 80
+feminino,10,69,2020-12-06,hipertensão arterial sistêmica/diabetes/obesidade,De 60 a 80
+masculino,10,66,2020-12-01,hipertensão arterial sistêmica/câncer,De 60 a 80
+masculino,10,66,2020-12-07,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,10,85,2020-12-04,sem comorbidade,Mais de 80
+feminino,11,62,2020-12-09,hipertensão arterial sistêmica,De 60 a 80
+masculino,11,65,2020-12-08,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes/doença renal crônica/obesidade,De 60 a 80
+feminino,11,68,2020-12-06,imunodeficiência/hipotireoidismo,De 60 a 80
+masculino,11,52,2020-12-07,diabetes,40 a 60
+feminino,11,58,2020-12-08,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,40 a 60
+masculino,11,47,2020-12-09,imunodeficiência/pneumopatia crônica,40 a 60
+masculino,11,86,2020-12-05,diabetes/doença neurológica crônica,Mais de 80
+feminino,11,74,2020-12-09,diabetes,De 60 a 80
+feminino,11,86,2020-12-10,doença cardiovascular crônica/diabetes/obesidade,Mais de 80
+feminino,11,54,2020-12-06,doença cardiovascular crônica/diabetes,40 a 60
+feminino,11,67,2020-12-09,diabetes/obesidade,De 60 a 80
+masculino,11,97,2020-12-09,sem comorbidade,Mais de 80
+masculino,11,92,2020-12-09,doença cardiovascular crônica/hipertensão arterial sistêmica,Mais de 80
+feminino,11,89,2020-12-07,hipertensão arterial sistêmica/diabetes/doença neurológica crônica,Mais de 80
+feminino,11,58,2020-12-10,doença cardiovascular crônica,40 a 60
+masculino,11,89,2020-12-10,doença cardiovascular crônica/hipertensão arterial sistêmica,Mais de 80
+masculino,11,80,2020-12-09,doença cardiovascular crônica/obesidade,De 60 a 80
+feminino,11,75,2020-12-06,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,11,43,2020-11-19,hipertensão arterial sistêmica,40 a 60
+masculino,11,83,2020-12-10,sem comorbidade,Mais de 80
+feminino,11,74,2020-12-11,doença cardiovascular crônica,De 60 a 80
+feminino,11,72,2020-12-11,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+feminino,11,60,2020-12-12,sem comorbidade,40 a 60
+masculino,11,74,2020-12-12,doença cardiovascular crônica/hipotireoidismo/doença de hadson,De 60 a 80
+masculino,11,61,2020-12-12,hipertensão arterial sistêmica/obesidade,De 60 a 80
+feminino,11,68,2020-12-12,hipertensão arterial sistêmica/obesidade/hipotireoidismo,De 60 a 80
+feminino,11,91,2020-12-11,doença cardiovascular crônica/pneumopatia crônica,Mais de 80
+feminino,11,78,2020-12-11,doença cardiovascular crônica,De 60 a 80
+masculino,11,70,2020-12-13,doença cardiovascular crônica/pneumopatia crônica,De 60 a 80
+feminino,11,78,2020-12-13,doença cardiovascular crônica/diabetes/doença neurológica crônica/câncer,De 60 a 80
+masculino,11,50,2020-12-13,doença cardiovascular crônica/hipertensão arterial sistêmica,40 a 60
+feminino,11,92,2020-12-13,hipertensão arterial sistêmica,Mais de 80
+masculino,11,73,2020-12-14,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,11,66,2020-12-14,doença cardiovascular crônica/diabetes/câncer,De 60 a 80
+masculino,11,91,2020-12-11,doença cardiovascular crônica/diabetes/obesidade,Mais de 80
+masculino,11,85,2020-12-11,sem comorbidade,Mais de 80
+masculino,11,72,2020-12-13,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,11,41,2020-12-13,doença cardiovascular crônica/obesidade,40 a 60
+masculino,11,77,2020-12-12,doença renal crônica,De 60 a 80
+masculino,12,71,2020-12-14,doença neurológica crônica,De 60 a 80
+feminino,12,80,2020-12-12,hipertensão arterial sistêmica/doença renal crônica,De 60 a 80
+feminino,12,87,2020-12-10,hipertensão arterial sistêmica/doença neurológica crônica,Mais de 80
+masculino,12,61,2020-12-10,sem comorbidade,De 60 a 80
+feminino,12,87,2020-12-11,doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+masculino,12,66,2020-12-11,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,12,78,2020-12-11,doença cardiovascular crônica/doença renal crônica,De 60 a 80
+feminino,12,86,2020-12-11,doença cardiovascular crônica/diabetes/obesidade,Mais de 80
+masculino,12,42,2020-12-12,sem comorbidade,40 a 60
+feminino,12,59,2020-12-14,doença cardiovascular crônica/diabetes/pneumopatia crônica,40 a 60
+feminino,12,86,2020-12-14,doença neurológica crônica,Mais de 80
+feminino,12,99,2020-12-13,doença neurológica crônica/hipotireoidismo,Mais de 80
+masculino,12,63,2020-12-16,hipertensão arterial sistêmica/diabetes/obesidade,De 60 a 80
+masculino,12,77,2020-12-13,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes/doença renal crônica,De 60 a 80
+masculino,12,70,2020-12-13,doença cardiovascular crônica,De 60 a 80
+feminino,12,60,2020-12-15,doença cardiovascular crônica/obesidade,40 a 60
+masculino,12,63,2020-12-15,pneumopatia crônica/tromboembolismo pulmonar,De 60 a 80
+feminino,12,58,2020-12-16,doença cardiovascular crônica/hipertensão arterial sistêmica,40 a 60
+feminino,12,88,2020-12-14,câncer/imunodeficiência,Mais de 80
+masculino,12,76,2020-12-17,diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,12,43,2020-12-16,hipertensão arterial sistêmica/doença renal crônica,40 a 60
+masculino,12,58,2020-12-16,hipertensão arterial sistêmica/diabetes/doença renal crônica,40 a 60
+masculino,12,76,2020-12-16,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,12,63,2020-12-16,hipertensão arterial sistêmica,De 60 a 80
+feminino,12,57,2020-12-17,imunodeficiência,40 a 60
+masculino,12,73,2020-12-17,sem comorbidade,De 60 a 80
+feminino,12,75,2020-12-17,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,12,61,2020-12-17,diabetes/doença renal crônica,De 60 a 80
+feminino,12,74,2020-12-17,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,12,53,2020-12-18,hipertensão arterial sistêmica/obesidade,40 a 60
+masculino,12,65,2020-12-18,acidente vascular encefálico prévio,De 60 a 80
+feminino,12,79,2020-12-18,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,12,82,2020-12-18,doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+feminino,12,65,2020-12-19,obesidade,De 60 a 80
+masculino,12,74,2020-12-19,sem comorbidade,De 60 a 80
+feminino,12,78,2020-12-18,sem comorbidade,De 60 a 80
+feminino,12,100,2020-12-18,sem comorbidade,Mais de 80
+masculino,12,54,2020-12-19,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,40 a 60
+feminino,13,54,2020-12-20,diabetes/hipertensão arterial sistêmica/doença renal crônica,40 a 60
+masculino,13,79,2020-12-18,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,13,83,2020-12-20,doença cardiovascular crônica/pneumopatia crônica,Mais de 80
+masculino,13,95,2020-12-08,doença neurológica crônica,Mais de 80
+masculino,13,74,2020-12-18,hipertensão arterial sistêmica,De 60 a 80
+feminino,13,67,2020-12-19,doença cardiovascular crônica/doença neurológica crônica/obesidade,De 60 a 80
+feminino,13,70,2020-12-18,doença cardiovascular crônica,De 60 a 80
+feminino,13,65,2020-12-18,hipertensão arterial sistêmica,De 60 a 80
+masculino,13,76,2020-12-20,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,13,55,2020-12-15,doença cardiovascular crônica/diabetes/obesidade,40 a 60
+feminino,13,80,2020-12-21,doença cardiovascular crônica/diabetes/pneumopatia crônica,De 60 a 80
+feminino,13,89,2020-12-20,doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+feminino,13,78,2020-12-21,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,13,74,2020-12-21,doença neurológica crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,13,45,2020-12-22,doença cardiovascular crônica/hipertensão arterial sistêmica/obesidade,40 a 60
+masculino,13,77,2020-12-19,hipertensão arterial sistêmica/doença neurológica crônica,De 60 a 80
+feminino,13,61,2020-12-23,doença cardiovascular crônica/diabetes/pneumopatia crônica,De 60 a 80
+masculino,13,53,2020-12-18,diabetes,40 a 60
+feminino,13,75,2020-12-22,doença cardiovascular crônica,De 60 a 80
+masculino,13,79,2020-12-22,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,13,51,2020-12-22,imunodeficiência,40 a 60
+masculino,13,88,2020-12-22,doença neurológica crônica,Mais de 80
+feminino,13,69,2020-12-22,hipertensão arterial sistêmica/pneumopatia crônica/obesidade,De 60 a 80
+masculino,13,51,2020-12-22,doença cardiovascular crônica,40 a 60
+feminino,13,73,2020-12-24,doença neurológica crônica/hipertensão arterial sistêmica,De 60 a 80
+feminino,13,87,2020-12-24,diabetes/doença renal crônica,Mais de 80
+feminino,13,89,2020-12-24,doença neurológica crônica,Mais de 80
+masculino,13,73,2020-12-25,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+feminino,13,27,2020-12-23,doença renal crônica/hipertensão arterial sistêmica/obesidade,20 a 40
+masculino,13,75,2020-12-23,hipertensão arterial sistêmica,De 60 a 80
+masculino,13,68,2020-12-25,hipertensão arterial sistêmica,De 60 a 80
+masculino,13,58,2020-12-25,hipertensão arterial sistêmica,40 a 60
+feminino,13,80,2020-12-27,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,13,73,2020-12-27,doença cardiovascular crônica/imunodeficiência,De 60 a 80
+feminino,13,76,2020-12-26,doença cardiovascular crônica/hipertensão arterial sistêmica/obesidade,De 60 a 80
+masculino,13,60,2020-12-28,doença cardiovascular crônica/hipertensão arterial sistêmica/doença neurológica crônica,40 a 60
+feminino,13,90,2020-12-28,doença cardiovascular crônica/hipertensão arterial sistêmica/doença neurológica crônica/obesidade,Mais de 80
+masculino,13,57,2020-12-24,doença neurológica crônica,40 a 60
+masculino,13,47,2020-12-27,doença cardiovascular crônica/hipertensão arterial sistêmica,40 a 60
+masculino,14,69,2020-12-23,sem comorbidade,De 60 a 80
+feminino,14,50,2020-12-23,hipertensão arterial sistêmica/diabetes,40 a 60
+masculino,14,60,2020-12-27,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,40 a 60
+masculino,14,91,2020-12-27,doença renal crônica,Mais de 80
+feminino,14,89,2020-12-27,doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+feminino,14,67,2020-12-22,hipertensão arterial sistêmica,De 60 a 80
+feminino,14,69,2020-12-27,doença cardiovascular crônica/pneumopatia crônica,De 60 a 80
+feminino,14,81,2020-12-24,doença cardiovascular crônica/diabetes/doença neurológica crônica,Mais de 80
+feminino,14,84,2020-12-27,hipertensão arterial sistêmica/pneumopatia crônica,Mais de 80
+feminino,14,91,2020-12-28,hipertensão arterial sistêmica/diabetes/hipotireoidismo,Mais de 80
+feminino,14,74,2020-12-27,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+feminino,14,62,2020-12-26,hipertensão arterial sistêmica/obesidade,De 60 a 80
+feminino,14,76,2020-12-28,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes/doença renal crônica,De 60 a 80
+feminino,14,31,2020-12-22,sem comorbidade,20 a 40
+feminino,14,50,2020-12-24,transplante renal,40 a 60
+masculino,14,67,2020-12-26,hipertensão arterial sistêmica,De 60 a 80
+feminino,14,76,2020-12-28,hipertensão arterial sistêmica/obesidade,De 60 a 80
+masculino,14,74,2020-12-25,hipertensão arterial sistêmica,De 60 a 80
+masculino,14,85,2020-12-25,doença cardiovascular crônica/hipertensão arterial sistêmica/pneumopatia crônica,Mais de 80
+masculino,14,54,2020-12-27,hipertensão arterial sistêmica/doença renal crônica,40 a 60
+masculino,14,65,2020-12-30,hipertensão arterial sistêmica,De 60 a 80
+feminino,14,88,2020-12-29,hipertensão arterial sistêmica/diabetes/doença neurológica crônica,Mais de 80
+masculino,14,70,2020-12-27,hipertensão arterial sistêmica,De 60 a 80
+masculino,14,92,2020-12-22,sem comorbidade,Mais de 80
+masculino,14,65,2020-12-29,hipertensão arterial sistêmica/trombose venosa profunda,De 60 a 80
+feminino,14,82,2020-12-29,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,Mais de 80
+feminino,14,77,2020-12-22,doença cardiovascular crônica/diabetes/doença neurológica crônica,De 60 a 80
+masculino,14,72,2020-12-30,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,14,78,2020-12-30,hipertensão arterial sistêmica/obesidade/asma,De 60 a 80
+masculino,14,72,2020-12-31,doença cardiovascular crônica/doença renal crônica,De 60 a 80
+masculino,14,87,2020-12-31,hipertensão arterial sistêmica/diabetes/doença renal crônica,Mais de 80
+masculino,14,88,2021-01-01,hipertensão arterial sistêmica/diabetes/doença cardiovascular crônica/hipotireoidismo,Mais de 80
+masculino,14,86,2021-01-01,diabetes/doença neurológica crônica,Mais de 80
+feminino,14,89,2021-01-02,hipertensão arterial sistêmica/pneumopatia crônica,Mais de 80
+feminino,14,93,2020-01-02,doença neurológica crônica,Mais de 80
+masculino,14,78,2020-01-02,hipertensão arterial sistêmica/doença renal crônica/pancreatite,De 60 a 80
+feminino,14,67,2020-01-02,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,14,68,2020-01-03,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,14,82,2020-01-03,pneumopatia crônica,Mais de 80
+feminino,14,58,2020-12-24,obesidade,40 a 60
+feminino,15,72,2020-12-24,doença neurológica crônica/doença cardiovascular crônica/pneumopatia crônica,De 60 a 80
+feminino,15,89,2020-12-29,hipertensão arterial sistêmica/doença neurológica crônica,Mais de 80
+masculino,15,81,2021-01-04,hipertensão arterial sistêmica,Mais de 80
+feminino,15,60,2021-01-04,sem comorbidade,40 a 60
+masculino,15,67,2021-01-04,doença cardiovascular crônica/doença neurológica crônica,De 60 a 80
+feminino,15,55,2021-01-01,doença cardiovascular crônica/doença renal crônica,40 a 60
+masculino,15,78,2020-12-31,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,15,93,2020-12-31,sem comorbidade,Mais de 80
+feminino,15,72,2021-01-04,doença cardiovascular crônica/diabetes/doença neurológica crônica,De 60 a 80
+feminino,15,86,2020-12-31,hipertensão arterial sistêmica/doença renal crônica/pneumopatia crônica,Mais de 80
+masculino,15,78,2021-01-04,doença cardiovascular crônica/acidente vascular cerebral prévio/hepatite,De 60 a 80
+masculino,15,82,2020-12-29,doença cardiovascular crônica/pneumopatia crônica,Mais de 80
+masculino,15,60,2020-12-29,hipertensão arterial sistêmica/diabetes,40 a 60
+feminino,15,62,2021-01-04,hipertensão arterial sistêmica/diabetes,De 60 a 80
+feminino,15,73,2021-01-04,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes/doença renal crônica/pneumopatia crônica/obesidade,De 60 a 80
+masculino,15,78,2021-01-03,câncer,De 60 a 80
+masculino,15,94,2021-01-04,doença cardiovascular crônica,Mais de 80
+masculino,15,85,2020-12-31,hipertensão arterial sistêmica/doença renal crônica/pneumopatia crônica,Mais de 80
+masculino,15,75,2021-01-03,hipertensão arterial sistêmica/diabetes/pneumopatia crônica,De 60 a 80
+masculino,15,63,2020-12-29,obesidade,De 60 a 80
+masculino,15,41,2020-12-29,doença cardiovascular crônica/obesidade,40 a 60
+masculino,15,58,2020-12-31,diabetes,40 a 60
+masculino,15,73,2021-01-03,doença cardiovascular crônica,De 60 a 80
+masculino,15,78,2021-01-03,hipertensão arterial sistêmica,De 60 a 80
+masculino,15,70,2021-01-05,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,15,68,2021-01-05,hipertensão arterial sistêmica,De 60 a 80
+feminino,15,90,2021-01-04,doença cardiovascular crônica/diabetes/doença renal crônica,Mais de 80
+masculino,15,66,2020-12-25,anemia,De 60 a 80
+masculino,15,72,2021-01-06,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,15,75,2020-12-30,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,15,76,2021-01-05,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+feminino,15,71,2021-01-02,pneumopatia crônica,De 60 a 80
+feminino,15,53,2021-01-01,doença cardiovascular crônica/obesidade,40 a 60
+masculino,15,73,2020-01-05,sem comorbidade,De 60 a 80
+masculino,15,85,2020-12-24,doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+masculino,15,72,2020-01-06,hipertensão arterial sistêmica/doença neurológica crônica,De 60 a 80
+masculino,16,62,2020-01-06,doença cardiovascular crônica/hipertensão arterial sistêmica/acidente vascular encefálico prévio,De 60 a 80
+masculino,16,51,2020-01-07,hipertensão arterial sistêmica/diabetes,40 a 60
+feminino,16,80,2020-01-07,doença cardiovascular crônica/doença neurológica crônica,De 60 a 80
+masculino,16,53,2020-01-08,hipertensão arterial sistêmica/obesidade,40 a 60
+feminino,16,70,2020-01-08,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,16,76,2020-01-08,doença cardiovascular crônica/pneumopatia crônica,De 60 a 80
+feminino,16,73,2020-01-08,doença cardiovascular crônica/pneumopatia crônica,De 60 a 80
+feminino,16,84,2020-01-08,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes/dislipidemia,Mais de 80
+feminino,16,56,2020-01-07,hipertensão arterial sistêmica/diabetes,40 a 60
+masculino,16,86,2020-01-07,hipertensão arterial sistêmica,Mais de 80
+masculino,16,76,2020-01-08,hipertensão arterial sistêmica,De 60 a 80
+masculino,16,73,2020-01-08,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,16,70,2020-01-09,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+feminino,16,77,2020-01-10,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,16,82,2020-01-10,hipertensão arterial sistêmica,Mais de 80
+masculino,16,77,2020-01-10,doença cardiovascular crônica/hipertensão arterial sistêmica/hiperplasia de próstata,De 60 a 80
+feminino,16,100,2020-01-09,doença neurológica crônica/hipertensão arterial sistêmica/diabetes,Mais de 80
+feminino,16,58,2020-01-09,diabetes/obesidade,40 a 60
+feminino,16,64,2020-01-10,hipertensão arterial sistêmica/pneumopatia crônica,De 60 a 80
+masculino,16,78,2020-01-11,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,16,60,2020-01-07,doença cardiovascular crônica/diabetes/obesidade,40 a 60
+masculino,16,77,2020-01-10,hipertensão arterial sistêmica/diabetes/doença renal crônica/doença hepática crônica/imunodeficiência,De 60 a 80
+masculino,16,96,2020-01-10,doença cardiovascular crônica/câncer,Mais de 80
+feminino,16,63,2020-01-08,doença cardiovascular crônica/obesidade/pneumopatia crônica,De 60 a 80
+feminino,16,80,2020-01-08,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+feminino,16,81,2020-01-07,doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+masculino,16,80,2020-01-11,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,16,69,2020-01-10,hipertensão arterial sistêmica/diabetes,De 60 a 80
+feminino,16,56,2020-01-11,hipertensão arterial sistêmica/vasculopatia,40 a 60
+masculino,16,73,2020-01-11,pancreatite/pneumopatia crônica,De 60 a 80
+masculino,16,87,2020-01-10,doença neurológica crônica,Mais de 80
+masculino,16,60,2020-11-17,doença neurológica crônica/imunodeficiência,40 a 60
+feminino,16,49,2020-01-10,doença cardiovascular crônica/diabetes/pneumopatia crônica,40 a 60
+feminino,16,90,2020-01-12,doença neurológica crônica/hipotireoidismo,Mais de 80
+masculino,16,87,2020-01-08,imunodeficiência/neoplasia,Mais de 80
+masculino,16,73,2020-01-08,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,16,73,2020-01-12,doença cardiovascular crônica/obesidade/dislipidemia,De 60 a 80
+masculino,16,85,2020-01-11,doença cardiovascular crônica/diabetes,Mais de 80
+feminino,16,81,2020-01-14,doença cardiovascular crônica,Mais de 80
+feminino,16,76,2020-01-13,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,17,73,2020-01-14,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes/doença neurológica crônica,De 60 a 80
+masculino,17,86,2020-01-11,hipertensão arterial sistêmica/doença neurológica crônica/doença renal crônica,Mais de 80
+feminino,17,83,2020-01-14,doença cardiovascular crônica/hipertensão arterial sistêmica/doença renal crônica,Mais de 80
+feminino,17,73,2020-01-12,doença cardiovascular crônica/hipertensão arterial sistêmica/pneumopatia crônica,De 60 a 80
+masculino,17,93,2020-01-11,doença neurológica crônica,Mais de 80
+masculino,17,79,2020-01-14,doença cardiovascular crônica/hipertensão arterial sistêmica/doença neurológica crônica,De 60 a 80
+feminino,17,63,2020-01-15,doença cardiovascular crônica,De 60 a 80
+feminino,17,82,2020-12-25,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes/doença renal crônica,Mais de 80
+masculino,17,87,2020-01-06,doença óssea de paget,Mais de 80
+masculino,17,68,2020-01-14,hipertensão arterial sistêmica/câncer,De 60 a 80
+masculino,17,83,2020-01-15,doença cardiovascular crônica/diabetes/doença neurológica crônica/doença renal crônica,Mais de 80
+feminino,17,49,2020-01-04,diabetes/obesidade,40 a 60
+feminino,17,42,2020-01-15,sem comorbidade,40 a 60
+masculino,17,53,2020-01-15,sem comorbidade,40 a 60
+feminino,17,81,2020-01-16,hipertensão arterial sistêmica/diabetes,Mais de 80
+feminino,17,56,2020-01-16,câncer,40 a 60
+masculino,17,47,2020-01-17,sem comorbidade,40 a 60
+masculino,17,86,2020-01-17,hipertensão arterial sistêmica/doença neurológica crônica/câncer,Mais de 80
+masculino,17,65,2020-01-17,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,17,47,2020-01-17,sem comorbidade,40 a 60
+feminino,17,69,2020-01-16,doença cardiovascular crônica,De 60 a 80
+masculino,17,77,2020-01-15,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes/câncer,De 60 a 80
+masculino,17,72,2020-01-18,sem comorbidade,De 60 a 80
+feminino,17,70,2020-01-18,hipertensão arterial sistêmica/obesidade,De 60 a 80
+feminino,17,58,2020-01-10,doença cardiovascular crônica/diabetes/doença renal crônica,40 a 60
+feminino,17,79,2020-01-16,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,17,74,2020-01-15,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,17,74,2020-01-15,hipertensão arterial sistêmica/diabetes,De 60 a 80
+feminino,17,80,2020-01-15,talassemia,De 60 a 80
+masculino,17,74,2020-01-17,doença cardiovascular crônica/diabetes/doença renal crônica,De 60 a 80
+masculino,17,67,2020-01-15,sem comorbidade,De 60 a 80
+masculino,17,77,2020-01-17,doença cardiovascular crônica/diabetes/doença neurológica crônica,De 60 a 80
+feminino,17,84,2020-01-17,doença cardiovascular crônica/diabetes,Mais de 80
+masculino,17,67,2020-01-16,doença cardiovascular crônica/diabetes/câncer,De 60 a 80
+masculino,17,73,2020-01-18,doença cardiovascular crônica/doença renal crônica,De 60 a 80
+feminino,17,72,2020-01-19,diabetes,De 60 a 80
+feminino,17,66,2020-01-19,hipertensão arterial sistêmica/diabetes/obesidade,De 60 a 80
+masculino,17,79,2020-01-18,hipertensão arterial sistêmica/diabetes/doença neurológica crônica,De 60 a 80
+masculino,17,85,2020-01-18,doença cardiovascular crônica,Mais de 80
+masculino,17,42,2020-01-18,doença renal crônica/imunodeficiência,40 a 60
+masculino,17,56,2020-01-20,doença cardiovascular crônica/diabetes/doença renal crônica,40 a 60
+masculino,17,79,2020-01-20,doença cardiovascular crônica/diabetes/acidente vascular encefálico prévio,De 60 a 80
+masculino,18,66,2020-01-20,diabetes/doença neurológica crônica,De 60 a 80
+masculino,18,73,2020-01-20,doença cardiovascular crônica/diabetes/doença renal crônica,De 60 a 80
+feminino,18,92,2020-01-16,doença neurológica crônica/hipotireoidismo,Mais de 80
+masculino,18,62,2020-01-20,câncer,De 60 a 80
+masculino,18,76,2020-01-20,doença cardiovascular crônica/doença neurológica crônica/pneumopatia crônica,De 60 a 80
+masculino,18,53,2020-01-20,hipertensão arterial sistêmica/diabetes,40 a 60
+feminino,18,61,2020-01-21,hipertensão arterial sistêmica/obesidade,De 60 a 80
+feminino,18,70,2020-01-20,doença cardiovascular crônica,De 60 a 80
+feminino,18,81,2020-01-20,doença cardiovascular crônica/câncer/pneumopatia crônica,Mais de 80
+feminino,18,83,2020-01-20,doença renal crônica,Mais de 80
+feminino,18,81,2020-01-21,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,Mais de 80
+feminino,18,63,2020-12-29,obesidade,De 60 a 80
+masculino,18,86,2020-01-22,doença cardiovascular crônica/diabetes,Mais de 80
+feminino,18,63,2020-01-21,pneumopatia crônica,De 60 a 80
+masculino,18,67,2020-12-20,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,18,67,2020-12-30,hipertensão arterial sistêmica/diabetes,De 60 a 80
+feminino,18,58,2020-12-24,obesidade,40 a 60
+feminino,18,75,2020-01-21,sem comorbidade,De 60 a 80
+feminino,18,58,2020-01-21,doença neurológica crônica/pneumopatia crônica,40 a 60
+masculino,18,81,2020-01-21,hipertensão arterial sistêmica,Mais de 80
+masculino,18,60,2020-01-22,obesidade,40 a 60
+masculino,18,73,2020-01-23,sem comorbidade,De 60 a 80
+feminino,18,76,2020-01-23,doença neurológica crônica,De 60 a 80
+masculino,18,79,2020-01-23,doença neurológica crônica,De 60 a 80
+masculino,18,83,2020-01-23,hipertensão arterial sistêmica/doença neurológica crônica/câncer,Mais de 80
+masculino,18,66,2020-01-23,hipertensão arterial sistêmica/doença neurológica crônica,De 60 a 80
+masculino,18,72,2020-01-24,hipertensão arterial sistêmica/diabetes/pneumopatia crônica,De 60 a 80
+feminino,18,44,2020-01-24,hipertensão arterial sistêmica,40 a 60
+masculino,18,90,2020-01-24,doença neurológica crônica,Mais de 80
+masculino,18,71,2020-01-24,diabetes/câncer,De 60 a 80
+masculino,18,67,2020-01-24,diabetes/doença renal crônica/obesidade,De 60 a 80
+masculino,18,70,2020-01-25,doença cardiovascular crônica,De 60 a 80
+masculino,18,97,2020-01-24,hipertensão arterial sistêmica/diabetes,Mais de 80
+masculino,18,73,2020-01-25,hipertensão arterial sistêmica/câncer/imunodeficiência/obesidade,De 60 a 80
+feminino,18,77,2020-01-22,hipertensão arterial sistêmica/diabetes/doença neurológica crônica,De 60 a 80
+masculino,18,28,2020-01-25,diabetes/doença neurológica crônica/pneumopatia crônica,20 a 40
+feminino,18,80,2020-01-25,hipertensão arterial sistêmica,De 60 a 80
+masculino,18,60,2020-01-22,hipertensão arterial sistêmica/obesidade,40 a 60
+masculino,18,82,2020-01-25,hipertensão arterial sistêmica/diabetes,Mais de 80
+masculino,18,73,2020-01-26,hipertensão arterial sistêmica/diabetes/acidente vascular encefálico,De 60 a 80
+masculino,18,70,2020-01-23,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,19,75,2020-01-24,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes/pneumopatia crônica,De 60 a 80
+masculino,19,76,2020-01-25,doença cardiovascular crônica/pneumopatia crônica,De 60 a 80
+feminino,19,85,2020-01-26,hipertensão arterial sistêmica/diabetes,Mais de 80
+masculino,19,71,2020-01-07,doença neurológica crônica/câncer,De 60 a 80
+feminino,19,87,2020-01-25,hipertensão arterial sistêmica/diabetes/pneumopatia crônica,Mais de 80
+feminino,19,73,2020-01-26,doença cardiovascular crônica/diabetes/hipotireoidismo,De 60 a 80
+feminino,19,71,2020-01-25,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+feminino,19,72,2020-01-23,câncer,De 60 a 80
+feminino,19,86,2020-01-25,doença cardiovascular crônica/hipertensão arterial sistêmica,Mais de 80
+feminino,19,85,2020-01-28,doença cardiovascular crônica,Mais de 80
+feminino,19,90,2020-01-27,doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+feminino,19,90,2020-01-28,doença cardiovascular crônica/diabetes/doença neurológica crônica,Mais de 80
+feminino,19,89,2020-01-27,doença cardiovascular crônica,Mais de 80
+masculino,19,81,2020-01-27,doença cardiovascular crônica/diabetes/doença neurológica crônica,Mais de 80
+masculino,19,94,2020-01-27,doença neurológica crônica,Mais de 80
+masculino,19,74,2020-01-27,diabetes/imunodeficiência/câncer,De 60 a 80
+feminino,19,83,2020-01-12,doença neurológica crônica,Mais de 80
+feminino,19,83,2020-01-27,doença cardiovascular crônica/diabetes,Mais de 80
+feminino,19,89,2020-01-27,doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+masculino,19,60,2020-01-27,doença cardiovascular crônica/diabetes,40 a 60
+feminino,19,77,2020-01-28,doença cardiovascular crônica/hipertensão arterial sistêmica/pneumopatia crônica,De 60 a 80
+masculino,19,88,2020-01-28,câncer,Mais de 80
+feminino,19,78,2020-01-28,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,19,82,2020-01-29,sem comorbidade,Mais de 80
+masculino,19,78,2020-01-29,pneumopatia crônica,De 60 a 80
+feminino,19,69,2020-01-29,hipertensão arterial sistêmica/diabetes,De 60 a 80
+feminino,19,76,2020-01-29,hipertensão arterial sistêmica,De 60 a 80
+feminino,19,69,2020-01-28,doença cardiovascular crônica/diabetes/doença renal crônica/obesidade,De 60 a 80
+feminino,19,55,2020-01-29,hipertensão arterial sistêmica/doença renal crônica,40 a 60
+feminino,19,86,2020-01-29,hipertensão arterial sistêmica/diabetes/doença neurológica crônica,Mais de 80
+masculino,19,83,2020-01-30,hipertensão arterial sistêmica/pneumopatia crônica,Mais de 80
+feminino,19,95,2020-01-29,doença cardiovascular crônica/hipertensão arterial sistêmica,Mais de 80
+feminino,19,83,2020-01-30,doença neurológica crônica,Mais de 80
+masculino,19,48,2020-01-29,doença neurológica crônica,40 a 60
+feminino,19,67,2020-01-30,doença cardiovascular crônica/hipertensão arterial sistêmica/obesidade,De 60 a 80
+feminino,19,85,2020-01-31,doença neurológica crônica,Mais de 80
+feminino,19,92,2020-01-26,hipertensão arterial sistêmica,Mais de 80
+feminino,19,83,2020-01-31,doença cardiovascular crônica/hipertensão arterial sistêmica,Mais de 80
+feminino,19,87,2020-01-30,hipertensão arterial sistêmica/doença neurológica crônica/outra pneumonia crônica,Mais de 80
+feminino,19,90,2020-02-01,doença neurológica crônica,Mais de 80
+masculino,19,64,2020-01-29,diabetes/hipertensão arterial sistêmica/obesidade,De 60 a 80
+masculino,20,73,2020-12-28,sem comorbidade,De 60 a 80
+masculino,20,62,2020-02-01,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,20,75,2020-12-28,doença cardiovascular crônica/hipertensão arterial sistêmica/doença neurológica crônica,De 60 a 80
+masculino,20,70,2021-02-01,doença cardiovascular crônica/diabetes/doença renal crônica,De 60 a 80
+feminino,20,62,2021-02-02,hipertensão arterial sistêmica/diabetes/doença hepática crônica/pneumopatia crônica,De 60 a 80
+masculino,20,57,2021-02-01,hipertensão arterial sistêmica/diabetes/doença neurológica crônica,40 a 60
+feminino,20,89,2021-02-01,doença cardiovascular crônica,Mais de 80
+feminino,20,54,2021-01-31,hipertensão arterial sistêmica,40 a 60
+feminino,20,68,2021-02-03,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,20,21,2021-02-02,doença neurológica crônica,20 a 40
+feminino,20,88,2020-02-03,doença neurológica crônica,Mais de 80
+masculino,20,64,2020-02-03,doença cardiovascular crônica/diabetes/obesidade/pneumopatia crônica,De 60 a 80
+feminino,20,68,2020-01-22,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,20,62,2020-02-05,hipertensão arterial sistêmica,De 60 a 80
+feminino,20,72,2020-02-04,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,20,77,2020-02-04,hipertensão arterial sistêmica,De 60 a 80
+feminino,20,83,2020-02-03,hipertensão arterial sistêmica,Mais de 80
+masculino,20,69,2020-12-31,diabetes,De 60 a 80
+masculino,20,92,2020-02-05,doença cardiovascular crônica,Mais de 80
+masculino,20,73,2020-02-05,doença renal crônica,De 60 a 80
+feminino,20,68,2020-02-06,doença cardiovascular crônica/hipertensão arterial sistêmica/obesidade,De 60 a 80
+masculino,20,87,2020-02-06,sem comorbidade,Mais de 80
+feminino,20,70,2020-02-07,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+feminino,20,37,2020-02-07,sem comorbidade,20 a 40
+masculino,20,71,2020-02-07,doença cardiovascular crônica/hipertensão arterial sistêmica/doença neurológica crônica,De 60 a 80
+masculino,20,43,2020-02-07,obesidade,40 a 60
+feminino,20,73,2020-02-06,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,20,81,2020-02-04,doença cardiovascular crônica/doença neurológica crônica/pneumopatia crônica,Mais de 80
+feminino,20,73,2020-08-04,sem comorbidade,De 60 a 80
+masculino,20,66,2020-01-05,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+feminino,20,74,2020-02-03,sem comorbidade,De 60 a 80
+masculino,20,76,2020-02-08,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,20,87,2020-02-09,hipertensão arterial sistêmica/diabetes,Mais de 80
+masculino,20,70,2020-02-09,hipertensão arterial sistêmica/pneumopatia crônica,De 60 a 80
+masculino,20,83,2020-02-09,doença neurológica crônica/imunodeficiência/pneumopatia crônica,Mais de 80
+feminino,20,79,2020-02-10,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,20,77,2020-02-09,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,20,85,2020-02-10,doença cardiovascular crônica/diabetes,Mais de 80
+masculino,20,63,2020-02-11,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,21,83,2020-02-11,diabetes/pneumopatia crônica,Mais de 80
+feminino,21,83,2020-02-10,doença cardiovascular crônica,Mais de 80
+feminino,21,76,2020-02-09,pneumopatia crônica,De 60 a 80
+masculino,21,70,2020-02-13,doença cardiovascular crônica,De 60 a 80
+feminino,21,65,2020-02-14,sem comorbidade,De 60 a 80
+masculino,21,81,2020-02-14,hipertensão arterial sistêmica/diabetes/doença neurológica crônica,Mais de 80
+feminino,21,88,2020-02-15,hipertensão arterial sistêmica,Mais de 80
+masculino,21,71,2020-02-14,hipertensão arterial sistêmica/diabetes/obesidade,De 60 a 80
+masculino,21,70,2020-02-13,doença cardiovascular crônica,De 60 a 80
+feminino,21,65,2020-02-14,sem comorbidade,De 60 a 80
+masculino,21,81,2020-02-14,hipertensão arterial sistêmica/diabetes/doença neurológica crônica,Mais de 80
+feminino,21,88,2020-02-15,hipertensão arterial sistêmica,Mais de 80
+masculino,21,71,2020-02-14,hipertensão arterial sistêmica/diabetes/obesidade,De 60 a 80
+feminino,21,82,2020-12-31,doença cardiovascular crônica/pneumopatia crônica,Mais de 80
+feminino,21,79,2020-02-15,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+feminino,21,83,2020-02-15,doença cardiovascular crônica/diabetes,Mais de 80
+feminino,21,66,2020-02-14,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+masculino,21,59,2020-02-14,hipertensão arterial sistêmica,40 a 60
+feminino,21,85,2020-02-17,doença cardiovascular crônica/diabetes,Mais de 80
+feminino,21,75,2020-02-16,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,21,79,2020-02-16,doença cardiovascular crônica,De 60 a 80
+feminino,21,85,2020-01-28,pneumopatia crônica,Mais de 80
+masculino,21,80,2020-02-05,diabetes/doença neurológica crônica,De 60 a 80
+masculino,21,81,2020-02-17,hipertensão arterial sistêmica/doença neurológica crônica,Mais de 80
+masculino,21,85,2020-02-18,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,Mais de 80
+masculino,21,65,2020-02-16,doença cardiovascular crônica,De 60 a 80
+masculino,21,92,2020-02-14,imunossupressão/câncer,Mais de 80
+masculino,21,88,2020-02-14,doença cardiovascular crônica/hipertensão arterial sistêmica,Mais de 80
+masculino,21,35,2020-02-17,hipertensão arterial sistêmica/obesidade,20 a 40
+feminino,21,59,2020-02-17,hipertensão arterial sistêmica/pneumopatia crônica,40 a 60
+feminino,21,85,2020-02-15,doença cardiovascular crônica/diabetes/doença neurológica crônica,Mais de 80
+feminino,21,76,2020-02-17,hipertensão arterial sistêmica,De 60 a 80
+feminino,21,84,2020-02-17,diabetes,Mais de 80
+feminino,21,74,2020-02-18,hipertensão arterial sistêmica,De 60 a 80
+masculino,21,60,2020-02-20,hipertensão arterial sistêmica/obesidade,40 a 60
+masculino,21,73,2020-02-21,doença cardiovascular crônica,De 60 a 80
+feminino,21,66,2020-02-21,pneumopatia crônica,De 60 a 80
+feminino,21,62,2020-02-14,imunodeficiência/doença hematológica,De 60 a 80
+feminino,21,79,2020-02-16,pneumopatia crônica,De 60 a 80
+masculino,21,68,2020-02-20,doença cardiovascular crônica,De 60 a 80
+feminino,21,76,2020-02-19,hipertensão arterial sistêmica/diabetes/hipotireoidismo,De 60 a 80
+feminino,21,68,2020-02-13,hipertensão arterial sistêmica/diabetes/doença hepática crônica,De 60 a 80
+masculino,22,71,2020-01-05,hipertensão arterial sistêmica/diabetes,De 60 a 80
+feminino,22,69,2020-01-21,hipertensão arterial sistêmica/diabetes/hipotireoidismo,De 60 a 80
+masculino,22,47,2020-02-22,pneumopatia crônica,40 a 60
+feminino,22,75,2020-02-23,doença neurológica crônica,De 60 a 80
+feminino,22,79,2020-02-23,hipertensão arterial sistêmica,De 60 a 80
+feminino,22,78,2020-12-23,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,22,86,2020-01-23,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes/doença neurológica crônica,Mais de 80
+masculino,22,66,2020-01-25,pneumopatia crônica/doença do refluxo esofágico,De 60 a 80
+masculino,22,38,2020-02-20,obesidade,20 a 40
+masculino,22,77,2020-02-24,diabetes/doença neurológica crônica,De 60 a 80
+feminino,22,39,2020-02-25,sem comorbidade,20 a 40
+feminino,22,35,2020-02-25,doença cardiovascular crônica,20 a 40
+feminino,22,84,2020-02-24,doença neurológica crônica,Mais de 80
+masculino,22,54,2020-01-16,doença cardiovascular crônica,40 a 60
+feminino,22,67,2020-02-21,hipertensão arterial sistêmica,De 60 a 80
+masculino,22,76,2020-02-25,hipertensão arterial sistêmica,De 60 a 80
+masculino,22,59,2020-02-24,doença cardiovascular crônica,40 a 60
+masculino,22,85,2020-02-24,hipertensão arterial sistêmica,Mais de 80
+feminino,22,95,2020-02-26,doença cardiovascular crônica/hipertensão arterial sistêmica/hipotireoidismo,Mais de 80
+masculino,22,76,2020-02-27,sem comorbidade,De 60 a 80
+masculino,22,77,2020-02-28,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,22,54,2020-02-28,doença cardiovascular crônica,40 a 60
+feminino,22,73,2020-02-28,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,22,88,2020-02-26,doença cardiovascular crônica,Mais de 80
+masculino,22,65,2020-02-28,hipertensão arterial sistêmica/diabetes/neoplasia,De 60 a 80
+feminino,22,81,2020-03-01,hipertensão arterial sistêmica/doença renal crônica/obesidade,Mais de 80
+feminino,22,85,2020-03-02,doença cardiovascular crônica/diabetes/hipotireoidismo,Mais de 80
+feminino,22,66,2020-03-01,doença cardiovascular crônica/diabetes/doença renal crônica,De 60 a 80
+feminino,22,66,2020-02-27,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+feminino,22,80,2020-03-01,doença renal crônica,De 60 a 80
+masculino,22,76,2020-03-02,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+feminino,22,67,2020-03-02,hipertensão arterial sistêmica/pneumopatia crônica/obesidade,De 60 a 80
+masculino,22,94,2020-03-04,doença cardiovascular crônica,Mais de 80
+feminino,22,59,2020-03-04,hipertensão arterial sistêmica/hipotireoidismo,40 a 60
+masculino,22,28,2020-03-04,obesidade,20 a 40
+feminino,22,0,2020-02-28,prematuridade extrema,
+feminino,22,0,2020-02-28,sem comorbidade,
+masculino,22,87,2020-02-06,doença neurológica crônica,Mais de 80
+masculino,22,57,2020-03-05,hipertensão arterial sistêmica/doença neurológica crônica,40 a 60
+feminino,22,65,2020-03-02,obesidade,De 60 a 80
+masculino,23,72,2020-03-05,hipertensão arterial sistêmica/pneumopatia crônica,De 60 a 80
+masculino,23,64,2020-03-04,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,23,72,2020-03-04,doença cardiovascular crônica/hipertensão arterial sistêmica/doença neurológica crônica,De 60 a 80
+masculino,23,77,2020-03-03,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+feminino,23,80,2020-03-06,hipertensão arterial sistêmica,De 60 a 80
+feminino,23,28,2020-03-06,puerpério,20 a 40
+feminino,23,80,2020-03-06,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,23,71,2020-02-07,pneumopatia crônica/síndrome de down/hipotireoidismo,De 60 a 80
+masculino,23,66,2020-03-07,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,23,53,2020-01-15,sem comorbidade,40 a 60
+masculino,23,77,2020-03-05,doença cardiovascular crônica/hipertensão arterial sistêmica/pneumopatia crônica,De 60 a 80
+masculino,23,95,2020-03-05,doença cardiovascular crônica/diabetes/pneumopatia crônica,Mais de 80
+masculino,23,58,2020-03-07,doença cardiovascular crônica/diabetes,40 a 60
+masculino,23,82,2020-02-09,doença cardiovascular crônica/diabetes,Mais de 80
+feminino,23,39,2020-03-07,hipertensão arterial sistêmica/obesidade,20 a 40
+feminino,23,93,2020-12-30,doença cardiovascular crônica/diabetes,Mais de 80
+masculino,23,71,2020-12-18,hipertensão arterial sistêmica,De 60 a 80
+feminino,23,63,2020-03-07,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,23,74,2020-03-06,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,23,92,2020-03-09,doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+masculino,23,65,2020-03-07,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,23,41,2020-03-09,obesidade,40 a 60
+masculino,23,70,2020-03-09,diabetes/doença renal crônica/câncer,De 60 a 80
+feminino,23,67,2020-03-09,hipertensão arterial sistêmica/diabetes,De 60 a 80
+feminino,23,61,2020-03-10,doença cardiovascular crônica,De 60 a 80
+masculino,23,75,2020-03-10,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+feminino,23,88,2020-03-09,doença cardiovascular crônica,Mais de 80
+feminino,23,63,2020-03-10,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,23,67,2020-03-10,hipertensão arterial sistêmica,De 60 a 80
+masculino,23,66,2020-03-09,doença cardiovascular crônica/doença hepática crônica,De 60 a 80
+feminino,23,96,2020-03-06,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,Mais de 80
+feminino,23,69,2020-03-11,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes/hipotireoidismo,De 60 a 80
+feminino,23,63,2020-03-09,doença cardiovascular crônica/diabetes/pneumopatia crônica,De 60 a 80
+feminino,23,84,2020-03-11,doença cardiovascular crônica/hipertensão arterial sistêmica/obesidade,Mais de 80
+feminino,23,78,2020-03-12,hipertensão arterial sistêmica,De 60 a 80
+masculino,23,69,2020-03-12,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+feminino,23,91,2020-03-06,doença neurológica crônica,Mais de 80
+feminino,23,81,2020-03-10,hipertensão arterial sistêmica/diabetes,Mais de 80
+feminino,23,38,2020-03-11,diabetes/obesidade,20 a 40
+feminino,23,74,2020-03-11,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,23,46,2020-03-05,hipertensão arterial sistêmica,40 a 60
+masculino,24,87,2021-01-23,doença cardiovascular crônica/hipertensão arterial sistêmica,Mais de 80
+feminino,24,85,2021-03-12,artrite,Mais de 80
+feminino,24,59,2021-03-12,sem comorbidade,40 a 60
+masculino,24,70,2021-03-13,hipertensão arterial sistêmica/doença renal crônica/pneumopatia crônica,De 60 a 80
+feminino,24,59,2021-03-14,hipertensão arterial sistêmica,40 a 60
+feminino,24,72,2021-03-14,hipertensão arterial sistêmica/doença neurológica crônica,De 60 a 80
+feminino,24,83,2021-03-13,hipertensão arterial sistêmica/diabetes/artrite reumatoide,Mais de 80
+feminino,24,89,2021-03-14,doença cardiovascular crônica/hipertensão arterial sistêmica/diabetes,Mais de 80
+masculino,24,74,2021-03-15,diabetes,De 60 a 80
+feminino,24,45,2021-01-30,hipertensão arterial sistêmica/diabetes/obesidade,40 a 60
+masculino,24,67,2021-03-13,hipertensão arterial sistêmica,De 60 a 80
+masculino,24,74,2021-03-12,diabetes/doença neurológica crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,24,64,2021-03-14,imunodeficiência/câncer/neoplasia,De 60 a 80
+masculino,24,75,2021-03-15,hipertensão arterial sistêmica,De 60 a 80
+feminino,24,46,2021-03-07,hipertensão arterial sistêmica/asma,40 a 60
+feminino,24,71,2021-03-15,depressão,De 60 a 80
+feminino,24,86,2021-03-14,doença cardiovascular crônica/hipertensão arterial sistêmica/cardiopatia/obesidade,Mais de 80
+feminino,24,70,2021-03-15,doença cardiovascular crônica/artrite reumatoide,De 60 a 80
+feminino,24,80,2021-03-13,hipertensão arterial sistêmica,De 60 a 80
+masculino,24,37,2021-03-14,sem comorbidade,20 a 40
+feminino,24,70,2021-03-13,doença neurológica crônica/doença pulmonar obstrutiva crônica,De 60 a 80
+masculino,24,61,2021-03-14,doença cardiovascular crônica,De 60 a 80
+feminino,24,98,2021-03-16,hipertensão arterial sistêmica/demência,Mais de 80
+masculino,24,67,2021-03-16,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,24,83,2021-03-16,ex tabagista,Mais de 80
+feminino,24,57,2021-03-15,hipertensão arterial sistêmica/doença pulmonar obstrutiva crônica,40 a 60
+feminino,24,60,2021-03-15,diabetes,40 a 60
+feminino,24,51,2021-03-13,doença cardiovascular crônica/diabetes/obesidade,40 a 60
+masculino,24,31,2021-03-11,obesidade,20 a 40
+masculino,24,0,2021-03-16,mãe com covid,
+masculino,24,96,2021-03-17,doença cardiovascular crônica/diabetes,Mais de 80
+feminino,24,76,2021-03-14,doença neurológica crônica/pneumopatia crônica,De 60 a 80
+feminino,24,72,2021-03-16,hipertensão arterial sistêmica/ex tabagista,De 60 a 80
+feminino,24,84,2021-03-17,doença neurológica crônica/hipertensão arterial sistêmica/parkinson,Mais de 80
+masculino,24,34,2021-03-11,doença neurológica crônica,20 a 40
+feminino,24,59,2021-03-14,obesidade,40 a 60
+feminino,24,61,2021-03-17,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,24,67,2021-03-17,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+masculino,24,70,2021-03-16,diabetes/glaucoma/hipertensão arterial sistêmica,De 60 a 80
+masculino,24,69,2021-03-18,doença cardiovascular crônica,De 60 a 80
+feminino,24,59,2021-03-17,doença cardiovascular crônica/diabetes/câncer,40 a 60
+feminino,24,85,2021-02-17,diabetes/hipertensão arterial sistêmica/hipotireoidismo,Mais de 80
+feminino,25,74,2021-03-15,hipertensão arterial sistêmica,De 60 a 80
+masculino,25,83,2021-03-17,doença cardiovascular crônica/doença arterial coronariana/hipertensão arterial sistêmica/intoxicação diarreica por molusco/pneumopatia crônica,Mais de 80
+masculino,25,36,2021-03-18,hipertensão arterial sistêmica,20 a 40
+masculino,25,70,2021-03-17,doença cardiovascular crônica/doença neurológica crônica,De 60 a 80
+feminino,25,63,2021-03-17,diabetes/obesidade/hipertensão arterial sistêmica/asma,De 60 a 80
+masculino,25,75,2021-03-18,doença cardiovascular crônica/doença neurológica crônica,De 60 a 80
+feminino,25,84,2021-03-17,doença cardiovascular crônica/hipertensão arterial sistêmica,Mais de 80
+feminino,25,84,2021-03-18,doença cardiovascular crônica/hipertensão arterial sistêmica,Mais de 80
+feminino,25,40,2021-03-18,obesidade/deficicência auditiva,20 a 40
+feminino,25,91,2021-03-19,doença cardiovascular crônica/doença pulmonar obstrutiva crônica/hipertensão arterial sistêmica,Mais de 80
+masculino,25,58,2021-03-19,obesidade/hipertensão arterial sistêmica,40 a 60
+masculino,25,84,2021-03-18,doença cardiovascular crônica/doença neurológica crônica,Mais de 80
+masculino,25,62,2021-03-18,doença cardiovascular crônica/diabetes/hipotireoidismo,De 60 a 80
+feminino,25,39,2021-03-16,sem comorbidade,20 a 40
+masculino,25,61,2021-03-20,hipertensão arterial sistêmica,De 60 a 80
+feminino,25,71,2021-03-20,diabetes/hipertensão arterial sistêmica/hipotireoidismo,De 60 a 80
+feminino,25,54,2021-03-20,diabetes/obesidade,40 a 60
+masculino,25,78,2021-03-20,síndrome de down/hipertensão arterial sistêmica,De 60 a 80
+masculino,25,64,2021-03-21,doença cardiovascular crônica/ex tabagista,De 60 a 80
+masculino,25,47,2021-03-21,sem comorbidade,40 a 60
+feminino,25,69,2021-03-21,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+masculino,25,53,2021-03-21,pré diabético,40 a 60
+masculino,25,78,2021-03-21,doença cardiovascular crônica/hipertensão arterial sistêmica/doença arterial coronariana/hiperplasia prostática benigna,De 60 a 80
+masculino,25,71,2021-03-21,doença cardiovascular crônica/diabetes/doença renal crônica,De 60 a 80
+masculino,25,88,2021-03-21,pneumopatia crônica/câncer próstata,Mais de 80
+masculino,25,67,2021-03-21,diabetes/obesidade/hipertensão arterial sistêmica,De 60 a 80
+masculino,25,0,2021-03-19,sem comorbidade,
+masculino,25,79,2021-03-21,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,25,57,2021-03-20,obesidade/hipertensão arterial sistêmica,40 a 60
+feminino,25,83,2021-03-20,epilepsia/metastase hepática,Mais de 80
+masculino,25,71,2021-03-21,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+feminino,25,67,2021-03-20,sem comorbidade,De 60 a 80
+feminino,25,63,2021-03-21,diabetes/hipertensão arterial sistêmica/diabetes/acidente vascular cerebral,De 60 a 80
+feminino,25,85,2021-03-20,doença cardiovascular crônica,Mais de 80
+masculino,25,34,2021-03-22,asma,20 a 40
+feminino,25,73,2021-03-22,diabetes/obesidade/hipertensão arterial sistêmica,De 60 a 80
+masculino,25,80,2021-03-23,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,25,85,2021-03-22,doença cardiovascular crônica/hipertensão arterial sistêmica,Mais de 80
+feminino,25,49,2021-03-22,doença cardiovascular crônica,40 a 60
+masculino,26,82,2021-03-22,doença cardiovascular crônica/doença neurológica crônica/imunodeficiência/imunodepressão,Mais de 80
+masculino,26,90,2021-03-17,diabetes/hipertensão arterial sistêmica,Mais de 80
+masculino,26,96,2021-03-22,diabetes,Mais de 80
+masculino,26,80,2021-03-18,sem comorbidade,De 60 a 80
+masculino,26,61,2021-03-19,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,26,47,2021-03-19,hipertensão arterial sistêmica,40 a 60
+feminino,26,71,2021-03-20,diabetes/hipertensão arterial sistêmica/dislipidemia,De 60 a 80
+feminino,26,87,2021-03-20,doença cardiovascular crônica/hipertensão arterial sistêmica,Mais de 80
+feminino,26,65,2021-03-20,doença pulmonar obstrutiva crônica,De 60 a 80
+masculino,26,78,2021-03-24,doença cardiovascular crônica/diabetes/doença hepática crônica/imunodeficiência/imunodepressão/transplante hepático,De 60 a 80
+feminino,26,56,2021-03-23,hipertensão arterial sistêmica,40 a 60
+masculino,26,56,2021-03-23,doença cardiovascular crônica/doença pulmonar obstrutiva crônica,40 a 60
+masculino,26,30,2021-03-24,obesidade/dislipidemia,20 a 40
+feminino,26,68,2021-03-24,doença cardiovascular crônica/hipertensão arterial sistêmica/doença arterial coronariana,De 60 a 80
+feminino,26,63,2021-03-24,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,26,49,2021-03-23,diabetes/obesidade/hipertensão arterial sistêmica,40 a 60
+masculino,26,89,2021-03-24,doença cardiovascular crônica/diabetes,Mais de 80
+masculino,26,67,2021-03-25,hipotireoidismo,De 60 a 80
+feminino,26,84,2021-03-25,hidrocefalia/dislipidemia/lúpus,Mais de 80
+feminino,26,44,2020-12-16,doença cardiovascular crônica/diabetes/asma/obesidade,40 a 60
+feminino,26,74,2021-03-25,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+feminino,26,76,2021-03-24,doença cardiovascular crônica,De 60 a 80
+masculino,26,53,2021-03-25,doença cardiovascular crônica/diabetes/obesidade,40 a 60
+masculino,26,60,2021-03-25,hipertensão arterial sistêmica,40 a 60
+masculino,26,64,2021-03-25,ex etilista,De 60 a 80
+feminino,26,58,2021-03-24,neoplasia cerebral,40 a 60
+masculino,26,75,2021-03-24,doença cardiovascular crônica/doença neurológica crônica,De 60 a 80
+masculino,26,74,2021-03-25,diabetes,De 60 a 80
+feminino,26,73,2021-03-24,doença renal crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,26,63,2021-03-25,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,26,70,2021-03-25,hipertensão arterial sistêmica,De 60 a 80
+masculino,26,73,2021-03-26,doença cardiovascular crônica/hipertensão arterial sistêmica/traumatismo cranioencefálico/arritmia,De 60 a 80
+masculino,26,45,2021-03-25,sem comorbidade,40 a 60
+masculino,26,49,2021-03-25,hipertensão arterial sistêmica,40 a 60
+feminino,26,73,2021-03-24,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,26,63,2021-03-26,diabetes/hipertensão arterial sistêmica/dislipidemia,De 60 a 80
+masculino,26,75,2021-03-25,doença cardiovascular crônica/doença neurológica crônica/hipertensão arterial sistêmica,De 60 a 80
+feminino,26,84,2021-03-22,doença cardiovascular crônica/hipertensão arterial sistêmica/hipotireoidismo,Mais de 80
+masculino,26,58,2021-03-12,sem comorbidade,40 a 60
+feminino,26,81,2021-03-24,sem comorbidade,Mais de 80
+masculino,27,87,2021-03-22,hipertensão arterial sistêmica,Mais de 80
+feminino,27,54,2021-03-23,doença pulmonar obstrutiva crônica/doença renal crônica,40 a 60
+feminino,27,76,2021-03-28,hipertensão arterial sistêmica,De 60 a 80
+masculino,27,67,2021-03-26,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,27,86,2021-03-28,doença neurológica crônica/esquizofrenia,Mais de 80
+feminino,27,74,2021-03-28,hipertensão arterial sistêmica/demência,De 60 a 80
+feminino,27,77,2021-03-27,doença cardiovascular crônica,De 60 a 80
+feminino,27,80,2021-03-29,doença cardiovascular crônica,De 60 a 80
+masculino,27,71,2021-03-28,doença cardiovascular crônica/infarto agudo do miocárdio/tabagista,De 60 a 80
+feminino,27,75,2021-03-28,doença neurológica crônica/hipertensão arterial sistêmica/púrpura trombocitopênica idiopática,De 60 a 80
+masculino,27,76,2021-03-27,diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,27,77,2021-03-26,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,27,48,2021-03-27,sem comorbidade,40 a 60
+masculino,27,54,2021-03-27,diabetes,40 a 60
+masculino,27,56,2021-03-27,sem comorbidade,40 a 60
+feminino,27,77,2021-03-27,tromboembolismo pulmonar/dislipidemia,De 60 a 80
+feminino,27,58,2021-03-27,artrite reumatoide,40 a 60
+feminino,27,80,2021-03-27,doença neurológica crônica,De 60 a 80
+masculino,27,67,2021-03-27,sem comorbidade,De 60 a 80
+masculino,27,40,2021-03-26,obesidade,20 a 40
+feminino,27,43,2021-03-26,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,40 a 60
+feminino,27,52,2021-03-29,doença cardiovascular crônica/hipertensão arterial sistêmica,40 a 60
+feminino,27,48,2021-03-29,hipertensão arterial sistêmica,40 a 60
+masculino,27,59,2021-03-27,doença cardiovascular crônica/doença neurológica crônica/hipertensão arterial sistêmica,40 a 60
+masculino,27,35,2021-03-26,sem comorbidade,20 a 40
+masculino,27,70,2021-03-28,obesidade,De 60 a 80
+masculino,27,59,2021-03-29,sem comorbidade,40 a 60
+masculino,27,55,2021-03-26,ex etilista,40 a 60
+feminino,27,65,2021-03-29,hipertensão arterial sistêmica,De 60 a 80
+feminino,27,70,2021-03-26,diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,27,86,2021-03-29,doença cardiovascular crônica/pneumopatia crônica,Mais de 80
+feminino,27,70,2021-03-26,hipertensão arterial sistêmica,De 60 a 80
+feminino,27,84,2021-03-26,hipotireoidismo,Mais de 80
+feminino,27,81,2021-03-27,doença cardiovascular crônica/diabetes/doença neurológica crônica/hipotireoidismo,Mais de 80
+feminino,27,79,2021-03-27,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,27,85,2021-03-28,doença cardiovascular crônica/doença pulmonar obstrutiva crônica/estenose uretral,Mais de 80
+feminino,27,80,2021-03-28,doença neurológica crônica,De 60 a 80
+masculino,27,67,2021-03-29,doença hepática crônica,De 60 a 80
+feminino,27,82,2021-03-25,doença neurológica crônica,Mais de 80
+masculino,27,44,2021-03-26,sem comorbidade,40 a 60
+masculino,27,66,2021-03-26,doença cardiovascular crônica,De 60 a 80
+masculino,27,74,2021-03-28,hipertensão arterial sistêmica/ex tabagista,De 60 a 80
+feminino,28,68,2021-03-29,diabetes/hipertensão arterial sistêmica/fibromialgia,De 60 a 80
+feminino,28,82,2021-03-18,hipertensão arterial sistêmica/diabetes,Mais de 80
+feminino,28,74,2021-03-27,doença cardiovascular crônica/hipertensão arterial sistêmica/obesidade,De 60 a 80
+feminino,28,71,2021-03-29,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,28,48,2021-03-29,hipertensão arterial sistêmica,40 a 60
+masculino,28,46,2021-03-30,síndrome de down/diabetes/obesidade/hipertensão arterial sistêmica,40 a 60
+masculino,28,54,2021-03-27,sem comorbidade,40 a 60
+masculino,28,81,2021-03-29,diabetes/hipertensão arterial sistêmica,Mais de 80
+feminino,28,77,2021-03-28,doença pulmonar obstrutiva crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,28,66,2021-03-29,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,28,54,2021-03-30,sem comorbidade,40 a 60
+masculino,28,62,2021-03-30,hipertensão arterial sistêmica,De 60 a 80
+feminino,28,84,2021-03-27,doença pulmonar obstrutiva crônica,Mais de 80
+feminino,28,78,2021-03-30,diabetes/hipertensão arterial sistêmica/hipertireoidismo,De 60 a 80
+masculino,28,34,2021-03-30,doença cardiovascular crônica/diabetes/obesidade,20 a 40
+feminino,28,60,2021-03-31,hipertensão arterial sistêmica,40 a 60
+masculino,28,32,2021-03-31,sem comorbidade,20 a 40
+feminino,28,87,2021-03-30,hipertensão arterial sistêmica,Mais de 80
+feminino,28,78,2021-03-30,hipertensão arterial sistêmica/hipotireoidismo,De 60 a 80
+feminino,28,71,2021-03-30,asma/bronquite,De 60 a 80
+feminino,28,69,2021-03-23,asma/obesidade,De 60 a 80
+masculino,28,65,2021-03-31,doença cardiovascular crônica/doença renal crônica/infarto agudo do miocárdio,De 60 a 80
+masculino,28,88,2021-01-24,doença cardiovascular crônica/hipertensão arterial sistêmica/câncer bexiga,Mais de 80
+masculino,28,51,2021-03-28,hipertensão arterial sistêmica/ex tabagista,40 a 60
+feminino,28,82,2021-03-29,doença cardiovascular crônica,Mais de 80
+feminino,28,69,2021-03-29,diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,28,71,2021-03-30,doença cardiovascular crônica/obesidade/câncer bexiga,De 60 a 80
+feminino,28,66,2021-03-31,hipertensão arterial sistêmica/hipotireoidismo,De 60 a 80
+feminino,28,88,2021-03-30,hipertensão arterial sistêmica/pneumopatia crônica,Mais de 80
+masculino,28,44,2021-03-30,obesidade,40 a 60
+feminino,28,58,2021-03-30,obesidade/doença pulmonar obstrutiva crônica,40 a 60
+masculino,28,58,2021-03-29,diabetes,40 a 60
+masculino,28,91,2021-03-31,sem comorbidade,Mais de 80
+masculino,28,86,2021-03-30,alzheimer,Mais de 80
+masculino,28,55,2021-03-30,hipertensão arterial sistêmica,40 a 60
+feminino,28,88,2021-03-30,diabetes/alzheimer/hipotireoidismo,Mais de 80
+feminino,28,78,2021-03-29,diabetes/hipertensão arterial sistêmica/parkinson,De 60 a 80
+feminino,28,90,2021-03-29,diabetes/doença neurológica crônica/parkinson/hipotireoidismo,Mais de 80
+feminino,28,71,2021-03-29,hipertensão arterial sistêmica/câncer mama,De 60 a 80
+feminino,28,79,2021-03-31,doença cardiovascular crônica/diabetes/doença renal aguda,De 60 a 80
+masculino,29,71,2021-03-28,hipertensão arterial sistêmica,De 60 a 80
+feminino,29,72,2021-03-30,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,29,90,2021-04-03,doença cardiovascular crônica/diabetes,Mais de 80
+feminino,29,82,2021-04-01,diabetes,Mais de 80
+masculino,29,63,2021-04-05,obesidade,De 60 a 80
+feminino,29,72,2021-04-03,hipertensão arterial sistêmica/diabetes/hipotireoidismo/obesidade,De 60 a 80
+feminino,29,49,2021-04-04,doença neurológica crônica,40 a 60
+masculino,29,45,2021-04-02,bronquite,40 a 60
+feminino,29,63,2021-03-31,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,29,77,2021-04-01,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,29,73,2021-04-03,doença cardiovascular crônica,De 60 a 80
+feminino,29,75,2021-04-05,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+feminino,29,74,2021-04-03,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,29,89,2021-04-04,doença cardiovascular crônica,Mais de 80
+masculino,29,48,2021-04-02,hipertensão arterial sistêmica,40 a 60
+masculino,29,74,2021-04-03,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,29,76,2021-04-04,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,29,60,2021-04-01,diabetes/obesidade,40 a 60
+feminino,29,62,2021-04-02,doença cardiovascular crônica/hipotireoidismo,De 60 a 80
+feminino,29,81,2021-04-03,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,Mais de 80
+masculino,29,67,2021-04-03,hipertensão arterial sistêmica,De 60 a 80
+masculino,29,60,2021-04-01,hipertensão arterial sistêmica/doença do refluxo esofágico,40 a 60
+masculino,29,77,2021-04-03,hipertensão arterial sistêmica,De 60 a 80
+masculino,29,80,2021-04-02,asma/diabetes/hipotireoidismo,De 60 a 80
+feminino,29,79,2021-03-31,diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,29,56,2021-04-04,doença cardiovascular crônica/diabetes/doença neurológica crônica/obesidade,40 a 60
+feminino,29,90,2021-04-02,diabetes,Mais de 80
+feminino,29,67,2021-04-04,diabetes/obesidade,De 60 a 80
+feminino,29,78,2021-04-04,obesidade/hipotireoidismo/dislipidemia/rinite,De 60 a 80
+masculino,29,68,2021-04-04,hipertensão arterial sistêmica/hepatopatia,De 60 a 80
+masculino,29,43,2021-04-05,doença cardiovascular crônica/epilepsia/abscesso cerebral/amaurose,40 a 60
+masculino,29,66,2021-04-02,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,29,84,2021-04-05,acidente vascular encefálico,Mais de 80
+feminino,29,75,2021-04-03,diabetes/pneumopatia crônica,De 60 a 80
+masculino,29,78,2021-04-04,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica/marca-passo,De 60 a 80
+masculino,29,42,2021-03-31,obesidade/hipertensão arterial sistêmica,40 a 60
+feminino,29,81,2021-04-01,sem comorbidade,Mais de 80
+masculino,29,60,2021-04-05,hipertensão arterial sistêmica,40 a 60
+feminino,29,57,2021-04-01,hipertensão arterial sistêmica,40 a 60
+masculino,29,77,2021-04-05,doença cardiovascular crônica/pneumopatia crônica/câncer,De 60 a 80
+masculino,30,74,2021-04-05,hipertensão arterial sistêmica,De 60 a 80
+masculino,30,74,2021-04-06,diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,30,61,2021-03-28,pneumopatia crônica/obesidade/hipertensão arterial sistêmica,De 60 a 80
+masculino,30,67,2021-04-01,doença cardiovascular crônica,De 60 a 80
+masculino,30,67,2021-04-02,doença cardiovascular crônica/diabetes/doença renal crônica,De 60 a 80
+feminino,30,83,2021-03-31,doença cardiovascular crônica/obesidade,Mais de 80
+feminino,30,72,2021-04-04,sem comorbidade,De 60 a 80
+masculino,30,65,2021-04-05,hipertensão arterial sistêmica,De 60 a 80
+feminino,30,71,2021-04-05,doença cardiovascular crônica/obesidade,De 60 a 80
+feminino,30,78,2021-04-05,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,30,74,2021-04-06,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,30,70,2021-04-03,hipertensão arterial sistêmica/ex tabagista,De 60 a 80
+masculino,30,67,2021-03-29,sem comorbidade,De 60 a 80
+feminino,30,69,2021-04-06,sem comorbidade,De 60 a 80
+masculino,30,81,2021-04-01,doença cardiovascular crônica,Mais de 80
+feminino,30,66,2021-04-03,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,30,62,2021-04-05,doença cardiovascular crônica/asma/pneumopatia crônica,De 60 a 80
+masculino,30,64,2021-04-04,diabetes/tabagista,De 60 a 80
+masculino,30,70,2021-04-06,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,30,75,2021-03-31,hipertensão arterial sistêmica/dislipidemia,De 60 a 80
+masculino,30,79,2021-03-29,doença cardiovascular crônica/obesidade,De 60 a 80
+masculino,30,69,2021-04-07,artrite/psoríase,De 60 a 80
+masculino,30,84,2021-04-06,doença cardiovascular crônica/pneumopatia crônica,Mais de 80
+masculino,30,53,2021-04-06,hipertensão arterial sistêmica,40 a 60
+masculino,30,56,2021-04-05,sem comorbidade,40 a 60
+masculino,30,46,2021-04-06,hipertensão arterial sistêmica/bronquite,40 a 60
+feminino,30,61,2021-04-06,hipertensão arterial sistêmica,De 60 a 80
+feminino,30,96,2021-04-07,doença cardiovascular crônica/diabetes/alzheimer,Mais de 80
+feminino,30,61,2021-03-31,hipotireoidismo,De 60 a 80
+masculino,30,78,2021-03-28,doença cardiovascular crônica,De 60 a 80
+masculino,30,83,2021-04-06,doença cardiovascular crônica/diabetes/doença neurológica crônica,Mais de 80
+masculino,30,85,2021-04-06,hipertensão arterial sistêmica/cardiopata/doença renal crônica dialitico,Mais de 80
+masculino,30,59,2021-04-06,hipertensão arterial sistêmica,40 a 60
+masculino,30,62,2021-04-06,hipertensão arterial sistêmica,De 60 a 80
+masculino,30,87,2021-04-01,hipertensão arterial sistêmica,Mais de 80
+feminino,30,60,2021-03-31,hipertensão arterial sistêmica/hipercolesterolemia,40 a 60
+feminino,30,47,2021-04-07,sem comorbidade,40 a 60
+masculino,30,44,2021-04-06,obesidade,40 a 60
+feminino,30,93,2021-04-06,doença neurológica crônica,Mais de 80
+feminino,30,91,2021-04-07,doença neurológica crônica,Mais de 80
+masculino,31,69,2021-04-07,obesidade/hipotireoidismo/dislipidemia,De 60 a 80
+feminino,31,86,2020-12-23,hipertensão arterial sistêmica/câncer mama,Mais de 80
+masculino,31,63,2021-04-04,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,31,95,2021-04-06,diabetes/hipertensão arterial sistêmica/doença pulmonar obstrutiva crônica/hipotireoidismo,Mais de 80
+feminino,31,74,2021-03-27,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,31,45,2021-04-07,sem comorbidade,40 a 60
+masculino,31,76,2020-12-23,doença cardiovascular crônica,De 60 a 80
+masculino,31,55,2021-04-07,doença cardiovascular crônica/diabetes,40 a 60
+feminino,31,29,2021-04-08,sem comorbidade,20 a 40
+feminino,31,77,2021-04-03,doença cardiovascular crônica/diabetes/asma,De 60 a 80
+masculino,31,48,2021-04-05,doença cardiovascular crônica,40 a 60
+masculino,31,50,2021-04-07,hipertrigliceridemia,40 a 60
+feminino,31,86,2021-04-07,diabetes/hipertensão arterial sistêmica,Mais de 80
+masculino,31,56,2021-04-08,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,40 a 60
+masculino,31,81,2021-04-06,pneumopatia crônica/hipertensão arterial sistêmica,Mais de 80
+masculino,31,75,2021-04-07,hipertensão arterial sistêmica/doença do refluxo esofágico,De 60 a 80
+feminino,31,43,2021-04-06,sem comorbidade,40 a 60
+feminino,31,66,2021-04-08,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,31,69,2021-04-08,hipertensão arterial sistêmica,De 60 a 80
+masculino,31,56,2021-04-07,diabetes/doença renal crônica/hipertensão arterial sistêmica/ddoença renal crônica,40 a 60
+feminino,31,80,2021-04-07,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,31,66,2021-03-31,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+masculino,31,64,2021-04-08,diabetes/hipertensão arterial sistêmica/neoplasia,De 60 a 80
+masculino,31,72,2021-03-30,hipertensão arterial sistêmica/aneurisma,De 60 a 80
+feminino,31,72,2021-03-14,sem comorbidade,De 60 a 80
+feminino,31,83,2021-04-07,hipertensão arterial sistêmica/acidente vascular cerebral,Mais de 80
+masculino,31,51,2021-03-24,sem comorbidade,40 a 60
+masculino,31,65,2021-04-06,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,31,87,2021-04-07,sem comorbidade,Mais de 80
+masculino,31,71,2021-03-14,doença pulmonar obstrutiva crônica,De 60 a 80
+feminino,31,79,2021-03-17,hipertensão arterial sistêmica/hipotireoidismo/osteoporose,De 60 a 80
+masculino,31,64,2021-04-09,doença hepática crônica,De 60 a 80
+feminino,31,82,2021-04-08,hipertensão arterial sistêmica,Mais de 80
+masculino,31,52,2021-04-09,hipertensão arterial sistêmica,40 a 60
+masculino,31,65,2021-04-02,sem comorbidade,De 60 a 80
+masculino,31,66,2021-04-08,hipertensão arterial sistêmica,De 60 a 80
+masculino,31,68,2021-03-27,diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,31,91,2021-03-25,hipertensão arterial sistêmica,Mais de 80
+masculino,31,57,2021-04-08,sem comorbidade,40 a 60
+feminino,32,62,2021-04-07,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,32,65,2021-04-07,sem comorbidade,De 60 a 80
+feminino,32,84,2021-03-14,hipertensão arterial sistêmica/arritmia,Mais de 80
+masculino,32,68,2021-04-08,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,32,67,2021-04-09,sem comorbidade,De 60 a 80
+feminino,32,48,2021-04-08,diabetes/hipertensão arterial sistêmica,40 a 60
+masculino,32,60,2021-04-09,doença neurológica crônica/arritmia,40 a 60
+feminino,32,67,2021-04-09,doença cardiovascular crônica/doença renal crônica,De 60 a 80
+masculino,32,88,2021-04-09,doença cardiovascular crônica/hipertensão arterial sistêmica/infarto agudo do miocárdio/ex tabagista,Mais de 80
+masculino,32,85,2021-04-09,doença cardiovascular crônica/hipertensão arterial sistêmica,Mais de 80
+feminino,32,63,2021-04-11,diabetes/obesidade/tumor cerebral,De 60 a 80
+masculino,32,88,2021-04-10,doença cardiovascular crônica/doença pulmonar obstrutiva crônica,Mais de 80
+feminino,32,52,2021-04-10,doença cardiovascular crônica/doença neurológica crônica/obesidade,40 a 60
+feminino,32,58,2021-04-09,doença cardiovascular crônica/diabetes/obesidade,40 a 60
+masculino,32,41,2021-04-05,febre reumática,40 a 60
+masculino,32,64,2021-04-12,doença cardiovascular crônica,De 60 a 80
+masculino,32,53,2021-04-10,hipertensão arterial sistêmica/varicocele,40 a 60
+feminino,32,76,2021-04-11,hipertensão arterial sistêmica/diabetes,De 60 a 80
+masculino,32,54,2021-04-11,doença cardiovascular crônica/diabetes,40 a 60
+masculino,32,58,2021-04-11,doença neurológica crônica/imunodeficiência/imunodepressão/hipertensão arterial sistêmica/doença pulmonar obstrutiva crônica,40 a 60
+masculino,32,77,2021-04-11,hipertensão arterial sistêmica,De 60 a 80
+feminino,32,56,2021-04-09,hipertensão arterial sistêmica,40 a 60
+feminino,32,80,2021-04-11,doença cardiovascular crônica/diabetes/doença neurológica crônica/pneumopatia crônica,De 60 a 80
+feminino,32,65,2021-04-11,hipertensão arterial sistêmica/diabetes,De 60 a 80
+feminino,32,75,2021-04-11,doença cardiovascular crônica,De 60 a 80
+feminino,32,70,2021-04-11,doença cardiovascular crônica/diabetes/imunodeficiência/imunodepressão,De 60 a 80
+feminino,32,60,2021-04-09,doença cardiovascular crônica/hipertensão arterial sistêmica/obesidade,40 a 60
+feminino,32,63,2021-04-10,diabetes/doença pulmonar obstrutiva crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,32,80,2021-04-06,diabetes/pneumopatia crônica/hipertensão arterial sistêmica/doença pulmonar obstrutiva crônica,De 60 a 80
+feminino,32,18,2021-04-10,obesidade,Menos de 20 anos
+masculino,32,71,2021-04-10,diabetes/hipertensão arterial sistêmica/ex tabagista,De 60 a 80
+feminino,32,73,2021-04-10,hipertensão arterial sistêmica,De 60 a 80
+masculino,32,71,2021-04-11,acidente vascular encefálico,De 60 a 80
+masculino,32,48,2021-04-11,hipertensão arterial sistêmica,40 a 60
+masculino,32,73,2021-04-11,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,32,40,2021-04-10,síndrome de down/obesidade/hipotireoidismo/hipovitaminose d,20 a 40
+feminino,32,66,2021-04-05,hipertensão arterial sistêmica,De 60 a 80
+masculino,33,73,2021-04-12,hipertensão arterial sistêmica,De 60 a 80
+masculino,33,70,2021-04-10,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,33,61,2021-04-10,doença cardiovascular crônica,De 60 a 80
+masculino,33,66,2021-04-11,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,33,58,2021-04-12,doença cardiovascular crônica/hipertensão arterial sistêmica/obesidade,40 a 60
+masculino,33,54,2021-04-12,doença hepática crônica,40 a 60
+masculino,33,51,2021-04-11,doença hepática crônica/hipertensão arterial sistêmica,40 a 60
+feminino,33,80,2021-04-12,ex tabagista,De 60 a 80
+feminino,33,76,2021-04-12,diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,33,73,2021-04-13,hipertensão arterial sistêmica/obesidade,De 60 a 80
+masculino,33,78,2021-04-11,diabetes/hipertensão arterial sistêmica/câncer próstata,De 60 a 80
+masculino,33,85,2021-04-10,hipertensão arterial sistêmica,Mais de 80
+masculino,33,42,2021-04-11,doença cardiovascular crônica/obesidade,40 a 60
+masculino,33,62,2021-04-13,sem comorbidade,De 60 a 80
+feminino,33,49,2021-03-14,sem comorbidade,40 a 60
+masculino,33,72,2021-04-13,diabetes/obesidade/hipertensão arterial sistêmica/tumor intestino,De 60 a 80
+masculino,33,68,2021-04-13,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica/hipotireoidismo,De 60 a 80
+masculino,33,70,2021-04-13,pneumopatia crônica/doença pulmonar obstrutiva crônica/hipertensão arterial sistêmica/aneurisma de aorta abdominal,De 60 a 80
+feminino,33,70,2021-04-13,diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,33,56,2021-04-10,doença cardiovascular crônica/diabetes/obesidade,40 a 60
+feminino,33,79,2021-04-14,doença cardiovascular crônica,De 60 a 80
+masculino,33,90,2021-04-15,doença neurológica crônica,Mais de 80
+feminino,33,73,2021-04-14,hipertensão arterial sistêmica/demência,De 60 a 80
+masculino,33,26,2021-04-12,obesidade/epilepsia,20 a 40
+masculino,33,87,2021-04-13,doença cardiovascular crônica/estenose aórtica grave/marca-passo,Mais de 80
+masculino,33,81,2021-03-31,sem comorbidade,Mais de 80
+masculino,33,76,2021-04-13,hipertensão arterial sistêmica,De 60 a 80
+masculino,33,79,2021-03-28,alzheimer,De 60 a 80
+feminino,33,64,2021-04-04,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+feminino,33,77,2021-04-14,câncer endométrio,De 60 a 80
+feminino,33,80,2021-04-14,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,33,60,2021-04-15,hipertensão arterial sistêmica,40 a 60
+feminino,33,67,2021-04-15,hipertensão arterial sistêmica/obesidade,De 60 a 80
+feminino,33,67,2021-04-15,diabetes/hipertensão arterial sistêmica/obesidade,De 60 a 80
+masculino,33,24,2021-04-16,obesidade,20 a 40
+feminino,33,28,2021-04-16,asma/obesidade,20 a 40
+masculino,33,72,2021-04-14,doença cardiovascular crônica/infarto agudo do miocárdio,De 60 a 80
+masculino,33,70,2021-04-16,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,34,46,2021-04-14,doença cardiovascular crônica,40 a 60
+masculino,34,59,2021-04-16,tabagista/etilista,40 a 60
+masculino,34,73,2021-04-17,doença cardiovascular crônica/obesidade/hipertensão arterial sistêmica,De 60 a 80
+masculino,34,37,2021-04-17,drogadição,20 a 40
+feminino,34,59,2021-04-16,sem comorbidade,40 a 60
+masculino,34,75,2021-04-16,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,34,44,2021-04-17,doença cardiovascular crônica/hipertensão arterial sistêmica,40 a 60
+feminino,34,72,2021-04-17,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+masculino,34,75,2021-04-18,doença cardiovascular crônica/doença neurológica crônica/hipertensão arterial sistêmica/alzheimer,De 60 a 80
+masculino,34,66,2021-04-18,sem comorbidade,De 60 a 80
+feminino,34,72,2021-04-18,diabetes/hipertensão arterial sistêmica/obesidade,De 60 a 80
+feminino,34,76,2021-04-17,doença cardiovascular crônica,De 60 a 80
+feminino,34,41,2021-04-17,obesidade,40 a 60
+feminino,34,55,2021-04-16,síndrome de down/hipotireoidismo,40 a 60
+masculino,34,75,2021-04-16,sem comorbidade,De 60 a 80
+feminino,34,37,2021-04-18,obesidade/hipertensão arterial sistêmica,20 a 40
+feminino,34,94,2021-04-16,hipertensão arterial sistêmica,Mais de 80
+masculino,34,66,2021-04-16,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,34,51,2021-04-18,hipertensão arterial sistêmica,40 a 60
+masculino,34,67,2021-04-18,diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,34,79,2021-04-18,hipertensão arterial sistêmica/epilepsia,De 60 a 80
+feminino,34,86,2021-04-16,hipertensão arterial sistêmica/hipotireoidismo,Mais de 80
+masculino,34,55,2021-04-16,hipertensão arterial sistêmica,40 a 60
+feminino,34,80,2021-04-17,doença cardiovascular crônica/hipotireoidismo,De 60 a 80
+feminino,34,84,2021-04-18,doença neurológica crônica/hipertensão arterial sistêmica,Mais de 80
+feminino,34,61,2021-04-19,doença cardiovascular crônica,De 60 a 80
+feminino,34,78,2021-04-13,doença cardiovascular crônica/obesidade/bronquite,De 60 a 80
+masculino,34,51,2021-04-18,diabetes/hipertensão arterial sistêmica/bronquite,40 a 60
+feminino,34,73,2021-04-12,diabetes/hipertensão arterial sistêmica/ex tabagista,De 60 a 80
+masculino,34,89,2021-04-19,doença cardiovascular crônica/doença neurológica crônica/hipertensão arterial sistêmica/epilepsia/parkinson,Mais de 80
+masculino,34,69,2021-04-05,diabetes,De 60 a 80
+masculino,34,62,2021-04-16,sem comorbidade,De 60 a 80
+masculino,34,84,2021-04-19,sem comorbidade,Mais de 80
+feminino,34,65,2021-04-19,sem comorbidade,De 60 a 80
+feminino,34,67,2021-04-20,doença cardiovascular crônica,De 60 a 80
+feminino,34,66,2021-04-20,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,34,43,2021-04-18,diabetes/obesidade/hipertensão arterial sistêmica,40 a 60
+masculino,34,63,2021-04-20,dislipidemia,De 60 a 80
+masculino,34,57,2021-04-20,asma/diabetes/hipertensão arterial sistêmica,40 a 60
+masculino,34,68,2021-04-20,hipertensão arterial sistêmica,De 60 a 80
+feminino,35,68,2021-04-07,diabetes/obesidade/hipertensão arterial sistêmica,De 60 a 80
+feminino,35,67,2021-04-14,doença cardiovascular crônica/diabetes/obesidade,De 60 a 80
+masculino,35,61,2021-04-19,fístula esôfago,De 60 a 80
+masculino,35,72,2021-04-19,doença renal crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,35,51,2021-04-13,diabetes/polineupatia diabética,40 a 60
+masculino,35,59,2021-04-20,sem comorbidade,40 a 60
+feminino,35,95,2021-04-01,hipertensão arterial sistêmica,Mais de 80
+masculino,35,83,2021-04-21,parkinson/hipotireoidismo,Mais de 80
+feminino,35,78,2021-04-20,tabagista,De 60 a 80
+feminino,35,63,2021-04-20,doença cardiovascular crônica/doença renal crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,35,52,2021-04-21,diabetes/hipertensão arterial sistêmica/esquizofrenia,40 a 60
+masculino,35,65,2021-04-20,hipertensão arterial sistêmica,De 60 a 80
+feminino,35,85,2021-03-05,doença neurológica crônica/hipertensão arterial sistêmica,Mais de 80
+feminino,35,67,2021-04-03,paciente psiquiátrica,De 60 a 80
+masculino,35,93,2021-01-27,doença cardiovascular crônica/doença pulmonar obstrutiva crônica/hipertensão arterial sistêmica/anemia,Mais de 80
+feminino,35,93,2021-04-20,hipertensão arterial sistêmica,Mais de 80
+masculino,35,87,2021-04-21,doença cardiovascular crônica/diabetes/doença neurológica crônica,Mais de 80
+masculino,35,59,2021-04-22,doença cardiovascular crônica,40 a 60
+masculino,35,61,2021-04-02,sem comorbidade,De 60 a 80
+masculino,35,94,2021-04-22,doença neurológica crônica,Mais de 80
+feminino,35,68,2021-04-23,diabetes,De 60 a 80
+feminino,35,72,2021-04-22,diabetes/obesidade/hipertensão arterial sistêmica/hipotireoidismo,De 60 a 80
+masculino,35,53,2021-04-23,hipertensão arterial sistêmica,40 a 60
+masculino,35,74,2021-04-23,doença neurológica crônica,De 60 a 80
+feminino,35,85,2021-04-22,doença renal crônica,Mais de 80
+feminino,35,64,2021-04-06,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,35,46,2021-04-22,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,40 a 60
+feminino,35,90,2021-03-23,doença neurológica crônica,Mais de 80
+feminino,35,69,2021-04-15,diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,35,63,2021-04-22,asma/diabetes/obesidade/hipertensão arterial sistêmica/hipotireoidismo,De 60 a 80
+masculino,35,75,2021-04-22,diabetes/obesidade,De 60 a 80
+feminino,35,35,2021-04-19,bipolar,20 a 40
+masculino,35,52,2021-04-22,diabetes/hipertensão arterial sistêmica,40 a 60
+masculino,35,79,2021-04-24,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,35,72,2021-04-25,doença cardiovascular crônica/diabetes/hipotireoidismo,De 60 a 80
+masculino,35,55,2021-04-25,hipertensão arterial sistêmica,40 a 60
+masculino,35,76,2021-04-23,hipertensão arterial sistêmica,De 60 a 80
+feminino,35,59,2021-04-23,sem comorbidade,40 a 60
+masculino,35,66,2021-04-23,doença cardiovascular crônica,De 60 a 80
+masculino,35,68,2021-04-24,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,36,59,2021-04-26,tabagista,40 a 60
+masculino,36,52,2021-04-23,sem comorbidade,40 a 60
+masculino,36,73,2021-04-23,doença cardiovascular crônica,De 60 a 80
+masculino,36,73,2021-04-24,doença cardiovascular crônica/asma/obesidade,De 60 a 80
+masculino,36,75,2021-04-24,doença cardiovascular crônica/doença renal crônica/ex tabagista/nefrectomia parcial,De 60 a 80
+feminino,36,70,2021-03-14,doença cardiovascular crônica,De 60 a 80
+feminino,36,70,2021-03-19,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,36,67,2021-04-23,doença cardiovascular crônica,De 60 a 80
+feminino,36,50,2021-04-25,doença cardiovascular crônica,40 a 60
+masculino,36,70,2021-04-25,insuficiência venosa periférica,De 60 a 80
+masculino,36,67,2021-04-23,diabetes,De 60 a 80
+masculino,36,76,2021-04-23,diabetes/hipertensão arterial sistêmica/doença diverticular,De 60 a 80
+feminino,36,78,2021-04-25,hipertensão arterial sistêmica,De 60 a 80
+masculino,36,53,2021-04-24,sem comorbidade,40 a 60
+feminino,36,80,2021-04-24,doença neurológica crônica/doença renal crônica/diabetes/hipertensão arterial sistêmica/obesidade,De 60 a 80
+feminino,36,65,2021-04-25,diabetes/hipertensão arterial sistêmica/obesidade,De 60 a 80
+masculino,36,71,2021-04-27,doença cardiovascular crônica/obesidade,De 60 a 80
+masculino,36,73,2021-04-26,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,36,71,2021-04-24,doença cardiovascular crônica,De 60 a 80
+feminino,36,79,2021-04-26,asma/hipertensão arterial sistêmica/dislipidemia,De 60 a 80
+masculino,36,85,2021-04-26,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica/acidente vascular encefálico prévio,Mais de 80
+masculino,36,65,2021-04-26,mieloma múltiplo,De 60 a 80
+feminino,36,37,2021-04-26,obesidade,20 a 40
+masculino,36,24,2021-04-26,asma/hipertensão arterial sistêmica,20 a 40
+feminino,36,41,2021-04-26,doença renal crônica/diabetes,40 a 60
+feminino,36,62,2021-04-27,diabetes,De 60 a 80
+masculino,36,72,2021-04-14,doença cardiovascular crônica/obesidade,De 60 a 80
+feminino,36,56,2021-04-27,doença cardiovascular crônica/diabetes/doença renal crônica,40 a 60
+masculino,36,55,2021-04-24,sem comorbidade,40 a 60
+masculino,36,76,2021-04-11,doença cardiovascular crônica,De 60 a 80
+masculino,36,79,2021-04-25,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,36,71,2021-04-27,doença cardiovascular crônica,De 60 a 80
+feminino,36,69,2021-04-27,doença cardiovascular crônica/obesidade/hipertensão arterial sistêmica,De 60 a 80
+masculino,36,74,2021-04-27,doença renal crônica/diabetes,De 60 a 80
+masculino,36,78,2021-04-27,doença cardiovascular crônica/hipotireoidismo/doença hematológica crônica,De 60 a 80
+masculino,36,77,2021-04-27,doença cardiovascular crônica/doença hepática crônica/diabetes/doença renal crônica,De 60 a 80
+masculino,36,68,2021-04-25,hipertensão arterial sistêmica/doença pulmonar obstrutiva crônica/tabagista,De 60 a 80
+feminino,37,66,2021-04-28,diabetes/hipertensão arterial sistêmica/ex tabagista/nefrolitíase,De 60 a 80
+masculino,37,38,2021-04-27,sem comorbidade,20 a 40
+masculino,37,60,2021-04-27,doença cardiovascular crônica/diabetes,40 a 60
+masculino,37,60,2021-04-28,doença cardiovascular crônica/doença neurológica crônica,40 a 60
+masculino,37,68,2021-04-28,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,37,62,2021-04-12,doença cardiovascular crônica,De 60 a 80
+feminino,37,97,2021-04-26,hipertensão arterial sistêmica,Mais de 80
+masculino,37,33,2021-04-29,obesidade,20 a 40
+masculino,37,57,2021-04-26,obesidade/hipertensão arterial sistêmica,40 a 60
+feminino,37,60,2021-04-28,obesidade,40 a 60
+feminino,37,72,2021-04-08,diabetes,De 60 a 80
+feminino,37,90,2021-04-28,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica/marca-passo,Mais de 80
+feminino,37,59,2021-04-28,doença cardiovascular crônica/hipertensão arterial sistêmica,40 a 60
+feminino,37,45,2021-04-29,doença cardiovascular crônica/asma,40 a 60
+feminino,37,89,2021-04-28,doença cardiovascular crônica/diabetes,Mais de 80
+masculino,37,80,2021-03-28,doença cardiovascular crônica/diabetes/doença neurológica crônica,De 60 a 80
+feminino,37,64,2021-04-07,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,37,48,2021-04-07,doença cardiovascular crônica/diabetes/câncer pelve/câncer útero/obesidade,40 a 60
+feminino,37,72,2021-04-02,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,37,54,2021-04-05,diabetes/obesidade,40 a 60
+masculino,37,72,2021-04-22,sem comorbidade,De 60 a 80
+masculino,37,32,2021-04-29,síndrome de down,20 a 40
+feminino,37,91,2021-04-29,doença neurológica crônica,Mais de 80
+feminino,37,79,2021-04-29,sem comorbidade,De 60 a 80
+masculino,37,91,2021-04-28,doença cardiovascular crônica/diabetes,Mais de 80
+masculino,37,74,2021-04-28,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,37,58,2021-04-29,sem comorbidade,40 a 60
+masculino,37,38,2021-04-30,obesidade,20 a 40
+masculino,37,76,2021-04-23,dislipidemia/hipertensão arterial sistêmica,De 60 a 80
+feminino,37,87,2021-04-23,doença cardiovascular crônica/doença neurológica crônica/diabetes,Mais de 80
+feminino,37,60,2021-04-29,obesidade,40 a 60
+feminino,37,68,2021-04-28,acidente vascular cerebral/histerectomia/hipertensão arterial sistêmica,De 60 a 80
+feminino,37,49,2021-04-30,doença cardiovascular crônica/diabetes,40 a 60
+masculino,37,36,2021-04-30,sem comorbidade,20 a 40
+masculino,37,50,2021-05-01,doença cardiovascular crônica/diabetes/doença renal crônica,40 a 60
+feminino,37,39,2021-04-30,obesidade,20 a 40
+masculino,37,49,2021-04-30,hipotireoidismo,40 a 60
+masculino,37,37,2021-05-02,doença cardiovascular crônica/hipertensão arterial sistêmica,20 a 40
+masculino,37,28,2021-05-02,asma,20 a 40
+feminino,38,83,2021-05-03,diabetes/hipertensão arterial sistêmica,Mais de 80
+feminino,38,63,2021-05-01,diabetes/obesidade/hipertensão arterial sistêmica,De 60 a 80
+masculino,38,56,2021-05-03,hipertensão arterial sistêmica,40 a 60
+masculino,38,52,2021-05-02,diabetes/hipertensão arterial sistêmica,40 a 60
+masculino,38,72,2021-05-03,doença cardiovascular crônica/doença pulmonar obstrutiva crônica/hipertensão arterial sistêmica,De 60 a 80
+feminino,38,57,2021-05-02,obesidade/hipertensão arterial sistêmica,40 a 60
+feminino,38,48,2021-05-02,diabetes/hipertensão arterial sistêmica,40 a 60
+masculino,38,66,2021-04-30,obesidade,De 60 a 80
+masculino,38,70,2021-05-03,doença cardiovascular crônica/asma/hipertensão arterial sistêmica,De 60 a 80
+masculino,38,34,2021-05-03,sem comorbidade,20 a 40
+masculino,38,66,2021-05-03,hipertensão arterial sistêmica,De 60 a 80
+feminino,38,55,2021-05-02,depressão/bipolar,40 a 60
+feminino,38,88,2021-05-02,hipertensão arterial sistêmica/esteatose do reto/doença diverticular,Mais de 80
+feminino,38,74,2021-05-03,doença cardiovascular crônica/doença neurológica crônica,De 60 a 80
+feminino,38,82,2021-05-03,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,Mais de 80
+masculino,38,37,2021-05-03,síndrome de down/doença neurológica crônica,20 a 40
+feminino,38,70,2021-05-01,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,38,71,2021-04-30,hipertensão arterial sistêmica/ex tabagista,De 60 a 80
+masculino,38,69,2021-04-30,hipertensão arterial sistêmica,De 60 a 80
+feminino,38,72,2021-05-02,diabetes/asma/imunodeficiência/imunodepressão/hipertensão arterial sistêmica/câncer mama,De 60 a 80
+masculino,38,49,2021-04-30,doença cardiovascular crônica/obesidade,40 a 60
+masculino,38,34,2021-05-02,tuberculose pulmonar,20 a 40
+feminino,38,42,2021-05-01,asma/obesidade,40 a 60
+masculino,38,57,2021-05-04,doença cardiovascular crônica/diabetes,40 a 60
+feminino,38,76,2021-05-01,doença cardiovascular crônica/diabetes/doença pulmonar obstrutiva crônica/hipertensão arterial sistêmica/doença renal crônica,De 60 a 80
+masculino,38,58,2021-05-02,hipertensão arterial sistêmica/obesidade,40 a 60
+masculino,38,91,2021-04-21,doença cardiovascular crônica,Mais de 80
+masculino,38,60,2021-05-04,sem comorbidade,40 a 60
+feminino,38,59,2021-04-08,doença pulmonar obstrutiva crônica/hipertensão arterial sistêmica/enfisema pulmonar,40 a 60
+feminino,38,74,2021-04-03,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,38,64,2021-05-05,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,38,62,2021-05-04,doença cardiovascular crônica/doença neurológica crônica,De 60 a 80
+feminino,38,50,2021-05-03,hipertensão arterial sistêmica,40 a 60
+masculino,38,58,2021-05-04,diabetes/hipertensão arterial sistêmica,40 a 60
+feminino,38,77,2021-05-04,sem comorbidade,De 60 a 80
+masculino,38,73,2021-05-03,obesidade/hipertensão arterial sistêmica,De 60 a 80
+masculino,38,79,2021-05-06,câncer pulmão,De 60 a 80
+feminino,38,37,2021-05-06,sem comorbidade,20 a 40
+masculino,39,63,2021-05-05,doença cardiovascular crônica/diabetes/doença neurológica crônica,De 60 a 80
+masculino,39,78,2021-05-05,diabetes/doença renal crônica,De 60 a 80
+feminino,39,77,2021-03-29,doença cardiovascular crônica/diabetes/alzheimer,De 60 a 80
+masculino,39,76,2021-05-06,diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,39,69,2021-03-02,doença cardiovascular crônica/hipertensão arterial sistêmica/marca-passo/insuficiência cardiáca,De 60 a 80
+feminino,39,82,2021-03-18,hipertensão arterial sistêmica,Mais de 80
+masculino,39,86,2021-05-05,diabetes/doença renal crônica/hipertensão arterial sistêmica,Mais de 80
+masculino,39,59,2021-05-04,sem comorbidade,40 a 60
+masculino,39,65,2021-05-04,doença cardiovascular crônica/obesidade,De 60 a 80
+masculino,39,79,2021-05-05,doença cardiovascular crônica/hipertensão arterial sistêmica/doença renal crônica,De 60 a 80
+masculino,39,58,2021-05-06,doença cardiovascular crônica/obesidade,40 a 60
+masculino,39,59,2021-05-06,hipertensão arterial sistêmica,40 a 60
+masculino,39,70,2021-05-06,doença cardiovascular crônica/diabetes/doença pulmonar obstrutiva crônica/obesidade,De 60 a 80
+masculino,39,49,2021-05-04,etilista,40 a 60
+feminino,39,74,2021-05-06,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,39,64,2021-03-30,hipertensão arterial sistêmica,De 60 a 80
+feminino,39,78,2021-05-04,doença cardiovascular crônica/hipertensão arterial sistêmica/asma/obesidade,De 60 a 80
+masculino,39,55,2021-05-06,ex tabagista/ex etilista,40 a 60
+feminino,39,62,2021-05-06,lobectomia/hipotireoidismo,De 60 a 80
+masculino,39,71,2021-05-05,câncer próstata/hipertensão arterial sistêmica,De 60 a 80
+feminino,39,94,2021-05-06,doença neurológica crônica/diabetes,Mais de 80
+feminino,39,83,2021-05-06,doença cardiovascular crônica/diabetes,Mais de 80
+feminino,39,83,2021-05-06,doença cardiovascular crônica,Mais de 80
+feminino,39,45,2021-05-07,sem comorbidade,40 a 60
+masculino,39,64,2021-05-06,hipertensão arterial sistêmica,De 60 a 80
+feminino,39,83,2021-05-07,doença cardiovascular crônica/hipotireoidismo/câncer pulmão,Mais de 80
+feminino,39,80,2021-04-30,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,39,51,2021-04-05,drogadição/etilista,40 a 60
+feminino,39,66,2021-05-09,diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,39,90,2021-05-08,doença neurológica crônica/imunodeficiência/imunodepressão,Mais de 80
+feminino,39,79,2021-03-31,diabetes/cardiopata,De 60 a 80
+feminino,39,71,2021-05-09,doença cardiovascular crônica/hipertensão arterial sistêmica,De 60 a 80
+feminino,39,46,2021-05-07,pancreatite crônica,40 a 60
+feminino,39,80,2021-05-07,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,39,91,2021-05-10,doença cardiovascular crônica/diabetes,Mais de 80
+feminino,39,65,2021-05-04,doença cardiovascular crônica,De 60 a 80
+feminino,39,69,2021-05-09,diabetes/doença neurológica crônica/hipertensão arterial sistêmica/acidente vascular encefálico,De 60 a 80
+masculino,39,77,2021-05-08,pneumopatia crônica/hipertensão arterial sistêmica/hiperplasia benigna próstata,De 60 a 80
+masculino,39,34,2021-05-10,obesidade/hipertensão arterial sistêmica,20 a 40
+feminino,39,76,2021-03-27,doença cardiovascular crônica/hipotireoidismo,De 60 a 80
+masculino,40,51,2021-05-09,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica/fibrilação atrial paroxística/obesidade,40 a 60
+masculino,40,79,2021-05-07,doença cardiovascular crônica/doença neurológica crônica,De 60 a 80
+feminino,40,57,2021-05-10,doença cardiovascular crônica/obesidade/ex tabagista,40 a 60
+feminino,40,68,2021-05-08,hipertensão arterial sistêmica,De 60 a 80
+masculino,40,83,2021-05-09,doença neurológica crônica/hipertensão arterial sistêmica/pneumonias de repetição,Mais de 80
+masculino,40,75,2021-05-09,doença cardiovascular crônica/diabetes,De 60 a 80
+masculino,40,58,2021-05-09,hipertensão arterial sistêmica,40 a 60
+feminino,40,95,2021-05-08,sem comorbidade,Mais de 80
+masculino,40,72,2021-05-08,doença cardiovascular crônica/asma,De 60 a 80
+feminino,40,63,2021-05-08,doença cardiovascular crônica/diabetes/asma/doença pulmonar obstrutiva crônica/obesidade,De 60 a 80
+feminino,40,49,2021-05-11,sem comorbidade,40 a 60
+masculino,40,52,2021-05-09,granilomatose werner,40 a 60
+masculino,40,38,2021-05-08,diabetes/doença renal crônica/hipertensão arterial sistêmica,20 a 40
+feminino,40,80,2021-05-11,hipertensão arterial sistêmica,De 60 a 80
+masculino,40,60,2021-05-12,hipertensão arterial sistêmica,40 a 60
+feminino,40,62,2021-03-30,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica/tabagista,De 60 a 80
+feminino,40,67,2021-03-26,hipertensão arterial sistêmica/lúpus,De 60 a 80
+masculino,40,75,2021-04-06,epilepsia,De 60 a 80
+feminino,40,49,2021-05-12,hipertensão arterial sistêmica,40 a 60
+feminino,40,72,2021-05-12,hipertensão arterial sistêmica/hipertensão ocular,De 60 a 80
+feminino,40,7,2021-05-01,tumor cerebral,Menos de 20 anos
+feminino,40,60,2021-05-12,doença cardiovascular crônica/obesidade,40 a 60
+masculino,40,74,2021-05-12,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,40,82,2021-05-12,asma/hipertensão arterial sistêmica/tup em hie,Mais de 80
+feminino,40,77,2021-05-13,doença neurológica crônica/paciente psiquiátrica,De 60 a 80
+feminino,40,67,2021-05-11,diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,40,81,2021-04-25,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,Mais de 80
+feminino,40,48,2021-04-20,sem comorbidade,40 a 60
+feminino,40,85,2021-05-13,doença cardiovascular crônica/doença neurológica crônica/hipertensão arterial sistêmica/imunodeficiência/imunodepressão/artrose,Mais de 80
+feminino,40,72,2021-05-11,diabetes/hipertensão arterial sistêmica/tabagista,De 60 a 80
+feminino,40,82,2021-05-14,doença cardiovascular crônica/diabetes/imunodeficiência/imunodepressão,Mais de 80
+feminino,40,63,2021-05-15,demência,De 60 a 80
+masculino,40,56,2021-05-17,doença neurológica crônica,40 a 60
+masculino,40,62,2021-05-14,pneumopatia crônica,De 60 a 80
+feminino,40,34,2021-05-10,obesidade,20 a 40
+masculino,41,49,2021-05-16,doença renal crônica/hipertensão arterial sistêmica/doença renal crônica não dialitico/bariátrica previa,40 a 60
+masculino,41,75,2021-05-15,doença cardiovascular crônica/diabetes/doença neurológica crônica/hipertensão arterial sistêmica,De 60 a 80
+masculino,41,75,2021-05-15,hipertensão arterial sistêmica,De 60 a 80
+masculino,41,75,2021-05-16,doença cardiovascular crônica/diabetes/doença neurológica crônica/parkinson,De 60 a 80
+masculino,41,75,2021-05-16,doença cardiovascular crônica/parkinson,De 60 a 80
+masculino,41,81,2021-05-16,doença pulmonar obstrutiva crônica/obesidade,Mais de 80
+feminino,41,69,2021-05-16,pneumopatia crônica/obesidade,De 60 a 80
+feminino,41,80,2021-05-17,hipertensão arterial sistêmica/hipotireoidismo,De 60 a 80
+feminino,41,60,2021-05-16,diabetes/hipertensão arterial sistêmica/bronquite/obesidade,40 a 60
+feminino,41,70,2021-05-15,diabetes/obesidade/dislipidemia,De 60 a 80
+masculino,41,51,2021-05-16,diabetes/doença neurológica crônica,40 a 60
+feminino,41,26,2021-05-15,doença cardiovascular crônica/asma/gestante/prolapso na válvula mitral,20 a 40
+feminino,41,69,2021-05-18,dislipidemia/hipertensão arterial sistêmica,De 60 a 80
+masculino,41,88,2021-05-16,doença cardiovascular crônica/pneumopatia crônica,Mais de 80
+feminino,41,75,2021-05-17,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica,De 60 a 80
+feminino,41,80,2021-05-17,doença cardiovascular crônica/diabetes/pneumopatia crônica,De 60 a 80
+masculino,41,73,2021-05-18,doença cardiovascular crônica/diabetes/pneumopatia crônica/infarto agudo do miocárdio prévio/câncer pulmão,De 60 a 80
+masculino,41,79,2021-05-17,hipertensão arterial sistêmica/arritmia,De 60 a 80
+feminino,41,65,2021-05-18,hipertensão arterial sistêmica,De 60 a 80
+masculino,41,82,2021-05-14,hipertensão arterial sistêmica/câncer próstata/bexiga,Mais de 80
+masculino,41,53,2021-05-18,sem comorbidade,40 a 60
+feminino,41,68,2021-05-17,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,41,70,2021-05-19,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica/ex tabagista,De 60 a 80
+masculino,41,81,2021-05-19,doença cardiovascular crônica/prótese metálica cardíaca,Mais de 80
+masculino,41,56,2021-05-18,doença pulmonar obstrutiva crônica,40 a 60
+feminino,41,84,2021-05-17,doença cardiovascular crônica/diabetes/pneumopatia crônica/hipertensão arterial sistêmica/acidente vascular encefálico,Mais de 80
+feminino,41,52,2021-05-18,asma/obesidade,40 a 60
+feminino,41,39,2021-05-20,doença cardiovascular crônica/obesidade,20 a 40
+feminino,41,84,2021-05-18,diabetes/doença renal crônica/hipertensão arterial sistêmica,Mais de 80
+feminino,41,59,2021-05-11,câncer útero,40 a 60
+masculino,41,58,2021-05-19,câncer esôfago,40 a 60
+masculino,41,76,2021-05-19,hipertensão arterial sistêmica/diabetes,De 60 a 80
+feminino,41,60,2021-04-02,sem comorbidade,40 a 60
+feminino,41,51,2021-05-21,pneumopatia crônica/obesidade/hipertensão arterial sistêmica,40 a 60
+masculino,42,75,2021-05-21,doença cardiovascular crônica/doença hepática crônica/doença hematológica crônica/tabagista/etilista,De 60 a 80
+masculino,42,63,2021-05-19,hipertensão arterial sistêmica,De 60 a 80
+masculino,42,54,2021-05-21,doença neurológica crônica/diabetes/hipertensão arterial sistêmica,40 a 60
+feminino,42,47,2021-03-30,diabetes,40 a 60
+masculino,42,68,2021-05-03,neoplasia,De 60 a 80
+feminino,42,61,2021-05-21,hipertensão arterial sistêmica,De 60 a 80
+feminino,42,83,2021-05-20,doença cardiovascular crônica/doença neurológica crônica/hipertensão arterial sistêmica/hipotireoidismo/asma,Mais de 80
+masculino,42,79,2021-05-21,hipertensão arterial sistêmica,De 60 a 80
+masculino,42,32,2021-05-22,obesidade,20 a 40
+feminino,42,19,2021-05-23,puerpério,Menos de 20 anos
+feminino,42,61,2021-05-22,doença cardiovascular crônica/diabetes,De 60 a 80
+feminino,42,76,2021-05-21,diabetes/hipertensão arterial sistêmica/obesidade,De 60 a 80
+feminino,42,83,2021-05-22,doença cardiovascular crônica/diabetes/hipotireoidismo,Mais de 80
+masculino,42,55,2021-05-23,hipertensão arterial sistêmica/hipotireoidismo,40 a 60
+feminino,42,60,2021-05-23,doença cardiovascular crônica/diabetes,40 a 60
+feminino,42,37,2021-04-30,sem comorbidade,20 a 40
+masculino,42,35,2021-05-24,obesidade,20 a 40
+masculino,42,66,2021-05-21,hipertensão arterial sistêmica/insuficiência cardiáca,De 60 a 80
+feminino,42,37,2021-05-24,doença neurológica crônica/tumor cerebral/sífilis/febre reumática,20 a 40
+feminino,42,82,2021-05-22,diabetes/hipertensão arterial sistêmica,Mais de 80
+feminino,42,59,2021-05-24,hipertensão arterial sistêmica/tabagista/cadeirante,40 a 60
+masculino,42,39,2021-05-22,hipertensão arterial sistêmica,20 a 40
+masculino,42,91,2021-05-25,diabetes,Mais de 80
+masculino,42,63,2021-05-24,sem comorbidade,De 60 a 80
+feminino,42,71,2021-05-23,hipotireoidismo,De 60 a 80
+masculino,42,53,2021-05-21,diabetes/hipertensão arterial sistêmica,40 a 60
+masculino,42,69,2021-05-24,doença cardiovascular crônica,De 60 a 80
+masculino,42,44,2021-05-25,obesidade,40 a 60
+masculino,42,65,2021-05-23,obesidade/ex tabagista,De 60 a 80
+feminino,42,43,2021-05-22,hipertensão arterial sistêmica/hipotireoidismo/obesidade/depressão,40 a 60
+masculino,42,48,2021-05-24,glaucoma/apneia do sono,40 a 60
+masculino,42,71,2021-05-25,hipertensão arterial sistêmica/depressão,De 60 a 80
+feminino,42,68,2021-05-26,diabetes/doença renal crônica,De 60 a 80
+feminino,42,91,2021-05-26,doença neurológica crônica,Mais de 80
+feminino,42,70,2021-05-25,diabetes/doença neurológica crônica/hipertensão arterial sistêmica,De 60 a 80
+feminino,42,70,2021-05-27,doença cardiovascular crônica/diabetes/hipertensão arterial sistêmica/ex tabagista,De 60 a 80
+feminino,42,76,2021-05-19,diabetes/hipertensão arterial sistêmica,De 60 a 80
+masculino,42,71,2021-05-26,hipertensão arterial sistêmica/doença pulmonar obstrutiva crônica/doença renal crônica dialitica,De 60 a 80
+masculino,43,62,2021-05-27,câncer metastático,De 60 a 80
+feminino,43,89,2021-05-05,hipertensão arterial sistêmica,Mais de 80
+masculino,43,59,2021-05-28,doença neurológica crônica/hipertensão arterial sistêmica/epilepsia,40 a 60
+feminino,43,63,2021-05-28,diabetes/obesidade,De 60 a 80
+masculino,43,82,2021-05-28,doença cardiovascular crônica/diabetes,Mais de 80
+masculino,43,43,2021-05-27,sem comorbidade,40 a 60
+feminino,43,66,2021-05-28,doença cardiovascular crônica/diabetes/insuficiência cardiáca,De 60 a 80
+masculino,43,77,2021-05-28,diabetes,De 60 a 80
+masculino,43,72,2021-05-26,doença cardiovascular crônica,De 60 a 80
+feminino,43,50,2021-05-28,esteatose hepática,40 a 60
+feminino,43,61,2021-05-28,doença cardiovascular crônica,De 60 a 80
+feminino,43,29,2021-05-29,sem comorbidade,20 a 40
+feminino,43,69,2021-05-20,pneumopatia crônica,De 60 a 80
+feminino,43,82,2021-05-30,doença cardiovascular crônica/diabetes,Mais de 80
+masculino,43,55,2021-05-26,diabetes/câncer língua,40 a 60
+masculino,43,69,2021-05-30,doença cardiovascular crônica/obesidade,De 60 a 80
+masculino,43,67,2021-05-29,doença neurológica crônica/hipertensão arterial sistêmica,De 60 a 80
+feminino,43,93,2021-05-29,doença neurológica crônica,Mais de 80
+feminino,43,69,2021-05-28,doença cardiovascular crônica/asma/pneumopatia crônica,De 60 a 80
+masculino,43,50,2021-05-28,diabetes/hipertensão arterial sistêmica,40 a 60
+masculino,43,55,2021-05-28,sem comorbidade,40 a 60
+masculino,43,58,2021-05-31,esquizofrenia,40 a 60
+masculino,43,51,2021-05-28,obesidade/hipertensão arterial sistêmica,40 a 60
+masculino,43,38,2021-05-29,obesidade,20 a 40
+masculino,43,67,2021-05-30,doença cardiovascular crônica,De 60 a 80
+masculino,43,81,2021-05-28,doença neurológica crônica/hipertensão arterial sistêmica/hidrocefalia,Mais de 80
+masculino,43,59,2021-06-01,diabetes/hipertensão arterial sistêmica/doença pulmonar obstrutiva crônica/tabagista,40 a 60
+feminino,43,75,2021-05-31,doença hepática crônica/diabetes,De 60 a 80
+feminino,43,55,2021-05-28,obesidade/hipertensão arterial sistêmica,40 a 60
+feminino,43,44,2021-05-30,sem comorbidade,40 a 60
+feminino,43,93,2021-05-31,doença cardiovascular crônica/hipotireoidismo,Mais de 80
+masculino,43,31,2021-06-01,sem comorbidade,20 a 40
+masculino,43,69,2021-06-01,sem comorbidade,De 60 a 80
+masculino,43,46,2021-06-01,doença cardiovascular crônica/hipertensão arterial sistêmica,40 a 60
+masculino,43,78,2021-06-01,etilista,De 60 a 80
