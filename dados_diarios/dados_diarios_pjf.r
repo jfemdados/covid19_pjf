@@ -23,7 +23,9 @@ obitos_diarios_pjf_raw <- tibble(
   #criando divisão por páginas para ajudar com datas mais a frente
   pag= 1:43) # como automatizar a colocação desse número de páginas? Não quero ter que mudar toda vez que aumente o nº de pág.
 
-obitos_diarios_pjf_raw %>% slice(1) %>% pull(texto)                                    
+
+#S quiser verificar como estava cada página
+#obitos_diarios_pjf_raw %>% slice(1) %>% pull(texto)                                    
 
 
 # Separando Linhas --------------------------------------------------------
@@ -40,8 +42,9 @@ obitos_diarios_pjf_separado<- obitos_diarios_pjf_raw %>%
   mutate(texto= str_split(texto, "\\r\\n\\d+\\. "))%>%
   unnest(texto)
 
-obitos_diarios_pjf_separado %>%# slice(1000:1578) %>%
-  pull(texto) 
+#Aqui printei todo o DF para conferir se não havia duplicidade de linhas
+#obitos_diarios_pjf_separado %>%# slice(1000:1578) %>%
+ # pull(texto) 
 
 # -------------- TIDYING ----------------------------------------------------
 
@@ -140,43 +143,77 @@ obitos_diarios_pjf_clean<- obitos_diarios_pjf_separado %>%
 
 table(obitos_diarios_pjf_clean$genero)
 
-# esses dois vetores servem para usar na hora de padronizar a coluna do gênero.
+# Alguns vetores para usar na hora de padronizar as colunas de genero e comorbindade
 
 genero_feminino <- c( "feminino", "feminina", "idosa", "isosa", "mulher")
 genero_masculino <- c( "homem", "idoso", "isoso", "masculino", "natimorto")
+erros_comorbidade <- paste("severa descompensada e não tratada",
+                           ";l",
+                           "dialitic[oa]",
+                           "não dialitico",
+                           sep = "|")
 
-# Começando os trabalhos de padronização 
+
+# Começando os trabalhos de padronização de variáveis
 
 
 #Padronizando Gênero e Comorbidades
+
 obitos_diarios_pjf_tidy_gen_com <- obitos_diarios_pjf_clean %>%
   #Com as variáveis já separadas, podemos retirar a coluna original do texto.
   select(!texto) %>%
-  #Padronizando GÊNERO
+  #1º Passo - Padronizando GÊNERO
   mutate(genero= case_when(
     genero %in% genero_feminino ~ "feminino",
     genero %in% genero_masculino ~ "masculino",
     TRUE ~ as.character(genero)),
-    #padronizando COMORBIDADES. Criei coluna comorbidade (original) e comorbidades (modificada) para ter controle do que fazia
-    comorbidades= str_replace_all(comorbidade, "drc\\b", "doença renal crônica"),
-    comorbidades= str_replace_all(comorbidades, "dcc", "doença cardiovascular crônica"),
-    comorbidades= str_replace_all(comorbidades, "has|hás|hs", "hipertensão arterial sistêmica"),
+  #2º Passo - Padronizando COMORBIDADES. Criei coluna comorbidade (original) e comorbidades (modificada) para ter controle do que fazia
+    comorbidades= str_remove(comorbidade, "severa descompensada e não tratada|;l"),
+    comorbidades= str_replace_all(comorbidades, "drc\\b|irc|ialítico", "doença renal crônica"),
+    comorbidades= str_replace_all(comorbidades, "dc(c)*", "doença cardiovascular crônica"),
     comorbidades= str_replace_all(comorbidades, "dm|diabetes mel{1,2}itus", "diabetes"),
+    comorbidades= str_replace_all(comorbidades, "has|hás|hs|had\\b|hipertensão arterial$", "hipertensão arterial sistêmica"),
     comorbidades= str_replace_all(comorbidades, "dpoc", "doença pulmonar obstrutiva crônica"),
-    comorbidades= str_replace_all(comorbidades, "\\bca\\b", "câncer"),
+    comorbidades= str_replace_all(comorbidades, "\\b[cç]a\\b( de)*|paciente oncológico|doença oncológica", "câncer"),
+    comorbidades= str_replace_all(comorbidades, "câncer útero|útero","câncer útero"),
     comorbidades= str_replace_all(comorbidades, "dnc", "doença neurológica crônica"),
+    comorbidades= str_replace_all(comorbidades, "dhc", "doença hepática crônica"),
     comorbidades= str_replace_all(comorbidades, "outra pneumopatia", "pneumopatia"),
     comorbidades= str_replace_all(comorbidades, "iam", "infarto agudo do miocárdio"),
-    comorbidades= str_replace_all(comorbidades, "ave", "acidente vascular encefálico"),
+    comorbidades= str_replace_all(comorbidades, "\\bave", "acidente vascular encefálico"),
+    comorbidades= str_replace_all(comorbidades, "marcapasso","marca-passo"),
+    comorbidades= str_replace_all(comorbidades, "imunosupressão","imunossupressão"),
     comorbidades= str_replace_all(comorbidades, "\\bfa\\b", "fibrilação atrial"),
     comorbidades= str_replace_all(comorbidades, "\\btu\\b", "tumor"),
-    comorbidades= str_replace_all(comorbidades, "ave", "acidente vascular encefálico"),
+    comorbidades= str_replace_all(comorbidades, "\\bave\\b", "acidente vascular encefálico"),
+    comorbidades= str_replace_all(comorbidades, "avc", "acidente vascular cerebral"),
+    comorbidades= str_replace_all(comorbidades, "histórico de avc", "acidente vascular cerebral prévio"),
     comorbidades= str_replace_all(comorbidades, "dvc", "doença venosa crônica"),
-    comorbidades= str_replace_all(comorbidades, "tep", "trombo embolismo pulmonar"),
+    comorbidades= str_replace_all(comorbidades, "tep", "tromboembolismo pulmonar"),
     comorbidades= str_replace_all(comorbidades, "tb pulmonar", "tuberculose pulmonar"),
-    #arrumando delimitadores
-    comorbidades= str_replace_all(comorbidades, " e |/", ","),
-    #retirando tudo que estava dentro de parentêses geralmente a sigla(explocação da sigla)
+    comorbidades= str_replace_all(comorbidades, "etilismo", "etilista"),
+    comorbidades= str_replace_all(comorbidades, "hpb", "hiperplasia prostática benigna"),
+    comorbidades= str_replace_all(comorbidades, "usuário de droga", "drogadição"),
+    comorbidades= str_replace_all(comorbidades, "puérpera","puerpério"),
+    comorbidades= str_replace_all(comorbidades, "tce","traumatismo cranioencefálico"),
+    comorbidades= str_replace_all(comorbidades, "imunosupressão","imunossupressão"),
+    comorbidades= str_replace_all(comorbidades, "pti","púrpura trombocitopênica idiopática"),
+    comorbidades= str_replace_all(comorbidades, "drge","doença do refluxo esofágico"),
+    comorbidades= str_replace_all(comorbidades, "eplepsia|convulsão|crise convulsiva","epilepsia"),
+    comorbidades= str_replace_all(comorbidades, "transtorno bipolar","bipolar"),
+    comorbidades= str_replace_all(comorbidades, "transtorno depressivo","depressão"),
+    comorbidades= str_replace_all(comorbidades, "síndrome demência","demência"),
+    comorbidades= str_replace_all(comorbidades, "transplantado","transplante"),
+    comorbidades= str_replace_all(comorbidades, "\\bic(c)*\\b","insuficiência cardiáca"),
+    comorbidades= str_replace_all(comorbidades, "dac|coronariopata|coranopata","doença arterial coronariana"),
+    comorbidades= str_replace_all(comorbidades, "transplantado","transplante"),
+    comorbidades= str_replace_all(comorbidades, "dsp","intoxicação diarreica por molusco"),
+    comorbidades= str_replace_all(comorbidades, "dlp|dislepidemia","dislipidemia"),
+    #arrumando delimitadores dentro da coluna comorbidades " e " e "," por "/"
+    comorbidades= str_replace_all(comorbidades, " e |,", "/"),
+    #retirando espaços depois de barras
+    comorbidades= str_replace_all(comorbidades, "/ ", "/"),
+    #retirando tudo que estava dentro de parentêses geralmente a sigla(explicação da sigla)
     comorbidades= str_remove_all(comorbidades, "\\(.+\\)"),
     #Todas as Comorbidades estão separadas por "," prontas para sofrerem unnest. Finalizando, retirando espaços.
     comorbidades = str_squish(comorbidades),
@@ -184,11 +221,26 @@ obitos_diarios_pjf_tidy_gen_com <- obitos_diarios_pjf_clean %>%
     comorbidades = str_replace(comorbidades, "comorbidades", "sem comorbidade"),
     comorbidades = tidyr::replace_na(comorbidades, "sem comorbidade"))
 
-table(obitos_diarios_pjf_clean_gen_com$genero)
+#Coluna Gênero Tidy! Mesma variável de uma só forma
 
+table(obitos_diarios_pjf_tidy_gen_com$genero)
+
+#Dando Unnest nas comorbidades para verificar padronização
+
+obitos_diarios_pjf_tidy_comorbidade_separado <- obitos_diarios_pjf_tidy_gen_com %>%
+  mutate(comorbidades= str_split(comorbidades, "/")) %>%
+  unnest(comorbidades)
+
+# Comorbidades Tidy! (dentro da possibilidades, pois alguma pelo excesso de especialização.
+# Algumas doenças estão em grandes grupos, como doença cardiovascular crônica,
+# mas algumas, que estão nesses grandes grupos, como insuficiência cardíaca, doença arterial coronariana, etc...
+  
+table(obitos_diarios_pjf_tidy_comorbidade_separado$comorbidades)
+
+
+#Padronizado DATAS - 1º Passo: Passando as datas que estão escritas por extenso para número.
 
 #Tentei fazer essa função para lidar com números por extenso, infelizmente não funcionou.
-#terá que ser por vez no meio do código
 
 nomeMes_to_nMes <- function(x){
   
@@ -208,8 +260,7 @@ nomeMes_to_nMes <- function(x){
   
 }
 
-#Padronizado DATAS - 1º Passo: Passando as datas que estão escritas por extenso para número.
-#tentei usar função mas não funcionou
+#terá que ser por vez no meio do código
 
 obitos_diarios_pjf_tidy_datas_extenso<- obitos_diarios_pjf_tidy_gen_com %>%
   mutate(
@@ -237,7 +288,7 @@ obitos_diarios_pjf_tidy_datas_extenso<- obitos_diarios_pjf_tidy_gen_com %>%
 
 
 
-# 2º passo data - Lidando com Datas com 1º Algarismo faltante d/mm/aaaa ou dd/m/aaaa
+# 2º passo data - Lidando com Datas com algum algarismo faltante (d/mm/aaaa ou dd/m/aaaa)
 #Separei as Datas em três colunas difrentes "dia", "mes", "ano" para facilitar na faxina.
 #Com todos os numeros arrumados, juntei tudo. com unite.
 
@@ -250,7 +301,6 @@ obitos_diarios_pjf_tidy_datas_numero<- obitos_diarios_pjf_tidy_datas_extenso %>%
   #arrumando meses e dias com apenas um algarismo (dd/m/yyyy, d/mm/yyyy e d/m/yyyy) #Tentei com across não funcionou
   mutate(dia = case_when(
     str_length(dia) == 1 ~ paste(0, dia, sep= ""),
-    # dia == "00" ~ "01",
     TRUE ~ as.character(dia)),
     mes = case_when(
       str_length(mes) == 1 ~ paste(0, mes, sep= ""),
@@ -296,9 +346,13 @@ obitos_diarios_pjf_fx_etaria <- obitos_diarios_pjf_tidy %>%
   mutate(faixa_etaria = cut(idade,
                             breaks =  c(0,20,40,60,80,101), 
                             labels = c("Menos de 20 anos", "20 a 40", "40 a 60",
-                                       "De 60 a 80", "Mais de 80")
-  ))
+                                       "De 60 a 80", "Mais de 80")))
 
+#,
+  #obtendo nº de comorbidades
+ #         n_comorbidades = case_when(
+  #          comor
+   #       )
 
 # "Modelos"  ----------------------------------------------------
 
@@ -335,12 +389,14 @@ obitos_diarios_pjf_total%>%
        subtitle = "Em Vermelho, média movel dos últimos 7 dias. Em Azul, média móvel dos últimos 14 dias.",
        caption= "Fonte: Prefeitura de Juiz de Fora - Elaboração do Gráfico: JF em Dados")+
   scale_y_continuous(name = "Nº de Mortes") + xlab(label= "Data da Ocorrência do Óbito") +
-  theme_classic() + theme(text =  element_text(family="Times New Roman"), plot.title = element_text(size=18, face="bold" )) 
+  theme_classic() + theme( plot.title = element_text(size=18, face="bold" )) 
 
 
 
 # Exportação ----------------------------------------------------
 
+rio::export(obitos_diarios_pjf_fx_etaria,
+            file= "municipal/dados_diarios/obitos_diarios_pjf_fx_etaria.csv")
 
-writexl::write_xlsx(obitos_diarios_pjf_total,
-                    path= "municipal/dados_diarios/obitos_diarios_pjf_total.xlsx")
+writexl::write_xlsx(obitos_diarios_pjf_fx_etaria,
+                    path= "municipal/dados_diarios/obitos_diarios_fx_etaria.xlsx")
