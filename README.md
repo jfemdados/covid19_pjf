@@ -1,4 +1,4 @@
-# covid19_pjf
+# Covid19_pjf - Data do Óbito por Covid diulgado pela Prefeitura Municipal
 
 semelhante à "covid19jf", mas focado somente em dados fornecidos pela prefeitura
 Trata-se da base de "metadados" dos óbitos de covid em Juiz de Fora.
@@ -14,8 +14,8 @@ Trata-se da base de "metadados" dos óbitos de covid em Juiz de Fora.
  O separador de cada linha as vezes é um ";" "." ou até em alguns casos casos, nada "".
  Dentro de cada linha, o separador de colunas as vezes é ".", "," ou apenas um espaço.
 
-# Assim, eu faxinei e transformei em um CSV e XL que estão disponível no final como *obitos_diarios_pjf_fx_etaria* em csv e xls.
-# Codigo no *dados_diarios_pjf.r*
+ Assim, eu faxinei e transformei em um CSV e XL que estão disponível no final como *obitos_diarios_pjf_fx_etaria* em csv e xls.
+ Codigo no *dados_diarios_pjf.r*
 As comorbidades estão separadas dentro da coluna comorbidades por "/".
 
 Rendeu esse post:
