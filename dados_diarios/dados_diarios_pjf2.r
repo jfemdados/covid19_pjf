@@ -18,11 +18,13 @@ library(tidyverse)
 library(pdftools)
 
 
-obitos_diarios_pjf_raw <- tibble(
-  texto= pdftools::pdf_text("municipal/dados_diarios/data_raw/obitos_covid19_jf.pdf"),
-  #criando divisão por páginas para ajudar com datas mais a frente
-  pag= 1:45) # como automatizar a colocação desse número de páginas? Não quero ter que mudar toda vez que aumente o nº de pág.
 
+url <- "https://covid19.pjf.mg.gov.br/arquivos/obitos_covid19_jf.pdf"
+
+
+obitos_diarios_pjf_raw <- tibble(
+  texto= pdftools::pdf_text(url),
+  pag= 1:pdf_length(url))
 
 #Se quiser verificar como estava cada página, é possível verificar por esse table.
 # colquei o # para possiblitar o Ctrl + Shift + Enter
@@ -49,8 +51,8 @@ obitos_diarios_pjf_separado<- obitos_diarios_pjf_raw %>%
 # Novamente, para verificar rodar o código abaixo.
 # colquei o # para possiblitar o Ctrl + Shift + Enter
 
-obitos_diarios_pjf_separado %>%# slice(1000:1578) %>%
- pull(texto) 
+#obitos_diarios_pjf_separado %>%# slice(1000:1578) %>%
+ #pull(texto) 
 
 # -------------- TIDYING ----------------------------------------------------
 
@@ -81,8 +83,9 @@ obitos_diarios_pjf_clean<- obitos_diarios_pjf_separado %>%
   mutate(texto=str_remove(texto, "^\\d+\\.|1304") %>% 
            str_to_lower(),
   #Retirando alguns resíduos do PDF que restaram na linha separada
-         texto= str_remove_all(texto, "\\r\\n") %>%
-           str_squish()) %>%
+         texto= str_squish(texto)) %>%
+    #str_remove_all(texto, "\\r\\n") %>%
+     #      str_squish(texto) %>%
   #o gênero está na ordem, então aqui um separate funciona.
   tidyr::separate(col=texto,
                   into= c("genero", "texto"),
@@ -124,7 +127,13 @@ obitos_diarios_pjf_clean<- obitos_diarios_pjf_separado %>%
                          str_extract(texto, "has, dnc, ca|dcc, dm|imunodeficiência, outra pneumopatia crônica"),
                          as.character(comorbidade)),
     #Retirando finais de linhas que ainda continham separadores
-    comorbidade = str_remove(comorbidade, "(\\.|,|;)$"))
+    comorbidade = str_remove(comorbidade, "(\\.|,|;)$"),
+    #Por fim, criando a coluna faixa etária, muito mais delimitada que "idoso" ou "não idoso"
+    faixa_etaria = cut(idade,
+                       breaks =  c(-1,20,40,60,80,101), 
+                       labels = c("Menos de 20", "20 a 40", "40 a 60",
+                                  "60 a 80", "Mais de 80")))
+    
 
 
 
@@ -189,6 +198,7 @@ obitos_diarios_pjf_tidy_gen_com <- obitos_diarios_pjf_clean %>%
     comorbidades= str_replace_all(comorbidades, "outra pneumopatia", "pneumopatia"),
     comorbidades= str_replace_all(comorbidades, "iam", "infarto agudo do miocárdio"),
     comorbidades= str_replace_all(comorbidades, "\\bave", "acidente vascular encefálico"),
+    comorbidades= str_replace_all(comorbidades, "cardiopata", "cardiopatia"),
     comorbidades= str_replace_all(comorbidades, "marcapasso","marca-passo"),
     comorbidades= str_replace_all(comorbidades, "imunosupressão","imunossupressão"),
     comorbidades= str_replace_all(comorbidades, "\\bfa\\b", "fibrilação atrial"),
@@ -388,11 +398,34 @@ obitos_diarios_pjf_fx_etaria <- obitos_diarios_pjf_tidy %>%
                             labels = c("Menos de 20", "20 a 40", "40 a 60",
                                        "60 a 80", "Mais de 80")))
 
-#,
+
   #obtendo nº de comorbidades
- #         n_comorbidades = case_when(
-  #          comor
-   #       )
+numero_de_comorbidades<- obitos_diarios_pjf_tidy_comorbidade_separado %>%
+  count(comorbidades)%>%
+  arrange(desc(n))%>%
+  mutate(total_de_obitos= nrow(obitos_diarios_pjf_tidy),
+         percentual = n/total_de_obitos,
+         posicao= 1:nrow(numero_de_comorbidades),
+         dez_mais= case_when(
+           posicao <= 10 ~ comorbidades,
+           posicao >= 11 ~ "Outras Comorbidades")) 
+
+numero_de_comorbidades %>%
+  group_by(dez_mais)%>%
+  tally(n)%>%
+  arrange(desc(como))
+
+
+writexl::write_xlsx(numero_de_comorbidades,
+                    path= "municipal/dados_diarios/numero_de_comorbidades.xlsx")
+
+
+  slice(1:10)
+  
+  numero_de_comorbidades%>%
+    slice(1:10) %>%
+  ggplot(aes(y=comorbidades, x= percentual)) + geom_col()
+
 
 # "Modelos"  ----------------------------------------------------
 
@@ -408,7 +441,10 @@ obitos_diarios_pjf_total_por_mes<- obitos_diarios_pjf_tidy_datas_numero %>%
    group_by(ano, faixa_etaria) %>%
   count(mes)%>%
   mutate(mes_ano= paste(mes,ano,sep= "-") %>%
-           lubridate::my())
+           lubridate::my()) %>%
+  arrange(mes_ano)%>%
+  #group_by(mes_ano)%>%
+  pivot_wider(names_from = faixa_etaria, values_from= n)
 
 
 
@@ -436,11 +472,20 @@ obitos_diarios_pjf_total<- obitos_diarios_pjf_fx_etaria %>%
 #Mortes por Mês Por Faixa Etária
 
 obitos_diarios_pjf_total_por_mes %>%
-  ggplot(aes(x=mes_ano, y= n, fill=faixa_etaria)) + geom_col(position = "fill")+
+  ggplot(aes(x=mes_ano, y= n, fill=faixa_etaria)) + geom_col ( colour= "black") +
   labs(title = "Mortes por Covid em Juiz de Fora por Faixa Etária - PJF",
        subtitle = "Percentual de mortes por Cada Faixa Etária em cada mês",
        caption= "Fonte: Prefeitura de Juiz de Fora - Elaboração do Gráfico e Faxina de Dados: JF em Dados") +
   scale_y_continuous(name = "Nº de Mortes") + xlab(label= "Data da Ocorrência do Óbito") +
+  theme_classic() + theme( plot.title = element_text(size=18, face="bold" )) 
+
+
+obitos_diarios_pjf_total_por_mes %>%
+  ggplot(aes(x=mes_ano, y= n, fill=faixa_etaria)) + geom_area(position = "fill", colour= "black") +
+  labs(title = "Mortes por Covid em Juiz de Fora por Faixa Etária - PJF",
+       subtitle = "Percentual de mortes por Cada Faixa Etária em cada mês",
+       caption= "Fonte: Prefeitura de Juiz de Fora - Elaboração do Gráfico e Faxina de Dados: JF em Dados") +
+  scale_y_continuous(name = "Porcentagem de mortes por mês") + xlab(label= "Data da Ocorrência do Óbito") +
   theme_classic() + theme( plot.title = element_text(size=18, face="bold" )) 
 
 
@@ -464,9 +509,11 @@ obitos_diarios_pjf_total%>%
 
 # Exportação ----------------------------------------------------
 
-rio::export(obitos_diarios_pjf_fx_etaria,
+rio::export(obitos_diarios_pjf_total_por_mes,
             file= "municipal/dados_diarios/obitos_diarios_pjf_fx_etaria.csv")
 
-writexl::write_xlsx(obitos_diarios_pjf_fx_etaria,
+writexl::write_xlsx(obitos_diarios_pjf_total_por_mes,
                     path= "municipal/dados_diarios/obitos_diarios_fx_etaria.xlsx")
 
+writexl::write_xlsx(obitos_diarios_pjf_total,
+                    path= "municipal/dados_diarios/obitos_diarios_media_movel.xlsx")
