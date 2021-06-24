@@ -1,0 +1,585 @@
+---
+title: "Faxina de Dados - Base Municipal de Óbitos por Covid na base da PJF"
+author: "Marcello S. Filgueiras"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(pdftools)
+```
+
+## Introdução
+
+Olá caros amigos da Curso-R. Meu nome é Marcello S. Filgueiras e esse é o meu TCC para o curso de Faxina de dados.
+
+A base escolhida trata-se de uma base de "metadados" dos óbitos de covid em Juiz de Fora, disponibilziada pela prefeitura da cidade (PJF)  [aqui no seu site oficial](https://covid19.pjf.mg.gov.br/arquivos/obitos_covid19_jf.pdf).
+
+É o mais próximo de uma base de metadados que se tem na cidade, tendo em vista que as bases do DataSus e do Estado apesar de mais detalhadas tem número _bastante inferior_ ao divulgado  pela prefeitura (atraso de mais de dias).
+
+A prefeitura só divulga os números agregados totais de mortos em XLS. 
+Inclusive, não se trata para cadia mostrando a evolução, mas apenas o último número total.
+
+Escolhida a base, vamos aos problemas: Não se trata de uma base tidy.
+
+1) Há problemas quanto a forma de disponibilização no arquivo, que está em PDF e dificulta o trabalho, além do que, está _totalmente despadronizado_.
+2) Na base, cada observação é uma linha, no caso um óbito,  o primeiro requisito de uma base tidy. Mas para aí. A estrutura em
+3) Temos um caso de uma coluna que representa mais de uma variável, a primeira coluna, que fala sobre gênero e faixa etária.
+4) Separadas colunas por uma variável, temos mesmos valores dentro dessa variável colocados de formas diferentes, como por exemplo 16 formas de colocar os 2 gêneros masculino e feminino.
+
+Cada um desses problemas foram resolvidos. Todos esses problemas serão explicados ao longo do código, de forma setorizada. Tentei ao máximo fazer uma seção por arquivo. No final alguns gráficos foram feitos com a base arrumada.
+
+## 1) Lendo PDF (Importing)
+
+
+### 1.1) Trazendo a base do PDF para um DF no R
+
+Se você não abriu o PDF, por favor, abra para entender melhor o processo. O arquivo está [aqui no site da PJF](https://covid19.pjf.mg.gov.br/arquivos/obitos_covid19_jf.pdf).
+
+Ao ler o PDF com `pdftools::pdf_text`, cada página está do jeito abaixo jeito, uma enorme string por página. São 45 páginas nesse formato (que podem aumentar a depender do dia que você abra o documento).
+
+```{r}
+
+url <- "https://covid19.pjf.mg.gov.br/arquivos/obitos_covid19_jf.pdf"
+
+obitos_diarios_pjf_raw <- tibble(
+  texto= pdftools::pdf_text(url),
+  pag= pdf_length(url)) 
+
+obitos_diarios_pjf_raw %>%
+  slice(1) %>%
+  pull(texto)
+
+```
+
+A estrutura do PDF original lembra a de um CSV, em que cada linha no PDF é um caso separado por delimitadores, mas está longe disso.
+
+Para cada linha, o separador ao final de cada uma varia. As vezes é um **";" "."** ou até em alguns casos casos, um vazio,  **\"\"**.
+
+Dentro de cada linha, o separador de colunas as vezes é **".", "," ou apenas um espaço "" **.
+
+O primeiro passo foi ler o PDF e **transformá-lo em um data frame**, com uso de `tibble()`. A primeira coluna `texto` é leitura de cada página do PDF. Ao lado dela, foi criada `pag`, o número de páginas do PDF para manter o controle e ajudar com alguns problemas com datas lá na frente.
+
+(Como automatizar a colocação desse número de páginas? Sempre que o número de páginas aumenta é necessário reformar o código e aumentar aqui).
+
+
+```{r}
+obitos_diarios_pjf_raw <- tibble(
+  texto= pdftools::pdf_text(url),
+  pag= 1:pdf_length(url)) 
+
+obitos_diarios_pjf_raw
+
+```
+
+## 2) Mantendo a estrutura de uma observação por linha (Tidying)
+
+### 2.1) Separando Linhas
+
+No documento inicial, cada linha deveria ser um paciente (e quase é).
+Sendo assim, foi feito apenas uma separação com **"\\n"** no início.
+
+Mas nas linhas muito grandes, que passavam da margem, a mesma observação era dividida em duas linhas, tendo um **"\\n"** do meio, representando duas linhas no texto sobre o mesmo caso.
+
+Por isso, tentei optei pela separação de cada linha pelos números iniciais, que são "1.", "2.", "3.", "100." ... que existem no começo. Mas **"d+\\\\."**também pegava também datas que estavam separadas por pontos nas frases.
+
+Juntando as duas coisas optei por um separador de uma quebra de linha "\n" acomapanhada por números iniciais, que são "1.", "2.", "3.", "100." ... por isso, optei pela regex de  por **"\\\\r\\\\n\\d+\\\\."**.
+
+No pdf original, o mesmo código, no mesmo arquvio, o **"\\r\\n"** existia. Depois, _por vozes misteriosas por além_, rodando _o mesmo código, no mesmo arquivo_, não existe mais. Assim a regex da delimitação de cada linha ficou somente no "\\\\n\\d+\\\\." mesmo (e funcionou!). Não sei como o "\\r" sumiu.
+
+Assim, Separando Cada Linha do PDF que corresponde a um caso com o seguinte código: 
+
+```{r}
+obitos_diarios_pjf_separado<- obitos_diarios_pjf_raw %>%
+  mutate(texto= str_split(texto, "\\n\\d+\\. "))%>%
+  unnest(texto)
+
+obitos_diarios_pjf_separado %>%
+ as_tibble()
+
+```
+
+Assim, resolvemos o problema 1, tendo um df em um objeto de "fácil manuseio", e mantivemos a estrutura de uma observação por por linha, o problema 2. Agora, vamos à luta: separar as variáveis dentro da string, para depois, padronizá-las.
+
+
+## 3) Separando uma váriavel por coluna (Tidying) 
+
+
+No PDF original, teríamos 4 colunas, `c("genero", "idade", "data_do_obito" e "comorbidades")`. Mas na coluna gênero, temos duas variáveis: o `"gênero" e "faixa etária"`, em que o valor "idoso" explicita ao mesmo tempo que é masculino e tem mais de 60 anos. 
+
+
+A ideia original era separar todas essas colunas com um delimitador,como um read_delim, mas isso não é possível.
+
+Ora estamos com a ordem de `c( "genero", "idade", "data_do_obito" e "comorbidades")`.
+Ora estamos com a ordem de `c( "genero", "idade", "comorbidades" e "data_do_obito")`.
+Temos inclusive um caso de 5 colunas:  `c( faixa etária, genero, idade, data_do_obito e comorbidade"`, no exemplo `"idoso, masculino, 88 anos. óbito em 05/07/2020. comorbidades:dcc, etc."`.
+
+
+Portanto, como primeiro passo para transformar isso em uma tabela tidy:
+
+Vamos separar uma variável por coluna, buscando cada uma dessas informações com funções `stringr` e `tidyr::separate()`. 
+
+Para saber como buscar, precisamos saber os valores que cada variável está colocada.
+Em cada variável temos os seguintes valores:
+
+- Gênero: Não só dois, temos 6 gêneros: "idoso", "idosa", "masculino", "feminino", "homem" e "mulher".  É sempre a primeira variável da linha, o que dá para separar facilmente com uma vírgula portanto.
+- Idade: "dd anos" sempre os primeiros algarismos da linha.
+- Data: temos dd/mm/aaaa, dd/mm/aa, dd/mm, "dd do mes" e incríveis "ultimo domingo, 22". Busquei dessa forma cada um desses formatos na string.
+- Comorbidade: Se não tem nenhuma, está "Sem Comorbidade Relatada" ou NA. Se tem, começa com "Comorbidade: nome da doença..." ou "Fator de Risco: Nome da Doença". Mandei dessa forma, buscar tudo que vem depois de comorbidade, com alguns detalhes no meio.
+
+A coluna texto foi feita para buscar cada uma dessas variáveis, e até para manter o controle do que estava sendo feito
+
+Assim foi feito o código buscando cada variável abaixo:
+
+### 3.1) Separando Colunas dentro da String
+
+
+```{r}
+obitos_diarios_pjf_clean<- obitos_diarios_pjf_separado %>%
+  #Limpando os algarismos que começam no inicio de cada linha e são seguidos por  um"." . "1304 não tinha ponto e ficou para trás teve que ser feito manualmente. Aproveitando para tudo no low para facilitar regex;
+  mutate(texto=str_remove(texto, "^\\d+\\.|1304") %>% 
+           str_to_lower(),
+  #Retirando alguns espaços do PDF que restaram na linha separada
+         texto= str_remove_all(texto, "\\r\\n") %>%
+           str_squish()) %>%
+  #o gênero está na ordem, então aqui um separate funciona.
+  tidyr::separate(col=texto,
+                  into= c("genero", "texto"),
+                  sep = ",|\\.| ",
+                  extra= "merge")%>%
+  # Tentando buscar idade com separate(). Vai dar problema no caso de uma coluna a mais e casos de natimortos. Fiz para verificar.
+        #mutate(texto= str_trim(texto)) %>%
+        #tidyr::separate(col=texto,
+        #into= c("idade", "texto"),
+        #sep = ",|\\.| ",
+        #extra= "merge")
+  # Portanto, busquei Idade com str_extract e padronizando a idade de bebês;
+  mutate(idade = case_when(
+    genero== "natimorto" | str_detect(texto,"natimorto") ~ "0", # ( idade de bebês = 0 ) Triste =/
+    str_detect(texto,"01 dia") ~ "0",  # (idade de bebês = 0)   =/ Triste
+    TRUE ~ str_extract(texto, "\\d+"))%>%  # Depois disso, extraí todos os primeiros algarismos. Como a idade está na frente, não há problema.
+      as.numeric(), #com todas idades completas em formato character, já transformei para numeric.
+    #buscando data do obito em varios formatos.
+    data_obito = str_extract(texto, paste("\\d+/\\d+(/\\d+)*", #dd/mm e dd/mm/yy e dd/mm/yyyy
+                                          "\\d{4,4}",          #ddmm (sem separador)
+                                          "\\d{1,2} de \\w*",  #dia em número e mês por extenso
+                                          "morreu.*\\d+",      #"morreu no último domingo,dd"
+                                          sep = "|")),
+    #Buscando comorbidades
+    comorbidade= case_when(
+      str_detect(texto,"sem comorbidade") ~ "sem comorbidade", #buscando o que nao tem comorbidade
+      TRUE ~ str_extract(texto, "comorbidade(s)*.+|fator de risco(s)*.+")), #buscando tudo que vem depois de "comorbidades" ou "fator de risco"
+      #Em algumas linhas, a ordem é "data_do_obito","comorbidades" e nada vem depois.Portanto, essa regex, nessas linhas, pega somente as comorbidades, porque comorbidade está por último.
+      #Entretanto, algumas linhas estão na ordem "comorbidades", "data do óbito". Nesses casos, mandei tirar tudo que vem depois de "óbito", para ficar somente comorbidades. 
+    comorbidade = str_remove(comorbidade, paste("[oó]bito.+",
+                                                "óbito$",
+                                                sep= "|")) ,  
+    #tendo certeza que tudo nessa coluna é comorbidade, mandei tirar as iniciais da coluna. Aproveitei para limpar um str_squish no final
+    comorbidade = str_remove(comorbidade, "comorbidade(s)*(:|,)|comorbidade(s)*/fator de risco:|fator de risco:") %>%
+      str_squish(),
+    #Lidandos Falsos NA. Não indicavam o separador "comorbidade:" mas tinham o separador depois. Vieram somente a doença. Por isso vieram nulos, mas não eram NAs.
+    #Fiz na Mão
+    comorbidade = ifelse(is.na(comorbidade),
+                         str_extract(texto, "has, dnc, ca|dcc, dm|imunodeficiência, outra pneumopatia crônica"),
+                         as.character(comorbidade)),
+    #Retirando finais de linhas que ainda continham separadores
+    comorbidade = str_remove(comorbidade, "(\\.|,|;)$"),
+    #Por fim, criando a coluna faixa etária, muito mais delimitada que "idoso" ou "não idoso"
+    faixa_etaria = cut(idade,
+                            breaks =  c(-1,20,40,60,80,101), 
+                            labels = c("Menos de 20", "20 a 40", "40 a 60",
+                                       "60 a 80", "Mais de 80")))
+```
+
+Portanto, resolvemos o terceiro problema, temos uma variável por coluna.
+Vamos agora padronizá-las.
+
+
+## 4) Padronizando Valores das Variáveis em cada coluna
+
+
+De posse de uma variável por coluna, o próximo passo é padronizar a forma com que os valores aparecem, no campo Comorbidade, Gênero e nas Datas, bem como colocar na classe mais adequada do R.
+
+
+### 4.1) Padronizando Gênero e Comorbidades
+
+### a) Problemas na Comorbidade
+
+Na coluna `comorbidade`temos doenças em várias abreviações e vários nomes completos.
+
+Por exemplo, o valor em sigla "DNC" é "Doença Neural Crônica", "DRC" é "Doença Renal Crônica etc".
+Todas as siglas foram todas passadas para seus nomes completos para serem mais facilmente entendidas por quem é fora da saúde.
+
+Dentro da possibilidades, busquei colocar tudo da mesma doença, mas que está com nomes diferente, no mesmo valor dentro da variável.
+
+Porém falta padronização quanto ao nível de especialização, algumas doenças estão somente nos grandes grupos, como "câncer", mas também temos as especificadas "câncer de mama", "prostata", "utero" e etc. Temos vários desses problemas no grande grupos de doença cardiovasculares crônicas e suas várias especializações.
+
+Como a necessidade de mais especialização ou menos varia com o objetivo, optei por deixar tais casos na base, para se for de interesse, agrupá-las.
+
+Não é possível fazer um `unnest()` agora por ausência de padronização na delimitação para verificar o antes e depois, mas no final, é possível verificar essa ação.
+
+### b) Problemas no Gênero
+
+Na coluna `genero` temos dois gêneros com várias caligrafias diferentes para "masculino" e "feminino", como você pode ver abaixo.
+
+```{r}
+table(obitos_diarios_pjf_clean$genero)
+```
+
+Assim, esses dois vetores foram criados para usar na hora de padronizar as colunas de `genero`.
+
+```{r}
+genero_feminino <- c( "feminino", "feminina", "idosa", "isosa", "mulher")
+genero_masculino <- c( "homem", "idoso", "isoso", "masculino", "natimorto")
+```
+
+No código abaixo tentei enfrentar esses dois problemas.
+
+A `genero` foi fácil, a coluna `comorbidade` deu mais trabalho.
+Por isso, fiz duas colunas: uma original `comorbidade`, para manter controle, fazendo as alterações na coluna `comorbidades`.
+
+
+```{r}
+obitos_diarios_pjf_tidy_gen_com <- obitos_diarios_pjf_clean %>%
+  #Com as variáveis já separadas, podemos retirar a coluna original do texto.
+  select(!texto) %>%
+  #1º Passo - Padronizando GÊNERO
+  mutate(genero= case_when(
+    genero %in% genero_feminino ~ "feminino",
+    genero %in% genero_masculino ~ "masculino",
+    TRUE ~ as.character(genero)),
+  #2º Passo - Padronizando COMORBIDADES.
+  #Criei coluna comorbidade (original) e comorbidades (modificada) para ter controle do que fazia
+  #Acho que as colunas são autoexplicativas de qual conteúdo da mesma variável doença, despadronizada, passada doença, padronizada
+    comorbidades= str_remove(comorbidade, "severa descompensada e não tratada|;l"), #;l foi um caso sem padronização no final 
+    comorbidades= str_replace_all(comorbidades, "drc\\b|irc", "doença renal crônica"),
+    comorbidades= str_replace_all(comorbidades, "dialítico|dial[íi]tica", "dialitico"),
+    comorbidades= str_replace_all(comorbidades, "dc(c)*", "doença cardiovascular crônica"),
+    comorbidades= str_replace_all(comorbidades, "dm|diabetes mel{1,2}itus", "diabetes"),
+    comorbidades= str_replace_all(comorbidades, "has|hás|hs|had\\b|hipertensão arterial$", "hipertensão arterial sistêmica"),
+    comorbidades= str_replace_all(comorbidades, "dpoc", "doença pulmonar obstrutiva crônica"),
+    comorbidades= str_replace_all(comorbidades, "\\b[cç]a\\b( de)*|paciente oncológico|doença oncológica", "câncer"),
+    comorbidades= str_replace_all(comorbidades, "câncer útero|útero","câncer útero"),
+    comorbidades= str_replace_all(comorbidades, "dnc", "doença neurológica crônica"),
+    comorbidades= str_replace_all(comorbidades, "dhc", "doença hepática crônica"),
+    comorbidades= str_replace_all(comorbidades, "outra pneumopatia", "pneumopatia"),
+    comorbidades= str_replace_all(comorbidades, "iam", "infarto agudo do miocárdio"),
+    comorbidades= str_replace_all(comorbidades, "\\bave", "acidente vascular encefálico"),
+    comorbidades= str_replace_all(comorbidades, "marcapasso","marca-passo"),
+    comorbidades= str_replace_all(comorbidades, "imunosupressão","imunossupressão"),
+    comorbidades= str_replace_all(comorbidades, "\\bfa\\b", "fibrilação atrial"),
+    comorbidades= str_replace_all(comorbidades, "\\btu\\b", "tumor"),
+    comorbidades= str_replace_all(comorbidades, "\\bave\\b", "acidente vascular encefálico"),
+    comorbidades= str_replace_all(comorbidades, "cardiopata", "cardiopatia"),
+    comorbidades= str_replace_all(comorbidades, "histórico de avc", "acidente vascular cerebral prévio"),
+    comorbidades= str_replace_all(comorbidades, "avc", "acidente vascular cerebral"),
+    comorbidades= str_replace_all(comorbidades, "dvc", "doença venosa crônica"),
+    comorbidades= str_replace_all(comorbidades, "tep", "tromboembolismo pulmonar"),
+    comorbidades= str_replace_all(comorbidades, "tb( pulmonar)*", "tuberculose pulmonar"),
+    comorbidades= str_replace_all(comorbidades, "etilismo", "etilista"),
+    comorbidades= str_replace_all(comorbidades, "hpb", "hiperplasia prostática benigna"),
+    comorbidades= str_replace_all(comorbidades, "usuário de droga", "drogadição"),
+    comorbidades= str_replace_all(comorbidades, "puérpera","puerpério"),
+    comorbidades= str_replace_all(comorbidades, "tce","traumatismo cranioencefálico"),
+    comorbidades= str_replace_all(comorbidades, "imunosupressão","imunossupressão"),
+    comorbidades= str_replace_all(comorbidades, "pti","púrpura trombocitopênica idiopática"),
+    comorbidades= str_replace_all(comorbidades, "drge","doença do refluxo esofágico"),
+    comorbidades= str_replace_all(comorbidades, "eplepsia|convulsão|crise convulsiva","epilepsia"),
+    comorbidades= str_replace_all(comorbidades, "transtorno bipolar","bipolar"),
+    comorbidades= str_replace_all(comorbidades, "transtorno depressivo","depressão"),
+    comorbidades= str_replace_all(comorbidades, "síndrome demência","demência"),
+    comorbidades= str_replace_all(comorbidades, "transplantado","transplante"),
+    comorbidades= str_replace_all(comorbidades, "\\bic(c)*\\b","insuficiência cardiáca"),
+    comorbidades= str_replace_all(comorbidades, "dac|coronariopata|coranopata","doença arterial coronariana"),
+    comorbidades= str_replace_all(comorbidades, "da,","doença arterial coronariana,"),#se colocasse da(c)* na linha acima, quando fosse pegar dac, só pegaria dac, por isso optei por uma nova linha
+    comorbidades= str_replace_all(comorbidades, "deficicência","deficiência"),
+    comorbidades= str_replace_all(comorbidades, "transplantado","transplante"),
+    comorbidades= str_replace_all(comorbidades, "dsp","intoxicação diarreica por molusco"),
+    comorbidades= str_replace_all(comorbidades, "dlp|dislepidemia","dislipidemia"),
+    comorbidades= str_replace_all(comorbidades,
+                                  paste("hiperplasia benigna próstata",
+                                        "hiperplasia prostática benigna",
+                                        sep= "|"),
+                                  "hiperplasia de próstata"),
+    #arrumando delimitadores dentro da coluna comorbidades " e " e "," por "/"
+    comorbidades= str_replace_all(comorbidades, " e |,", "/"),
+    #a intenção era retirar tudo que estava dentro de parentêses geralmente a "sigla(explicação da sigla)"
+      # mas comorbidades= str_remove_all(comorbidades, "\\(.+\\)"), quando havia mais de dois parenteses por linhas, removia tudo entre elas.
+    # ex: "doença cardiovascular crônica (dcc), diabetes melitus (dm)" retivara não só cada grupo desse, mas tudo como uma regex "(dcc.*dm)"
+    # Assim, fiz na mão, retirando cada um dos casos entre parênteses que apareceram:
+    comorbidades= str_remove_all(comorbidades, paste("\\(diabetes\\)",
+                                                     "\\(doença cardiovascular crônica\\)",
+                                                     "\\(doença pulmonar obstrutiva crônica\\)", 
+                                                     "\\(hipertensão arterial sistêmica\\)",
+                                                     "\\(alzheimer\\)",
+                                                     "\\(doença renal crônica\\)",
+                                                     "\\(doença neurológica crônica\\)",
+                                                     sep= "|")),
+    #Todas as Comorbidades estão separadas por "," prontas para sofrerem unnest. Finalizando, retirando espaços.
+    comorbidades = str_squish(comorbidades),
+  #um caso em que não havia separado nenhum, foi necessário colocar na mão
+    comorbidades = str_replace(comorbidades,
+                             pattern = "doença cardiovascular crônica marca-passo",
+                             replacement = "doença cardiovascular crônica/marca-passo"),
+  #retirando espaços depois de barras, str squish nao pegou esse caso
+    comorbidades= str_replace_all(comorbidades, " / | /|/ ", "/"),
+    #Arrumando NA e Sem Comorbidades
+    comorbidades = str_replace(comorbidades, "comorbidades", "sem comorbidade"),
+    comorbidades = tidyr::replace_na(comorbidades, "sem comorbidade"))
+```
+
+**Coluna Gênero Tidy!** Valores da variável gênero de uma só forma.
+
+Antes:
+``` {r}
+table(obitos_diarios_pjf_clean$genero)
+```
+
+Depois:
+``` {r}
+table(obitos_diarios_pjf_tidy_gen_com$genero)
+```
+
+
+**Coluna Comorbidades Tidy!**
+
+Ela tem todas as variáveis padronizadas e separadas pelo mesmo delimitador "/".
+Dando Unnest nas comorbidades para verificar padronização dessa coluna:
+
+``` {r}
+obitos_diarios_pjf_tidy_comorbidade_separado <- obitos_diarios_pjf_tidy_gen_com %>%
+  mutate(comorbidades= str_split(comorbidades, "/")) %>%
+  unnest(comorbidades)
+
+table(obitos_diarios_pjf_tidy_comorbidade_separado$comorbidades)
+```
+
+Como dito acima, dentro das possibilidades, procurei manter as mesmas doenças padronizadas, tentando mudar a que estava com nomes diferentes, mantendo a opção de detalhamento de algumas bases. Única sigla que não consegui achar o significado foi "tup em hie".
+
+### 4.2) Padronizando Data do óbito
+
+Na coluna `data_obito`, temos a data efetiva do óbito (não da notificação) em vários padrões:
+
+Em algarismos, temos "dd/mm/yy", "dd/mm/yyyy", "dd/mm", "d/mm", "dd/m" e "ddmm".
+Por extenso, "dd de mes por extenso" e incríveis "morreu no último domingo, dd".
+
+A meta é passar tudo para yyyy-mm-dd como classe de "date" dentro R.
+
+Primeiro, a ideia é:
+a) passar tudo extenso para númerico; 
+b) arrumar o númerico;
+c) lidar com números faltantes;
+d) para depois, juntar tudo no formato date.
+
+
+####  a) Passando as datas que estão escritas por extenso para número.
+
+``` {r echo=T, results='hide'} 
+obitos_diarios_pjf_tidy_datas_extenso<- obitos_diarios_pjf_tidy_gen_com %>%
+  mutate(
+    data_obito= stringr::str_replace(data_obito, "janeiro", "01"),
+    data_obito=stringr::str_replace(data_obito , "fevereiro", "02"),
+    data_obito=stringr::str_replace(data_obito , "março", "03"),
+    data_obito=stringr::str_replace(data_obito , "abril", "04"),
+    data_obito=stringr::str_replace(data_obito , "maio", "05"),
+    data_obito=stringr::str_replace(data_obito , "junho", "06"),
+    data_obito=stringr::str_replace(data_obito , "julho", "07"),
+    data_obito=stringr::str_replace(data_obito , "agosto", "08"),
+    data_obito=stringr::str_replace(data_obito , "setembro", "09"),
+    data_obito=stringr::str_replace(data_obito , "outubro", "10"),
+    data_obito=stringr::str_replace(data_obito , "novembro", "11"),
+    data_obito=stringr::str_replace(data_obito , "dezembro", "12"),
+    data_obito=stringr::str_replace(data_obito , " de ", "/"),
+    # Tratando ultimo caso por extenso e aproveitando para arrumar uns de character
+    data_obito= case_when(
+      str_detect(data_obito, "/21\\b") ~ str_replace(data_obito,"/21\\b","/2021"), #Aproveitei para passar /yy para /yyyy
+      str_detect(data_obito, "/20\\b") ~ str_replace(data_obito,"/20\\b","/2020"),
+      str_detect(data_obito, "morreu") ~ str_extract(data_obito, "\\d+"), # retirando o ultimo caso por extenso, de "morreu no ultimo domingo, dd". 
+      str_detect(data_obito, "^\\d{4,4}") ~ paste(str_extract(data_obito,"\\d{2,2}"),
+                                                  "/",
+                                                  str_extract(data_obito, "\\d{2,2}\\b")),
+      # Padronizando casos de datas ddmm sem parentes ou qualquer delimitandor entre.
+      #Se encontrar quatro números, contínuos, no início da coluna, sem delimitador entre eles,
+      # faça um paste colocando um delimitardor entre os dois primeiros e os dois últimos números
+      TRUE ~ data_obito))
+```
+
+
+
+#### b & c) Padronizando datas númericos e faltantes
+
+Casos de "/yy" e sem delimitador entre datas foram arrumadas logo no chunk acima, a partir da 15 linha,
+
+Entetanto, ainda temos alguns problemas com datas em algarismos, que ainda estavam despadronizadas (d/mm/aaaa ou dd/m/aaaa).
+
+
+Junto disso, temos problemas de datas faltantes, com linhas sem o respectivo ano, registrados como NA (dd/mm), e até mesmo casos de somente dias (dd), graças aos casos de "último domingo".
+
+Como a base é organizada
+
+Assim, separei as Datas em três colunas difrentes "dia", "mes", "ano" para facilitar na faxina.
+Com todos os numeros arrumados, juntei tudo com `tidyr::unite()` na lógica abaixo.
+
+O PDF é atualizado todo dia e pelo menos, ele vai em “ordem” do que seria a data da notificação. Então, dá pra saber que algumas áreas do documento vão ter necessariamente datas em algumas épocas.
+
+Criei uma coluna de página do PDF porque percebi que da páginas 15 à 23, tenho números de Dezembro de 2020 e Janeiro à Março de 2021.
+
+Ou seja,  entre as páginas 15 e 23, o que for dezembro é 2020, e o que for janeiro, fevereiro ou março é 2021. O que tiver pra cima dessas páginas é 2020, e pra baixo 2021. Assim, com auxílio do número da página, consegui lidar com as datas faltantes.
+
+
+
+
+``` {r message= FALSE, warning = FALSE}
+obitos_diarios_pjf_tidy_datas_numero<- obitos_diarios_pjf_tidy_datas_extenso %>%
+  mutate( data_obito = str_split(data_obito, "/")) %>%
+  unnest_wider(data_obito) %>%
+  rename("dia"= "...1", "mes"= "...2", "ano" = "...3" ) %>%
+  #arrumando meses e dias com apenas um algarismo (dd/m/yyyy, d/mm/yyyy e d/m/yyyy) #Tentei com across não funcionou
+  mutate(dia = case_when(
+    str_length(dia) == 1 ~ paste(0, dia, sep= ""),
+    TRUE ~ as.character(dia)),
+    mes = case_when(
+      str_length(mes) == 1 ~ paste(0, mes, sep= ""),
+      is.na(mes) & pag == 9 ~ "11",
+      TRUE ~ as.character(mes)),
+    mes= str_replace(mes,"00","01"),
+    ano = case_when(#arrumando anos faltantes com auxílio da pagina do documento e o mês que ela se encontra
+      pag == 31 & dia == 23 ~ str_replace(ano, "2021","2020"), #um caso em que a data está  23/12/2021.
+      ano == "2020" ~ as.character(ano), #Como a ordem importa no case_when, apenas para não acionar nos casos que já estão completos
+      ano == "2021" ~ as.character(ano), #Como a ordem importa no case_when, apenas para não acionar nos casos que já estão completos
+      pag <= 13 ~ "2020", #todas as linhas acima da página 13 são 2020
+      pag >= 24 ~ "2021", #todas as linhas abaixo da página 24 são 2021
+      pag >= 14 & pag <= 23 & str_detect(mes, "12") ~ "2020", #o que estiver entre 14 e 23 e for mês 12 é 2020
+      pag >= 14 & pag <= 23 & str_detect(mes, "01|02|03") ~ "2021" #o que estiver entre 14 e 23 e for mês 1,2 ou 3 é 2021
+    ))
+```
+
+#### d) Unindo Datas
+
+Ultimos passos antes do tidy final. Unindo para transformar datas character em dates, com lubridate
+
+``` {r}
+obitos_diarios_pjf_tidy <- obitos_diarios_pjf_tidy_datas_numero %>%
+  mutate(across(c(dia:ano), str_squish)) %>% #Ultima Limpada antes da unida, mas across não funcionou muito bem, ora funcionava ora não
+  unite("data_obito", dia:ano, sep="-") %>% #Unindo as colunas dia, mes e ano em uma só
+  mutate(data_obito=lubridate::dmy(data_obito)) %>% #Transformando em objeto data
+  #mutate(data_obito = readr::parse_date(data_obito, format = "%d/%m/%Y")) %>%
+  select(!comorbidade) %>% #retirando a coluna controle de comorbidades
+  as_tibble()
+``` 
+
+
+## 5) Finalizando
+
+**Temos uma tabela Tidy!**
+
+``` {r}
+obitos_diarios_pjf_tidy 
+```
+
+1) Temos uma base em rds ou xlsx pronta para ser utilizada, não em pdf, facilitando o trabalho.
+2) Temos uma observação por linha.
+3) Temos uma variável por coluna "genero", "idade", "data_obito", "comorbidades" e "faixa_etaria".
+4) Cada valor dessa variável específica está padronizado de uma só forma:
+a) Temos dois gêneros padronizados em masculino e feminino, não 6 palavras que diziam a mesma coisa.
+b) Temos todas as comorbidades em seu nome completo e não em siglas que só são reconhecíveis por quem é da área, separadas em "," para operações com unnest.
+c) Temos idade e páginas em numéricos,datas em formato date como Mr Hadley pede.
+
+
+**Temos portanto uma base tidy!**
+
+Espero ter sido aprovado no TCC da CursoR. Entender a lógica por trás da coisa ajudou demais. Espero que tenha atendidos as expectativas.
+Gostei bastante do curso, apesar de não ter tido tempo para lidar com os exercícios por causa da OAB. Peço desculpas. Talvez ainda pegue alguns pra fazer kkk.
+
+Outra coisa:  Muito obrigado por exigirem que esse trabalho fosse entregue em Rmarkdown. Isso me fez aprender o pacote, que é muito fácil e é de uma potência de argumentação fudida. A limpeza ficou pronta na verdade há uns 20 dias, mas não sabia mexer com Rmarkdown e aprendei para entregar esse TCC.
+
+### 6) Bonus tracks - Algumas Visualizações 
+
+Plus de algumas visualizações que já fiz com a base.
+
+
+#### Número de Mortes Diário com Média Móvel:
+
+``` {r,  echo=FALSE}
+
+
+obitos_diarios_pjf_tidy %>%
+  # group_by(data_obito) %>%
+  count(data_obito)%>%
+  tsibble::as_tsibble(index=data_obito)%>%
+  mutate(media_movel_mortes_7dias= slider::slide_index_dbl(.i = data_obito,
+                                                           .x = n,
+                                                           .f = mean,
+                                                           .before = 6),
+         media_movel_mortes_14dias = slider::slide_index_dbl(.i = data_obito,
+                                                             .x = n,
+                                                             .f = mean,
+                                                             .before = 13))%>%
+  arrange(data_obito) %>%
+  ggplot(aes(x=data_obito, y=n)) +geom_col() +
+  geom_line(aes(x=data_obito, y= media_movel_mortes_7dias), 
+            color= "red", show.legend = TRUE, size= 1.2, alpha= 0.8) +
+  geom_line(aes(x=data_obito, y= media_movel_mortes_14dias), 
+            color= "blue", show.legend = TRUE, size= 1.2, alpha= 0.8)+
+  labs(title = "Nº Diário de Mortes por Coronavírus em Juiz de Fora - PJF",
+       subtitle = "Em Vermelho, média movel dos últimos 7 dias. Em Azul, média móvel dos últimos 14 dias.",
+       caption= "Fonte: Prefeitura de Juiz de Fora - Elaboração do Gráfico e Faxina de Dados: JF em Dados")+
+  scale_y_continuous(name = "Nº de Mortes") + xlab(label= "Data da Ocorrência do Óbito") +
+  theme_classic() + theme( plot.title = element_text(size=18, face="bold" )) 
+  
+
+```
+
+#### Número de Mortes Por Faixa Etária:
+
+``` {r,  echo= FALSE}
+obitos_diarios_pjf_total_por_mes <- obitos_diarios_pjf_tidy_datas_numero %>%
+  mutate(faixa_etaria = cut(idade,
+                            breaks =  c(-1,20,40,60,80,101), 
+                            labels = c("Menos de 20", "20 a 40", "40 a 60",
+                                       "60 a 80", "Mais de 80")))%>%
+  mutate(across(c(dia:ano), str_squish)) %>%
+   group_by(ano, faixa_etaria) %>%
+  count(mes)%>%
+  mutate(mes_ano= paste(mes,ano,sep= "-") %>%
+           lubridate::my()) %>%
+  arrange(mes_ano)
+
+
+obitos_diarios_pjf_total_por_mes %>%
+  ggplot(aes(x=mes_ano, y= n, fill=faixa_etaria)) + geom_col ( colour= "black") +
+  labs(title = "Mortes por Covid em Juiz de Fora por Faixa Etária - PJF",
+       subtitle = "Percentual de mortes por Cada Faixa Etária em cada mês",
+       caption= "Fonte: Prefeitura de Juiz de Fora - Elaboração do Gráfico e Faxina de Dados: JF em Dados") +
+  scale_y_continuous(name = "Nº de Mortes") + xlab(label= "Data da Ocorrência do Óbito") +
+  theme_classic() + theme( plot.title = element_text(size=18, face="bold" )) 
+
+
+obitos_diarios_pjf_total_por_mes %>%
+  ggplot(aes(x=mes_ano, y= n, fill=faixa_etaria)) + geom_area(position = "fill", colour= "black") +
+  labs(title = "Mortes por Covid em Juiz de Fora por Faixa Etária - PJF",
+       subtitle = "Percentual de mortes por Cada Faixa Etária em cada mês",
+       caption= "Fonte: Prefeitura de Juiz de Fora - Elaboração do Gráfico e Faxina de Dados: JF em Dados") +
+  scale_y_continuous(name = "Porcentagem de mortes por mês") + xlab(label= "Data da Ocorrência do Óbito") +
+  theme_classic() + theme( plot.title = element_text(size=18, face="bold" )) 
+```
+
+
+#### Obtendo nº de comorbidades
+
+As comorbidades mais presentes. Alerta: O percentual é mais de 100%, porque quem tem mais de uma comorbidade conta mais de uma vez ao fazer o unnest().
+
+``` {r}
+obitos_diarios_pjf_tidy_comorbidade_separado %>%
+  count(comorbidades)%>%
+  arrange(desc(n))%>%
+  mutate(total= nrow(obitos_diarios_pjf_tidy),
+         percentual = n/total) %>%
+  as_tibble()
+
+```
+
+Muito obrigado Curso-R, Bea, Fernando e Julio! 
+
