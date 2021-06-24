@@ -398,6 +398,23 @@ obitos_diarios_pjf_fx_etaria <- obitos_diarios_pjf_tidy %>%
                             labels = c("Menos de 20", "20 a 40", "40 a 60",
                                        "60 a 80", "Mais de 80")))
 
+#Criando mais e menos de 60 para um novo gráfico
+obito_60 <- obitos_diarios_pjf_fx_etaria %>% 
+  mutate(sessenta_anos = case_when(idade %in% c(0:60) ~ "Menos de 60",
+                                   idade %in% c(61:120) ~ "Mais de 60")) %>%
+  mutate(ano_mes = str_sub(data_obito, 1,7)) %>% 
+  group_by(ano_mes, sessenta_anos) %>% 
+  count(sessenta_anos) %>%
+  pivot_wider(id_cols = c('ano_mes', 'sessenta_anos'),
+              names_from = sessenta_anos,
+              values_from = n) %>% 
+  rio::export("obito60.csv")
+
+getwd()
+
+
+
+
 
   #obtendo nº de comorbidades
 numero_de_comorbidades<- obitos_diarios_pjf_tidy_comorbidade_separado %>%
