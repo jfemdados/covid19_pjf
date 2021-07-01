@@ -89,15 +89,15 @@ extrai_numeros <- function(posicao_tr){
     as.double()
 }
 
-primeira_base <-tibble(link = map_chr(199:2,gera_link)) %>% 
-  mutate(conteudo_pdf = purrr::map(link, pdftools::pdf_data)) %>% 
-  unnest(conteudo_pdf)%>% 
-  mutate(casos_suspeitos = 
-           map_dbl(1:234, extrai_algo, algo = 3),
-         casos_confirmados = 
-           map_dbl(1:234, extrai_algo, algo = 5),
-         data= 
-           map_dbl(1:234, extrai_algo, algo = 2))
+#primeira_base <-tibble(link = map_chr(199:2,gera_link)) %>% 
+ # mutate(conteudo_pdf = purrr::map(link, pdftools::pdf_data)) %>% 
+  #unnest(conteudo_pdf)%>% 
+  #mutate(casos_suspeitos = 
+   #        map_dbl(1:234, extrai_algo, algo = 3),
+    #     casos_confirmados = 
+     #      map_dbl(1:234, extrai_algo, algo = 5),
+      #   data= 
+       #    map_dbl(1:234, extrai_algo, algo = 2))
 
 
 seq(from = 'x1', to = 'x12')
