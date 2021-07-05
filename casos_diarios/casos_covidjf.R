@@ -12,36 +12,28 @@ url <- "https://covid19.pjf.mg.gov.br/boletim.php#gsc.tab=0"
 #gera parte do link
 gera_link <- function(posicao_tr){
   x <- read_html(url) %>% 
-    html_elements(xpath = glue('//*[@id="Conteudo"]/div[2]/div[2]/table/tbody/tr[{posicao_tr}]/td[2]/a')) %>%
+    rvest::html_elements(xpath = glue('//*[@id="Conteudo"]/div[2]/div[2]/table/tbody/tr[{posicao_tr}]/td[2]/a')) %>%
     as.character() %>% 
     str_extract("boletim_\\d+")  
   paste0("https://covid19.pjf.mg.gov.br/arquivos/",x,".pdf")
 }
-
 
 #Já gerando um tibble reduzido com os conteudos do PDF
 
 #423-2 - essas são todas as posições dos links na página scrappada, coloquei de 10 a 3 
 #só para testar antes de gerar tudo
 
-base_previa <- tibble(link = map_chr(10:3,gera_link),
-                      conteudo_pdf = map_chr(link, pdftools::pdf_text))
+gera_bases_cruas<-function(posicoes){
+  tibble(link = map_chr(50:2,gera_link),
+         conteudo_pdf = map_chr(link, pdftools::pdf_text))
+}
+
+base_previa1<-gera_bases_cruas(30:1)
 
 
- #mortes = str_extract_all(conteudo_pdf, '//d')
-  #unnest_longer(mortes) %>%
-#Aqui em cima já ta gerando uma base com um conteudo_pdf, mas precisa ser extraído via regex
-#as coisas
+#tidying
 
-
-# @marcello, resolve isso pra mim? já ta gerando um tibble com o conteudo TODO do pdf,
-#precisa só de separar esse conteúdo de jeito que faça sentido
-
-
-
-# Done - =D
-
- base_previa_tidy<- base_previa %>%
+ base_previa_tidy<- base_previa1 %>%
    tidyr::separate(conteudo_pdf,
                   into = c("erro", "data", "casos_suspeitos", "casos_confirmados",
                            "obitos", "obitos_em_investigacao"),
@@ -56,11 +48,12 @@ base_previa <- tibble(link = map_chr(10:3,gera_link),
  
  
  base_previa_tidy %>%
-   ggplot(aes(x=data,y=casos_suspeitos)) +geom_col()
+   ggplot(aes(x=data)) +geom_line(casos_suspeitos)
  
  
-
-
+ base_previa_tidy %>% 
+   select(-erro) %>% 
+rio::export( "planilha_desde_fim_maio.xlsx")
 
 
 
