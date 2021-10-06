@@ -18,9 +18,11 @@ Trata-se da base de "metadados" dos óbitos de covid em Juiz de Fora.
  Codigo no *dados_diarios_pjf.r*
 As comorbidades estão separadas dentro da coluna comorbidades por "/".
 
-Rendeu esse post:
+Rendeu uma publicação no Jornal da Cidade:
 
-![image](https://user-images.githubusercontent.com/53457944/120711466-ca694580-c495-11eb-87fc-806038c76cc3.png)
+![image](https://user-images.githubusercontent.com/53457944/136277310-d74226b2-7416-4f4f-bab3-430c848311ee.png)
+
+e um prêmio no curso da faxina de dados da Curso-R. Veja no tcc_pjf.html que é um Rmarkdown completo de como foi feito.
 
 
 
